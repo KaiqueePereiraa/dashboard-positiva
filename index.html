@@ -17,6 +17,11 @@ body{font-family:'Avenir','Century Gothic','Trebuchet MS',sans-serif;background:
 .header-title .sub{font-size:.78rem;color:var(--green);font-style:italic;margin-top:2px}
 .header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 
+.mode-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--green);border-radius:8px;overflow:hidden}
+.mode-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 20px;font-family:inherit;font-size:.82rem;font-weight:900;font-style:italic;letter-spacing:1px;cursor:pointer;transition:all .2s;text-transform:uppercase}
+.mode-btn.active{background:var(--green);color:var(--navy)}
+.mode-btn:hover:not(.active){color:var(--white)}
+
 .unit-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--blue);border-radius:8px;overflow:hidden}
 .unit-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 18px;font-family:inherit;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;border-right:1px solid var(--blue);white-space:nowrap}
 .unit-btn:last-child{border-right:none}
@@ -30,7 +35,7 @@ body{font-family:'Avenir','Century Gothic','Trebuchet MS',sans-serif;background:
 select,input[type=number]{background:var(--dark);border:1px solid rgba(255,255,255,.15);color:var(--white);padding:5px 10px;border-radius:5px;font-family:inherit;font-size:.82rem;cursor:pointer;outline:none}
 select:focus{border-color:var(--green)}
 .mes-wrap{display:flex;align-items:center;gap:8px}
-.mes-switcher{display:flex;background:var(--dark);border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden}
+.mes-switcher{display:flex;background:var(--dark);border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;flex-wrap:wrap}
 .mes-btn{background:transparent;border:none;border-right:1px solid rgba(255,255,255,.1);color:var(--gray-m);padding:5px 14px;font-family:inherit;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s}
 .mes-btn:last-child{border-right:none}
 .mes-btn.active{background:var(--blue);color:var(--white)}
@@ -56,6 +61,10 @@ select:focus{border-color:var(--green)}
 .kpi-card.hi .val{color:var(--green)}
 .kpi-card.neg .val{color:var(--red)}
 .kpi-card .sub{font-size:.7rem;color:var(--gray-m);margin-top:5px}
+.kpi-card .delta{display:inline-block;font-size:.72rem;font-weight:900;margin-top:6px;padding:2px 8px;border-radius:8px}
+.delta.up{background:rgba(190,245,117,.13);color:var(--green)}
+.delta.down{background:rgba(255,107,107,.13);color:var(--red)}
+.delta.flat{background:rgba(255,255,255,.06);color:var(--gray-m)}
 
 /* CHARTS */
 .charts-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}
@@ -93,11 +102,22 @@ select:focus{border-color:var(--green)}
 .cmp-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.86rem}
 .cmp-row .ml{color:var(--gray-m);font-size:.77rem}
 .cmp-row .mv{font-weight:900;font-style:italic}
-.delta{display:block;font-size:.72rem;font-weight:700;padding:3px 6px;border-radius:7px;margin:6px 0;text-align:center;width:68px}
-.delta.pos{background:rgba(190,245,117,.15);color:var(--green)}
-.delta.neg{background:rgba(255,107,107,.15);color:var(--red)}
-.delta.neu{background:rgba(255,255,255,.06);color:var(--gray-m)}
+.cmp-col.mid .delta{display:block;font-size:.72rem;font-weight:700;padding:3px 6px;border-radius:7px;margin:6px 0;text-align:center;width:68px}
+.cmp-col.mid .delta.pos{background:rgba(190,245,117,.15);color:var(--green)}
+.cmp-col.mid .delta.neg{background:rgba(255,107,107,.15);color:var(--red)}
+.cmp-col.mid .delta.neu{background:rgba(255,255,255,.06);color:var(--gray-m)}
 .no-cmp{text-align:center;padding:52px;color:var(--gray-m)}
+
+/* SEMANAL */
+.sem-content{padding:24px 32px}
+.analise-card{background:var(--card);border-radius:10px;padding:20px;border-left:4px solid var(--green);margin-bottom:20px;animation:fadeUp .35s ease}
+.analise-card h3{font-size:.74rem;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:12px;font-style:italic}
+.analise-card p{font-size:.92rem;line-height:1.65;color:var(--gray-l)}
+.acoes-list{list-style:none;margin-top:6px}
+.acoes-list li{font-size:.9rem;line-height:1.5;padding:9px 0 9px 30px;position:relative;border-bottom:1px solid rgba(255,255,255,.05)}
+.acoes-list li:last-child{border-bottom:none}
+.acoes-list li::before{content:'✅';position:absolute;left:0;top:8px;font-size:.85rem}
+.sem-vazio{text-align:center;padding:64px 32px;color:var(--gray-m);font-size:.95rem;line-height:1.8}
 </style>
 </head>
 <body>
@@ -106,15 +126,19 @@ select:focus{border-color:var(--green)}
 <div class="header">
   <div class="header-title">
     <h1 id="h-titulo">DASHBOARD POSITIVA</h1>
-    <div class="sub" id="h-sub">Relatório mensal</div>
+    <div class="sub" id="h-sub">Carregando…</div>
   </div>
   <div class="header-right">
+    <div class="mode-switcher">
+      <button class="mode-btn active" id="mode-mensal" onclick="setMode('mensal')">Mensal</button>
+      <button class="mode-btn" id="mode-semanal" onclick="setMode('semanal')">Semanal</button>
+    </div>
     <div class="unit-switcher" id="unit-switcher"></div>
   </div>
 </div>
 
-<!-- FILTERS -->
-<div class="filters-bar">
+<!-- FILTERS (MENSAL) -->
+<div class="filters-bar" id="filters-mensal">
   <div class="mes-wrap">
     <label>Mês:</label>
     <div class="mes-switcher" id="mes-switcher"></div>
@@ -124,6 +148,17 @@ select:focus{border-color:var(--green)}
   <label for="f-professor">Professor:</label>
   <select id="f-professor"><option value="">Todos</option></select>
 </div>
+
+<!-- FILTERS (SEMANAL) -->
+<div class="filters-bar" id="filters-semanal" style="display:none">
+  <div class="mes-wrap">
+    <label>Semana:</label>
+    <div class="mes-switcher" id="sem-switcher"></div>
+  </div>
+</div>
+
+<!-- ══════════════ MODO MENSAL ══════════════ -->
+<div id="view-mensal">
 
 <!-- TABS -->
 <div class="tabs-nav">
@@ -137,6 +172,9 @@ select:focus{border-color:var(--green)}
 <div class="tab-content active" id="tab-geral">
   <div id="av-parcial" class="aviso parcial" style="display:none">
     ℹ️ Dados de <strong>conversão parciais</strong> — arquivo formato Convertidos (somente fechamentos registrados). % de conversão não disponível.
+  </div>
+  <div id="av-previa" class="aviso parcial" style="display:none">
+    ⏳ <strong>Prévia do mês em andamento</strong> — dados parciais até <span id="av-previa-data">—</span>. Os números finais saem no fechamento do mês.
   </div>
   <div class="kpi-grid">
     <div class="kpi-card" id="card-oport"><div class="lbl">Oportunidades</div><div class="val" id="kv-oport">—</div><div class="sub">Cadastros no período</div></div>
@@ -195,37 +233,76 @@ select:focus{border-color:var(--green)}
   <div id="cmp-wrap"></div>
 </div>
 
+</div><!-- /view-mensal -->
+
+<!-- ══════════════ MODO SEMANAL ══════════════ -->
+<div id="view-semanal" style="display:none">
+<div class="sem-content" id="sem-content"></div>
+</div>
+
 <script>
-const TD = {"Positiva Acqua Laranjeiras": {"Março/2026": {"unidade": "Positiva Acqua Laranjeiras", "periodo": "Março/2026", "mes": 3, "ano": 2026, "tem_oportunidades": true, "oportunidades": 64, "vendas": 31, "vendas_outro_mes": 10, "conversao_pct": 48.4, "rematriculas": 9, "entrada_total": 50, "saida_total": 42, "saldo": 8, "consultores": [{"nome": "FRANCIELY IGNACIO ELIZIARIO", "cadastros": 41, "vendas": 18, "conversao_pct": 43.9}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 17, "vendas": 12, "conversao_pct": 70.6}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 3, "vendas": 0, "conversao_pct": 0.0}, {"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}, {"nome": "ADEVALDA OLIVEIRA", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 55, "fechamentos_experimentais": 35, "conversao_experimentais_pct": 63.6, "professores": [{"nome": "FELIPE LOPES TONINI", "atendidas": 4, "convertidas": 4, "conversao_pct": 100.0}, {"nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA", "atendidas": 6, "convertidas": 5, "conversao_pct": 83.3}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 7, "convertidas": 5, "conversao_pct": 71.4}, {"nome": "NATHALIA ALMEIDA LOILA", "atendidas": 17, "convertidas": 11, "conversao_pct": 64.7}, {"nome": "SHEILA FREIRE BATISTA PITOMBA", "atendidas": 15, "convertidas": 8, "conversao_pct": 53.3}, {"nome": "BRUNO MARTINS FAZIO", "atendidas": 9, "convertidas": 4, "conversao_pct": 44.4}], "conversoes_futuras": 2}, "Abril/2026": {"unidade": "Positiva Acqua Laranjeiras", "periodo": "Abril/2026", "mes": 4, "ano": 2026, "tem_oportunidades": true, "oportunidades": 34, "vendas": 16, "vendas_outro_mes": 0, "conversao_pct": 47.1, "rematriculas": 5, "entrada_total": 21, "saida_total": 30, "saldo": -9, "consultores": [{"nome": "ADRIELLY SANTANA SABINO", "cadastros": 19, "vendas": 8, "conversao_pct": 42.1}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 7, "vendas": 5, "conversao_pct": 71.4}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 6, "vendas": 3, "conversao_pct": 50.0}, {"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 2, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 41, "fechamentos_experimentais": 28, "conversao_experimentais_pct": 68.3, "professores": [{"nome": "BRUNO MARTINS FAZIO", "atendidas": 7, "convertidas": 6, "conversao_pct": 85.7}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 12, "convertidas": 8, "conversao_pct": 66.7}, {"nome": "SHEILA FREIRE BATISTA PITOMBA", "atendidas": 9, "convertidas": 6, "conversao_pct": 66.7}, {"nome": "FELIPE LOPES TONINI", "atendidas": 3, "convertidas": 2, "conversao_pct": 66.7}, {"nome": "NATHALIA ALMEIDA LOILA", "atendidas": 9, "convertidas": 6, "conversao_pct": 66.7}, {"nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}], "conversoes_futuras": 4}, "Maio/2026": {"unidade": "Positiva Acqua Laranjeiras", "periodo": "Maio/2026", "mes": 5, "ano": 2026, "tem_oportunidades": true, "oportunidades": 37, "vendas": 23, "vendas_outro_mes": 6, "conversao_pct": 62.2, "rematriculas": 8, "entrada_total": 37, "saida_total": 25, "saldo": 12, "consultores": [{"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 10, "vendas": 8, "conversao_pct": 80.0}, {"nome": "RAYNY VITORIA PACHECO DOS SANTOS", "cadastros": 8, "vendas": 5, "conversao_pct": 62.5}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 17, "vendas": 9, "conversao_pct": 52.9}, {"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 28, "fechamentos_experimentais": 21, "conversao_experimentais_pct": 75.0, "professores": [{"nome": "FELIPE LOPES TONINI", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "SHEILA FREIRE BATISTA PITOMBA", "atendidas": 6, "convertidas": 6, "conversao_pct": 100.0}, {"nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA", "atendidas": 2, "convertidas": 2, "conversao_pct": 100.0}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 6, "convertidas": 5, "conversao_pct": 83.3}, {"nome": "BRUNO MARTINS FAZIO", "atendidas": 9, "convertidas": 6, "conversao_pct": 66.7}, {"nome": "NATHALIA ALMEIDA LOIOLA", "atendidas": 4, "convertidas": 1, "conversao_pct": 25.0}], "conversoes_futuras": 0}, "Junho/2026": {"unidade": "Positiva Acqua Laranjeiras", "periodo": "Junho/2026", "mes": 6, "ano": 2026, "tem_oportunidades": true, "oportunidades": 52, "vendas": 19, "vendas_outro_mes": 1, "conversao_pct": 36.5, "rematriculas": 8, "entrada_total": 28, "saida_total": 27, "saldo": 1, "consultores": [{"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 9, "vendas": 5, "conversao_pct": 55.6}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 10, "vendas": 5, "conversao_pct": 50.0}, {"nome": "RAYNY VITORIA PACHECO DOS SANTOS", "cadastros": 23, "vendas": 8, "conversao_pct": 34.8}, {"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 54, "fechamentos_experimentais": 28, "conversao_experimentais_pct": 51.9, "professores": [{"nome": "FELIPE LOPES TONINI", "atendidas": 5, "convertidas": 5, "conversao_pct": 100.0}, {"nome": "SHEILA FREIRE BATISTA PITOMBA", "atendidas": 10, "convertidas": 7, "conversao_pct": 70.0}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 10, "convertidas": 5, "conversao_pct": 50.0}, {"nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA", "atendidas": 4, "convertidas": 2, "conversao_pct": 50.0}, {"nome": "BRUNO MARTINS FAZIO", "atendidas": 11, "convertidas": 5, "conversao_pct": 45.5}, {"nome": "NATHALIA ALMEIDA LOIOLA", "atendidas": 14, "convertidas": 4, "conversao_pct": 28.6}], "conversoes_futuras": 4}, "Julho/2026": {"unidade": "Positiva Acqua Laranjeiras", "periodo": "Julho/2026", "mes": 7, "ano": 2026, "tem_oportunidades": true, "oportunidades": 60, "vendas": 28, "vendas_outro_mes": 7, "conversao_pct": 46.7, "rematriculas": 6, "entrada_total": 41, "saida_total": 35, "saldo": 6, "consultores": [{"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 12, "vendas": 7, "conversao_pct": 58.3}, {"nome": "RAYNY VITORIA PACHECO DOS SANTOS", "cadastros": 19, "vendas": 11, "conversao_pct": 57.9}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 7, "vendas": 4, "conversao_pct": 57.1}, {"nome": "FELIPE NETTO DE OLIVEIRA", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 46, "fechamentos_experimentais": 34, "conversao_experimentais_pct": 73.9, "professores": [{"nome": "FELIPE LOPES TONINI", "atendidas": 7, "convertidas": 7, "conversao_pct": 100.0}, {"nome": "NATHALIA ALMEIDA LOIOLA", "atendidas": 8, "convertidas": 8, "conversao_pct": 100.0}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 8, "convertidas": 6, "conversao_pct": 75.0}, {"nome": "BRUNO MARTINS FAZIO", "atendidas": 13, "convertidas": 9, "conversao_pct": 69.2}, {"nome": "SHEILA FREIRE BATISTA PITOMBA", "atendidas": 6, "convertidas": 3, "conversao_pct": 50.0}, {"nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA", "atendidas": 4, "convertidas": 1, "conversao_pct": 25.0}], "conversoes_futuras": 4}}, "Positiva Club": {"Abril/2026": {"unidade": "Positiva Club", "periodo": "Abril/2026", "mes": 4, "ano": 2026, "tem_oportunidades": true, "oportunidades": 48, "vendas": 17, "vendas_outro_mes": 1, "conversao_pct": 35.4, "rematriculas": 25, "entrada_total": 43, "saida_total": 84, "saldo": -41, "consultores": [{"nome": "LUANA APARECIDA FERNANDES", "cadastros": 18, "vendas": 9, "conversao_pct": 50.0}, {"nome": "ISABELLY SANTOS MIGUITA", "cadastros": 19, "vendas": 5, "conversao_pct": 26.3}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 8, "vendas": 2, "conversao_pct": 25.0}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 2, "vendas": 1, "conversao_pct": 50.0}, {"nome": "ALEXANDRE", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 33, "fechamentos_experimentais": 14, "conversao_experimentais_pct": 42.4, "professores": [{"nome": "BRENDA GOMES FIGUEIREDO AUGUSTO", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "MATHEUS VIEIRA PIMENTEL", "atendidas": 6, "convertidas": 4, "conversao_pct": 66.7}, {"nome": "EDUARDA SEPULCHRO", "atendidas": 2, "convertidas": 1, "conversao_pct": 50.0}, {"nome": "BRUNO SANTOS MAZA", "atendidas": 9, "convertidas": 4, "conversao_pct": 44.4}, {"nome": "GUILHERME GOLDNER", "atendidas": 11, "convertidas": 4, "conversao_pct": 36.4}, {"nome": "MARCOS VINICIUS SILVA GONÇALVES", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "GABRIEL DIAS DEL ANTONIO", "atendidas": 3, "convertidas": 0, "conversao_pct": 0.0}], "conversoes_futuras": 0}, "Maio/2026": {"unidade": "Positiva Club", "periodo": "Maio/2026", "mes": 5, "ano": 2026, "tem_oportunidades": true, "oportunidades": 76, "vendas": 47, "vendas_outro_mes": 1, "conversao_pct": 61.8, "rematriculas": 35, "entrada_total": 83, "saida_total": 66, "saldo": 17, "consultores": [{"nome": "ISABELLY SANTOS MIGUITA", "cadastros": 17, "vendas": 11, "conversao_pct": 64.7}, {"nome": "LUANA APARECIDA FERNANDES", "cadastros": 42, "vendas": 27, "conversao_pct": 64.3}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 13, "vendas": 8, "conversao_pct": 61.5}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 2, "vendas": 1, "conversao_pct": 50.0}], "total_experimentais": 27, "fechamentos_experimentais": 6, "conversao_experimentais_pct": 22.2, "professores": [{"nome": "GABRIEL DIAS DEL ANTONIO", "atendidas": 2, "convertidas": 2, "conversao_pct": 100.0}, {"nome": "GUILHERME GOLDNER", "atendidas": 3, "convertidas": 2, "conversao_pct": 66.7}, {"nome": "MATHEUS VIEIRA PIMENTEL", "atendidas": 6, "convertidas": 1, "conversao_pct": 16.7}, {"nome": "BRUNO SANTOS MAZA", "atendidas": 10, "convertidas": 1, "conversao_pct": 10.0}, {"nome": "EDUARDA SEPULCHRO", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "MARCOS VINICIUS SILVA GONÇALVES", "atendidas": 2, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "RAYANE FONSECA DOS SANTOS", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}], "conversoes_futuras": 0}, "Junho/2026": {"unidade": "Positiva Club", "periodo": "Junho/2026", "mes": 6, "ano": 2026, "tem_oportunidades": true, "oportunidades": 52, "vendas": 18, "vendas_outro_mes": 0, "conversao_pct": 34.6, "rematriculas": 19, "entrada_total": 37, "saida_total": 59, "saldo": -22, "consultores": [{"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 29, "vendas": 12, "conversao_pct": 41.4}, {"nome": "ISABELLY SANTOS MIGUITA", "cadastros": 14, "vendas": 5, "conversao_pct": 35.7}, {"nome": "LUANA APARECIDA FERNANDES", "cadastros": 5, "vendas": 1, "conversao_pct": 20.0}, {"nome": "ALEXANDRE CONTARINI ABREU", "cadastros": 2, "vendas": 0, "conversao_pct": 0.0}, {"nome": "DIEGO NETTO DE OLIVEIRA", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 27, "fechamentos_experimentais": 8, "conversao_experimentais_pct": 29.6, "professores": [{"nome": "ALEXANDRE C. ABREU", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "GUILHERME GOLDNER", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "RAYANE FONSECA DOS SANTOS", "atendidas": 5, "convertidas": 2, "conversao_pct": 40.0}, {"nome": "BRUNO SANTOS MAZA", "atendidas": 6, "convertidas": 2, "conversao_pct": 33.3}, {"nome": "MATHEUS VIEIRA PIMENTEL", "atendidas": 7, "convertidas": 2, "conversao_pct": 28.6}, {"nome": "BRENDA GOMES FIGUEIREDO AUGUSTO", "atendidas": 2, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "EDUARDA SEPULCHRO", "atendidas": 3, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "GABRIEL DIAS DEL ANTONIO", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}, {"nome": "WENDELL SOARES DE SOUZA", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}], "conversoes_futuras": 0}, "Julho/2026": {"unidade": "Positiva Club", "periodo": "Julho/2026", "mes": 7, "ano": 2026, "tem_oportunidades": true, "oportunidades": 53, "vendas": 25, "vendas_outro_mes": 4, "conversao_pct": 47.2, "rematriculas": 53, "entrada_total": 82, "saida_total": 82, "saldo": 0, "consultores": [{"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 27, "vendas": 14, "conversao_pct": 51.9}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 2, "vendas": 1, "conversao_pct": 50.0}, {"nome": "MARCOS ROBERTO PEREIRA MONTEIRO", "cadastros": 2, "vendas": 1, "conversao_pct": 50.0}, {"nome": "ISABELLY SANTOS MIGUITA", "cadastros": 20, "vendas": 8, "conversao_pct": 40.0}, {"nome": "SUPORTEEVO.", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 0, "fechamentos_experimentais": 0, "conversao_experimentais_pct": 0.0, "professores": [], "conversoes_futuras": 1}}, "Positiva Acqua República": {"Abril/2026": {"unidade": "Positiva Acqua República", "periodo": "Abril/2026", "mes": 4, "ano": 2026, "tem_oportunidades": true, "oportunidades": 20, "vendas": 5, "vendas_outro_mes": 3, "conversao_pct": 25.0, "rematriculas": 0, "entrada_total": 8, "saida_total": 15, "saldo": -7, "consultores": [{"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 11, "vendas": 4, "conversao_pct": 36.4}, {"nome": "MARIA EDUARDA LOPES FREITAS", "cadastros": 3, "vendas": 1, "conversao_pct": 33.3}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}, {"nome": "KAIQUE PEREIRA SIQUEIRA", "cadastros": 1, "vendas": 0, "conversao_pct": 0.0}, {"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 4, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 19, "fechamentos_experimentais": 13, "conversao_experimentais_pct": 68.4, "professores": [{"nome": "CAMILA BRAGANÇA LOCATELLI DE CAMPOS", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "RAPHAELLA ALFREDO SANTANA", "atendidas": 1, "convertidas": 1, "conversao_pct": 100.0}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 8, "convertidas": 6, "conversao_pct": 75.0}, {"nome": "RAYANA BISPO DE SOUZA", "atendidas": 8, "convertidas": 5, "conversao_pct": 62.5}, {"nome": "LEONARDO LIMA DE SOUZA", "atendidas": 1, "convertidas": 0, "conversao_pct": 0.0}], "conversoes_futuras": 4}, "Maio/2026": {"unidade": "Positiva Acqua República", "periodo": "Maio/2026", "mes": 5, "ano": 2026, "tem_oportunidades": true, "oportunidades": 37, "vendas": 19, "vendas_outro_mes": 6, "conversao_pct": 51.4, "rematriculas": 4, "entrada_total": 29, "saida_total": 16, "saldo": 13, "consultores": [{"nome": "ADRIELLY SANTANA SABINO", "cadastros": 2, "vendas": 2, "conversao_pct": 100.0}, {"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 2, "vendas": 2, "conversao_pct": 100.0}, {"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 31, "vendas": 15, "conversao_pct": 48.4}], "total_experimentais": 46, "fechamentos_experimentais": 28, "conversao_experimentais_pct": 60.9, "professores": [{"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 18, "convertidas": 11, "conversao_pct": 61.1}, {"nome": "RAYANA BISPO DE SOUZA", "atendidas": 28, "convertidas": 17, "conversao_pct": 60.7}], "conversoes_futuras": 2}, "Junho/2026": {"unidade": "Positiva Acqua República", "periodo": "Junho/2026", "mes": 6, "ano": 2026, "tem_oportunidades": true, "oportunidades": 19, "vendas": 7, "vendas_outro_mes": 4, "conversao_pct": 36.8, "rematriculas": 6, "entrada_total": 17, "saida_total": 18, "saldo": -1, "consultores": [{"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 9, "vendas": 6, "conversao_pct": 66.7}, {"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 3, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 19, "fechamentos_experimentais": 12, "conversao_experimentais_pct": 63.2, "professores": [{"nome": "RAYANA BISPO DE SOUZA", "atendidas": 11, "convertidas": 7, "conversao_pct": 63.6}, {"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 8, "convertidas": 5, "conversao_pct": 62.5}], "conversoes_futuras": 1}, "Julho/2026": {"unidade": "Positiva Acqua República", "periodo": "Julho/2026", "mes": 7, "ano": 2026, "tem_oportunidades": true, "oportunidades": 25, "vendas": 9, "vendas_outro_mes": 0, "conversao_pct": 36.0, "rematriculas": 4, "entrada_total": 13, "saida_total": 16, "saldo": -3, "consultores": [{"nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS", "cadastros": 1, "vendas": 1, "conversao_pct": 100.0}, {"nome": "MARIA EDUARDA SANTOS LOUSSURDO", "cadastros": 13, "vendas": 6, "conversao_pct": 46.2}, {"nome": "RAYNY VITORIA PACHECO DOS SANTOS", "cadastros": 3, "vendas": 1, "conversao_pct": 33.3}, {"nome": "ADRIELLY SANTANA SABINO", "cadastros": 3, "vendas": 0, "conversao_pct": 0.0}], "total_experimentais": 23, "fechamentos_experimentais": 17, "conversao_experimentais_pct": 73.9, "professores": [{"nome": "RICHARDSON ALMEIDA SILVA", "atendidas": 23, "convertidas": 17, "conversao_pct": 73.9}], "conversoes_futuras": 2}}};
+// ── Dados (carregados de data/*.json) ─────────────────────────────────────
+let TD = {};   // mensal
+let SD = {};   // semanal
 
 // Estado global
-let curUnit = Object.keys(TD)[0];
-let curMes  = Object.keys(TD[curUnit])[0];
+let curMode = 'mensal';
+let curUnit = null;
+let curMes  = null;
+let curSem  = null;
 let charts  = {};
 
-// ── Helpers ────────────────────────────────────────────────────────────────
 const $  = id => document.getElementById(id);
-const fmt = n => (n === null || n === undefined) ? '—' : n;
 
 function destroyChart(id) {
   if (charts[id]) { charts[id].destroy(); delete charts[id]; }
 }
 
-// ── Build unit switcher ────────────────────────────────────────────────────
+// ── Mode switcher ──────────────────────────────────────────────────────────
+function semanaDefault(unit) {
+  const sems = Object.keys(SD[unit] || {});
+  if (!sems.length) return null;
+  // Última semana com análise registrada; senão, a última
+  const comAnalise = sems.filter(s => SD[unit][s].analise);
+  return comAnalise.length ? comAnalise[comAnalise.length - 1] : sems[sems.length - 1];
+}
+
+function setMode(m) {
+  curMode = m;
+  $('mode-mensal').classList.toggle('active', m === 'mensal');
+  $('mode-semanal').classList.toggle('active', m === 'semanal');
+  $('view-mensal').style.display   = m === 'mensal'  ? '' : 'none';
+  $('view-semanal').style.display  = m === 'semanal' ? '' : 'none';
+  $('filters-mensal').style.display  = m === 'mensal'  ? '' : 'none';
+  $('filters-semanal').style.display = m === 'semanal' ? '' : 'none';
+  buildUnitSwitcher();
+  if (m === 'semanal') {
+    const sems = Object.keys(SD[curUnit] || {});
+    if (!curSem || !sems.includes(curSem)) curSem = semanaDefault(curUnit);
+    buildSemSwitcher();
+    renderSemanal();
+  } else {
+    render();
+  }
+}
+
+// ── Unit switcher ──────────────────────────────────────────────────────────
+function unidadesDoModo() {
+  return Object.keys(curMode === 'mensal' ? TD : SD);
+}
+
 function buildUnitSwitcher() {
   const wrap = $('unit-switcher');
   wrap.innerHTML = '';
-  const units = Object.keys(TD);
-  // Known units order
+  const units = unidadesDoModo();
   const ORDER = ['Positiva Acqua Laranjeiras', 'Positiva Club', 'Positiva Acqua República'];
   ORDER.forEach(u => {
     const btn = document.createElement('button');
     btn.className = 'unit-btn' + (units.includes(u) ? '' : ' soon') + (u === curUnit ? ' active' : '');
-    btn.textContent = u.replace('Positiva ', '').replace('Acqua ', 'Acqua ');
+    btn.textContent = u.replace('Positiva ', '');
     if (units.includes(u)) btn.onclick = () => setUnit(u);
     wrap.appendChild(btn);
   });
-  // Add any extra unit not in ORDER
   units.filter(u => !ORDER.includes(u)).forEach(u => {
     const btn = document.createElement('button');
     btn.className = 'unit-btn' + (u === curUnit ? ' active' : '');
@@ -237,19 +314,20 @@ function buildUnitSwitcher() {
 
 function setUnit(u) {
   curUnit = u;
-  curMes  = Object.keys(TD[u])[0];
-  buildUnitSwitcher();
-  buildMesSwitcher();
-  buildFilters();
-  render();
+  if (curMode === 'mensal') {
+    curMes = Object.keys(TD[u])[0];
+    buildUnitSwitcher(); buildMesSwitcher(); buildFilters(); render();
+  } else {
+    curSem = semanaDefault(u);
+    buildUnitSwitcher(); buildSemSwitcher(); renderSemanal();
+  }
 }
 
-// ── Build mes switcher ─────────────────────────────────────────────────────
+// ── Mes switcher (mensal) ──────────────────────────────────────────────────
 function buildMesSwitcher() {
   const wrap = $('mes-switcher');
   wrap.innerHTML = '';
-  const meses = Object.keys(TD[curUnit]);
-  meses.forEach(m => {
+  Object.keys(TD[curUnit]).forEach(m => {
     const btn = document.createElement('button');
     btn.className = 'mes-btn' + (m === curMes ? ' active' : '');
     btn.textContent = m;
@@ -258,7 +336,21 @@ function buildMesSwitcher() {
   });
 }
 
-// ── Filters ────────────────────────────────────────────────────────────────
+// ── Semana switcher (semanal) ──────────────────────────────────────────────
+function buildSemSwitcher() {
+  const wrap = $('sem-switcher');
+  wrap.innerHTML = '';
+  Object.keys(SD[curUnit] || {}).forEach(s => {
+    const e = SD[curUnit][s];
+    const btn = document.createElement('button');
+    btn.className = 'mes-btn' + (s === curSem ? ' active' : '');
+    btn.textContent = e.rotulo || s;
+    btn.onclick = () => { curSem = s; buildSemSwitcher(); renderSemanal(); };
+    wrap.appendChild(btn);
+  });
+}
+
+// ── Filters (mensal) ───────────────────────────────────────────────────────
 function buildFilters() {
   const D = TD[curUnit][curMes];
   const fC = $('f-consultor');
@@ -274,20 +366,23 @@ function buildFilters() {
   fC.onchange = fP.onchange = render;
 }
 
-// ── Main render ────────────────────────────────────────────────────────────
+// ── Render MENSAL (idêntico ao v4) ────────────────────────────────────────
 function render() {
   const D = TD[curUnit][curMes];
   const fC = $('f-consultor').value;
   const fP = $('f-professor').value;
 
-  // Header
   $('h-titulo').textContent = (D.unidade || curUnit).toUpperCase();
   $('h-sub').textContent = 'Relatório de ' + D.periodo;
 
-  // Avisos
   $('av-parcial').style.display = D.tem_oportunidades ? 'none' : 'block';
+  if (D.parcial) {
+    $('av-previa').style.display = 'block';
+    $('av-previa-data').textContent = D.parcial_ate || '—';
+  } else {
+    $('av-previa').style.display = 'none';
+  }
 
-  // KPIs
   const entradaTotal = D.vendas + (D.vendas_outro_mes || 0) + D.rematriculas;
   const saldo = entradaTotal - D.saida_total;
   $('kv-oport').textContent = D.tem_oportunidades ? D.oportunidades : '—';
@@ -296,7 +391,6 @@ function render() {
   $('kv-pct').textContent    = D.tem_oportunidades && D.conversao_pct !== null ? D.conversao_pct + '%' : '—';
   $('card-pct').className    = 'kpi-card hi' + (D.tem_oportunidades ? '' : ' dim');
   $('sub-pct').textContent   = D.tem_oportunidades ? 'Oportunidades → Vendas' : 'Dados parciais';
-  // Aviso: leads deste mês que converteram em mês futuro
   const futuras = D.conversoes_futuras || 0;
   if (futuras > 0) {
     $('av-futuras').style.display = 'block';
@@ -312,7 +406,6 @@ function render() {
   $('kv-saldo').textContent  = (saldo >= 0 ? '+' : '') + saldo;
   $('card-saldo').className  = 'kpi-card ' + (saldo >= 0 ? 'hi' : 'neg');
 
-  // Donut de conversão
   destroyChart('ct-donut');
   if (D.tem_oportunidades && D.oportunidades > 0) {
     charts['ct-donut'] = new Chart($('ct-donut'), {
@@ -330,7 +423,6 @@ function render() {
     ctx.textAlign = 'center'; ctx.fillText('Dados parciais', $('ct-donut').width/2, $('ct-donut').height/2);
   }
 
-  // Donut de experimentais
   destroyChart('ct-exp');
   if (D.total_experimentais > 0) {
     charts['ct-exp'] = new Chart($('ct-exp'), {
@@ -346,22 +438,19 @@ function render() {
     });
   }
 
-  // Consultores
   let cons = [...(D.consultores || [])];
   if (fC) cons = cons.filter(c => c.nome === fC);
   renderConsultores(cons, D.tem_oportunidades);
 
-  // Professores
   renderTotaisProfessores(D);
   let profs = [...(D.professores || [])];
   if (fP) profs = profs.filter(p => p.nome === fP);
   renderProfessores(profs);
 
-  // Comparativo
   renderComparativo();
 }
 
-// ── Consultores ────────────────────────────────────────────────────────────
+// ── Consultores (mensal) ───────────────────────────────────────────────────
 function renderConsultores(cons, temOp) {
   const tbody = $('tb-consultores');
   const maxV = Math.max(...cons.map(c => c.vendas), 1);
@@ -392,7 +481,7 @@ function renderConsultores(cons, temOp) {
   });
 }
 
-// ── Professores ────────────────────────────────────────────────────────────
+// ── Professores (mensal) ───────────────────────────────────────────────────
 function renderTotaisProfessores(D) {
   const total  = D.total_experimentais || 0;
   const fecha  = D.fechamentos_experimentais || 0;
@@ -434,7 +523,7 @@ function renderProfessores(profs) {
   });
 }
 
-// ── Comparativo ────────────────────────────────────────────────────────────
+// ── Comparativo (mensal) ───────────────────────────────────────────────────
 function renderComparativo() {
   const wrap = $('cmp-wrap');
   const meses = Object.keys(TD[curUnit]);
@@ -480,7 +569,7 @@ function renderComparativo() {
 
   function deltaTag(a, b, maior) {
     if (a === null || b === null) return '<span class="delta neu">—</span>';
-    const diff = b - a;
+    const diff = Math.round((b - a) * 10) / 10;
     if (diff === 0) return '<span class="delta neu">= 0</span>';
     const melhor = maior ? diff > 0 : diff < 0;
     const sinal = diff > 0 ? '+' : '';
@@ -506,7 +595,6 @@ function renderComparativo() {
       <div class="cmp-col right"><h4>${selB}</h4>${rowsB}</div>
     </div>`;
 
-  // Gráfico comparativo
   wrap.innerHTML += `<div class="chart-card"><h3>Comparativo de métricas</h3><div class="chart-wrap"><canvas id="ct-cmp"></canvas></div></div>`;
   destroyChart('ct-cmp');
   const lbls = mets.filter(m=>m.a!==null&&m.b!==null&&!m.pct).map(m=>m.l);
@@ -525,7 +613,7 @@ function renderComparativo() {
   });
 }
 
-// ── Tab switching ──────────────────────────────────────────────────────────
+// ── Tab switching (mensal) ─────────────────────────────────────────────────
 function setTab(id) {
   document.querySelectorAll('.tab-btn').forEach((b,i) => {
     b.classList.toggle('active', ['geral','consultores','professores','comparativo'][i] === id);
@@ -535,11 +623,148 @@ function setTab(id) {
   if (id === 'comparativo') renderComparativo();
 }
 
+// ── Render SEMANAL ─────────────────────────────────────────────────────────
+function fmtData(iso) {
+  const [a, m, d] = iso.split('-');
+  return d + '/' + m;
+}
+
+function deltaHtml(atual, anterior, invertido) {
+  if (anterior === undefined || anterior === null) return '';
+  const diff = Math.round((atual - anterior) * 10) / 10;
+  if (diff === 0) return '<span class="delta flat">= sem. anterior</span>';
+  const bom = invertido ? diff < 0 : diff > 0;
+  const seta = diff > 0 ? '▲' : '▼';
+  const sinal = diff > 0 ? '+' : '';
+  return `<span class="delta ${bom?'up':'down'}">${seta} ${sinal}${diff} vs sem. anterior</span>`;
+}
+
+function renderSemanal() {
+  const wrap = $('sem-content');
+  const semanas = SD[curUnit] || {};
+  const keys = Object.keys(semanas);
+
+  if (!curSem || !keys.length) {
+    $('h-titulo').textContent = (curUnit || 'DASHBOARD POSITIVA').toUpperCase();
+    $('h-sub').textContent = 'Monitoramento semanal';
+    wrap.innerHTML = '<div class="sem-vazio">📅 Ainda não há dados semanais para esta unidade.<br>Suba os arquivos de sábado para começar o monitoramento.</div>';
+    return;
+  }
+
+  const E = semanas[curSem];
+  const idx = keys.indexOf(curSem);
+  const P = idx > 0 ? semanas[keys[idx - 1]] : null;
+
+  $('h-titulo').textContent = curUnit.toUpperCase();
+  $('h-sub').textContent = E.rotulo + ' · ' + fmtData(E.inicio) + ' a ' + fmtData(E.fim);
+
+  const safra = E.safra_conversao_pct !== null && E.safra_conversao_pct !== undefined ? E.safra_conversao_pct + '%' : '—';
+  const safraSub = E.safra_cadastros > 0
+    ? `${E.safra_convertidos}/${E.safra_cadastros} leads da semana já fecharam`
+    : 'Sem cadastros nesta semana';
+
+  let html = `
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="lbl">Oportunidades</div><div class="val">${E.oportunidades}</div><div class="sub">Cadastros na semana</div>${deltaHtml(E.oportunidades, P?.oportunidades)}</div>
+      <div class="kpi-card hi"><div class="lbl">Vendas na Semana</div><div class="val">${E.vendas_na_semana}</div><div class="sub">Contratos fechados na semana</div>${deltaHtml(E.vendas_na_semana, P?.vendas_na_semana)}</div>
+      <div class="kpi-card hi"><div class="lbl">Conversão da Safra</div><div class="val">${safra}</div><div class="sub">${safraSub}</div></div>
+      <div class="kpi-card"><div class="lbl">Experimentais</div><div class="val">${E.experimentais}</div><div class="sub">Aulas na semana</div>${deltaHtml(E.experimentais, P?.experimentais)}</div>
+      <div class="kpi-card hi"><div class="lbl">Fechamentos Exp.</div><div class="val">${E.fechamentos_experimentais}</div><div class="sub">Experimentais → matrícula</div>${deltaHtml(E.fechamentos_experimentais, P?.fechamentos_experimentais)}</div>
+      <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val">${E.rematriculas}</div><div class="sub">Renovações na semana</div>${deltaHtml(E.rematriculas, P?.rematriculas)}</div>
+    </div>
+
+    <div class="chart-card" style="margin-bottom:20px">
+      <h3>Evolução das últimas semanas</h3>
+      <div class="chart-wrap" style="height:250px"><canvas id="ct-sem-evolucao"></canvas></div>
+    </div>`;
+
+  if (E.analise) {
+    html += `
+    <div class="analise-card">
+      <h3>📊 Análise da Semana</h3>
+      <p>${E.analise}</p>
+    </div>`;
+  }
+  if (E.acoes && E.acoes.length) {
+    html += `
+    <div class="analise-card">
+      <h3>✅ Ações para a Próxima Semana</h3>
+      <ul class="acoes-list">${E.acoes.map(a => `<li>${a}</li>`).join('')}</ul>
+    </div>`;
+  }
+  if (!E.analise && !E.acoes) {
+    html += `<div class="aviso parcial">ℹ️ Semana sem análise registrada — os números foram atualizados retroativamente.</div>`;
+  }
+
+  const temCons = (E.consultores || []).length > 0;
+  const temProf = (E.professores || []).length > 0;
+  if (temCons || temProf) {
+    html += `<div class="charts-row" style="margin-top:20px">`;
+    if (temCons) {
+      html += `
+      <div class="chart-card">
+        <h3>Consultores na semana</h3>
+        <table class="data-table">
+          <thead><tr><th>Consultor</th><th>Cadastros</th><th>Vendas</th></tr></thead>
+          <tbody>${E.consultores.map((c,i) => `<tr class="${i===0&&c.vendas_na_semana>0?'leader':''}"><td>${c.nome}</td><td>${c.cadastros}</td><td>${c.vendas_na_semana}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>`;
+    }
+    if (temProf) {
+      html += `
+      <div class="chart-card">
+        <h3>Professores na semana</h3>
+        <table class="data-table">
+          <thead><tr><th>Professor</th><th>Atendidas</th><th>Convertidas</th></tr></thead>
+          <tbody>${E.professores.map((p,i) => `<tr class="${i===0&&p.convertidas>0?'leader':''}"><td>${p.nome}</td><td>${p.atendidas}</td><td>${p.convertidas}</td></tr>`).join('')}</tbody>
+        </table>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  wrap.innerHTML = html;
+
+  // Gráfico de evolução (últimas 8 semanas até a selecionada)
+  destroyChart('ct-sem-evolucao');
+  const inicio = Math.max(0, idx - 7);
+  const janela = keys.slice(inicio, idx + 1);
+  charts['ct-sem-evolucao'] = new Chart(document.getElementById('ct-sem-evolucao'), {
+    type: 'line',
+    data: {
+      labels: janela.map(k => semanas[k].rotulo.replace('Semana ', 'S')),
+      datasets: [
+        { label: 'Oportunidades', data: janela.map(k => semanas[k].oportunidades),
+          borderColor: '#788192', backgroundColor: '#788192', tension: .3, pointRadius: 4 },
+        { label: 'Vendas', data: janela.map(k => semanas[k].vendas_na_semana),
+          borderColor: '#BEF575', backgroundColor: '#BEF575', tension: .3, pointRadius: 4 },
+        { label: 'Experimentais', data: janela.map(k => semanas[k].experimentais),
+          borderColor: '#6FA8DC', backgroundColor: '#6FA8DC', tension: .3, pointRadius: 4 }
+      ]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+               plugins: { legend: { labels: { color: '#BBC0C9', font: { size: 11 } } } },
+               scales: { x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#788192', font: { size: 10 } } },
+                         y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#788192', precision: 0 } } } }
+  });
+}
+
 // ── Init ───────────────────────────────────────────────────────────────────
-buildUnitSwitcher();
-buildMesSwitcher();
-buildFilters();
-render();
+Promise.all([
+  fetch('data/mensal.json').then(r => r.json()),
+  fetch('data/semanal.json').then(r => r.json()).catch(() => ({}))
+]).then(([mensal, semanal]) => {
+  TD = mensal;
+  SD = semanal;
+  curUnit = Object.keys(TD)[0];
+  curMes  = Object.keys(TD[curUnit])[0];
+  buildUnitSwitcher();
+  buildMesSwitcher();
+  buildFilters();
+  render();
+}).catch(err => {
+  $('h-sub').textContent = 'Erro ao carregar dados: ' + err.message;
+});
 </script>
 </body>
 </html>

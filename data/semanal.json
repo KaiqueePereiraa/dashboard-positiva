@@ -1,0 +1,1203 @@
+{
+ "Positiva Acqua Laranjeiras": {
+  "2026-07-04": {
+   "inicio": "2026-06-28",
+   "fim": "2026-07-04",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 1,
+   "rotulo": "Semana 1 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 13,
+     "vendas_na_semana": 3,
+     "safra_cadastros": 13,
+     "safra_convertidos": 8,
+     "rematriculas": 0,
+     "experimentais": 7,
+     "fechamentos_experimentais": 5,
+     "consultores": {
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 5,
+       "vendas_na_semana": 1
+      },
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 4,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {
+      "NATHALIA ALMEIDA LOIOLA": {
+       "atendidas": 3,
+       "convertidas": 3
+      },
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 2,
+       "convertidas": 1
+      },
+      "FELIPE LOPES TONINI": {
+       "atendidas": 1,
+       "convertidas": 1
+      },
+      "BRUNO MARTINS FAZIO": {
+       "atendidas": 1,
+       "convertidas": 0
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 13,
+   "vendas_na_semana": 3,
+   "safra_cadastros": 13,
+   "safra_convertidos": 8,
+   "rematriculas": 0,
+   "experimentais": 7,
+   "fechamentos_experimentais": 5,
+   "safra_conversao_pct": 61.5,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 5,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 4,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": [
+    {
+     "nome": "NATHALIA ALMEIDA LOIOLA",
+     "atendidas": 3,
+     "convertidas": 3
+    },
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 2,
+     "convertidas": 1
+    },
+    {
+     "nome": "FELIPE LOPES TONINI",
+     "atendidas": 1,
+     "convertidas": 1
+    },
+    {
+     "nome": "BRUNO MARTINS FAZIO",
+     "atendidas": 1,
+     "convertidas": 0
+    }
+   ]
+  },
+  "2026-07-11": {
+   "inicio": "2026-07-05",
+   "fim": "2026-07-11",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 9,
+     "vendas_na_semana": 8,
+     "safra_cadastros": 9,
+     "safra_convertidos": 6,
+     "rematriculas": 0,
+     "experimentais": 9,
+     "fechamentos_experimentais": 8,
+     "consultores": {
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 5,
+       "vendas_na_semana": 6
+      },
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 2,
+       "vendas_na_semana": 2
+      },
+      "KAIQUE PEREIRA SIQUEIRA": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      }
+     },
+     "professores": {
+      "BRUNO MARTINS FAZIO": {
+       "atendidas": 4,
+       "convertidas": 4
+      },
+      "FELIPE LOPES TONINI": {
+       "atendidas": 1,
+       "convertidas": 1
+      },
+      "THIAGO CORDEIRO DE OLIVEIRA FERREIRA": {
+       "atendidas": 2,
+       "convertidas": 1
+      },
+      "NATHALIA ALMEIDA LOIOLA": {
+       "atendidas": 2,
+       "convertidas": 2
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 9,
+   "vendas_na_semana": 8,
+   "safra_cadastros": 9,
+   "safra_convertidos": 6,
+   "rematriculas": 0,
+   "experimentais": 9,
+   "fechamentos_experimentais": 8,
+   "safra_conversao_pct": 66.7,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 5,
+     "vendas_na_semana": 6
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 2,
+     "vendas_na_semana": 2
+    },
+    {
+     "nome": "KAIQUE PEREIRA SIQUEIRA",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": [
+    {
+     "nome": "BRUNO MARTINS FAZIO",
+     "atendidas": 4,
+     "convertidas": 4
+    },
+    {
+     "nome": "NATHALIA ALMEIDA LOIOLA",
+     "atendidas": 2,
+     "convertidas": 2
+    },
+    {
+     "nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA",
+     "atendidas": 2,
+     "convertidas": 1
+    },
+    {
+     "nome": "FELIPE LOPES TONINI",
+     "atendidas": 1,
+     "convertidas": 1
+    }
+   ]
+  },
+  "2026-07-18": {
+   "inicio": "2026-07-12",
+   "fim": "2026-07-18",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 4,
+     "vendas_na_semana": 1,
+     "safra_cadastros": 4,
+     "safra_convertidos": 1,
+     "rematriculas": 0,
+     "experimentais": 6,
+     "fechamentos_experimentais": 2,
+     "consultores": {
+      "FELIPE NETTO DE OLIVEIRA": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      },
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      },
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 0,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {
+      "SHEILA FREIRE BATISTA PITOMBA": {
+       "atendidas": 3,
+       "convertidas": 1
+      },
+      "NATHALIA ALMEIDA LOIOLA": {
+       "atendidas": 1,
+       "convertidas": 1
+      },
+      "BRUNO MARTINS FAZIO": {
+       "atendidas": 2,
+       "convertidas": 0
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 4,
+   "vendas_na_semana": 1,
+   "safra_cadastros": 4,
+   "safra_convertidos": 1,
+   "rematriculas": 0,
+   "experimentais": 6,
+   "fechamentos_experimentais": 2,
+   "safra_conversao_pct": 25.0,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 0,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "FELIPE NETTO DE OLIVEIRA",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": [
+    {
+     "nome": "SHEILA FREIRE BATISTA PITOMBA",
+     "atendidas": 3,
+     "convertidas": 1
+    },
+    {
+     "nome": "NATHALIA ALMEIDA LOIOLA",
+     "atendidas": 1,
+     "convertidas": 1
+    },
+    {
+     "nome": "BRUNO MARTINS FAZIO",
+     "atendidas": 2,
+     "convertidas": 0
+    }
+   ]
+  },
+  "2026-07-25": {
+   "inicio": "2026-07-19",
+   "fim": "2026-07-25",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 11,
+     "vendas_na_semana": 0,
+     "safra_cadastros": 11,
+     "safra_convertidos": 7,
+     "rematriculas": 1,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 3,
+       "vendas_na_semana": 0
+      },
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 4,
+       "vendas_na_semana": 0
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 11,
+   "vendas_na_semana": 0,
+   "safra_cadastros": 11,
+   "safra_convertidos": 7,
+   "rematriculas": 1,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 63.6,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 4,
+     "vendas_na_semana": 0
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 3,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": []
+  },
+  "2026-08-01": {
+   "inicio": "2026-07-26",
+   "fim": "2026-08-01",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 5,
+   "rotulo": "Semana 5 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 23,
+     "vendas_na_semana": 16,
+     "safra_cadastros": 23,
+     "safra_convertidos": 10,
+     "rematriculas": 4,
+     "experimentais": 24,
+     "fechamentos_experimentais": 19,
+     "consultores": {
+      "KAIQUE PEREIRA SIQUEIRA": {
+       "cadastros": 6,
+       "vendas_na_semana": 4
+      },
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 5,
+       "vendas_na_semana": 3
+      },
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 1,
+       "vendas_na_semana": 1
+      },
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 2,
+       "vendas_na_semana": 4
+      }
+     },
+     "professores": {
+      "BRUNO MARTINS FAZIO": {
+       "atendidas": 6,
+       "convertidas": 5
+      },
+      "NATHALIA ALMEIDA LOIOLA": {
+       "atendidas": 2,
+       "convertidas": 2
+      },
+      "THIAGO CORDEIRO DE OLIVEIRA FERREIRA": {
+       "atendidas": 2,
+       "convertidas": 0
+      },
+      "SHEILA FREIRE BATISTA PITOMBA": {
+       "atendidas": 3,
+       "convertidas": 2
+      },
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 6,
+       "convertidas": 5
+      },
+      "FELIPE LOPES TONINI": {
+       "atendidas": 5,
+       "convertidas": 5
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 23,
+   "vendas_na_semana": 16,
+   "safra_cadastros": 23,
+   "safra_convertidos": 10,
+   "rematriculas": 4,
+   "experimentais": 24,
+   "fechamentos_experimentais": 19,
+   "safra_conversao_pct": 43.5,
+   "consultores": [
+    {
+     "nome": "KAIQUE PEREIRA SIQUEIRA",
+     "cadastros": 6,
+     "vendas_na_semana": 4
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 2,
+     "vendas_na_semana": 4
+    },
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 5,
+     "vendas_na_semana": 3
+    },
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 1,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": [
+    {
+     "nome": "BRUNO MARTINS FAZIO",
+     "atendidas": 6,
+     "convertidas": 5
+    },
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 6,
+     "convertidas": 5
+    },
+    {
+     "nome": "FELIPE LOPES TONINI",
+     "atendidas": 5,
+     "convertidas": 5
+    },
+    {
+     "nome": "SHEILA FREIRE BATISTA PITOMBA",
+     "atendidas": 3,
+     "convertidas": 2
+    },
+    {
+     "nome": "NATHALIA ALMEIDA LOIOLA",
+     "atendidas": 2,
+     "convertidas": 2
+    },
+    {
+     "nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA",
+     "atendidas": 2,
+     "convertidas": 0
+    }
+   ],
+   "analise": "Julho terminou em ritmo forte: a semana 5 concentrou 23 cadastros (38% do mês), 16 vendas e 24 experimentais — o mês foi salvo no fim. O alerta está no meio do mês: as semanas 3 e 4 somaram só 15 cadastros, zero vendas fechadas na semana 4 e nenhuma experimental registrada. A safra da semana 4 (63,6%) mostra que os leads eram bons — eles só fecharam depois, na onda da semana 5.",
+   "acoes": [
+    "Distribuir as campanhas de captação ao longo do mês para evitar o vale das semanas 3-4",
+    "Garantir agendamento de experimentais toda semana — semana sem aula experimental é semana sem fechamento",
+    "Aproveitar que leads levam ~1-2 semanas para decidir: follow-up ativo no 7º dia após o cadastro"
+   ]
+  },
+  "2026-08-08": {
+   "inicio": "2026-08-02",
+   "fim": "2026-08-08",
+   "mes_ref": 8,
+   "ano_ref": 2026,
+   "semana_do_mes": 1,
+   "rotulo": "Semana 1 — Agosto",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 0,
+     "vendas_na_semana": 4,
+     "safra_cadastros": 0,
+     "safra_convertidos": 0,
+     "rematriculas": 0,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 0,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 0,
+   "vendas_na_semana": 4,
+   "safra_cadastros": 0,
+   "safra_convertidos": 0,
+   "rematriculas": 0,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": null,
+   "consultores": [
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 0,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": []
+  }
+ },
+ "Positiva Acqua República": {
+  "2026-07-04": {
+   "inicio": "2026-06-28",
+   "fim": "2026-07-04",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 1,
+   "rotulo": "Semana 1 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 4,
+     "vendas_na_semana": 2,
+     "safra_cadastros": 4,
+     "safra_convertidos": 3,
+     "rematriculas": 0,
+     "experimentais": 4,
+     "fechamentos_experimentais": 3,
+     "consultores": {
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 3,
+       "vendas_na_semana": 2
+      }
+     },
+     "professores": {
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 4,
+       "convertidas": 3
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 4,
+   "vendas_na_semana": 2,
+   "safra_cadastros": 4,
+   "safra_convertidos": 3,
+   "rematriculas": 0,
+   "experimentais": 4,
+   "fechamentos_experimentais": 3,
+   "safra_conversao_pct": 75.0,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 3,
+     "vendas_na_semana": 2
+    }
+   ],
+   "professores": [
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 4,
+     "convertidas": 3
+    }
+   ]
+  },
+  "2026-07-11": {
+   "inicio": "2026-07-05",
+   "fim": "2026-07-11",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 7,
+     "vendas_na_semana": 5,
+     "safra_cadastros": 7,
+     "safra_convertidos": 5,
+     "rematriculas": 2,
+     "experimentais": 11,
+     "fechamentos_experimentais": 10,
+     "consultores": {
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 5,
+       "vendas_na_semana": 3
+      },
+      "LIVIA OLIVEIRA RODRIGUES DOS SANTOS": {
+       "cadastros": 1,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 11,
+       "convertidas": 10
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 7,
+   "vendas_na_semana": 5,
+   "safra_cadastros": 7,
+   "safra_convertidos": 5,
+   "rematriculas": 2,
+   "experimentais": 11,
+   "fechamentos_experimentais": 10,
+   "safra_conversao_pct": 71.4,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 5,
+     "vendas_na_semana": 3
+    },
+    {
+     "nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "cadastros": 1,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": [
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 11,
+     "convertidas": 10
+    }
+   ]
+  },
+  "2026-07-18": {
+   "inicio": "2026-07-12",
+   "fim": "2026-07-18",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 0,
+     "vendas_na_semana": 1,
+     "safra_cadastros": 0,
+     "safra_convertidos": 0,
+     "rematriculas": 0,
+     "experimentais": 1,
+     "fechamentos_experimentais": 1,
+     "consultores": {
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 0,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 1,
+       "convertidas": 1
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 0,
+   "vendas_na_semana": 1,
+   "safra_cadastros": 0,
+   "safra_convertidos": 0,
+   "rematriculas": 0,
+   "experimentais": 1,
+   "fechamentos_experimentais": 1,
+   "safra_conversao_pct": null,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 0,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": [
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 1,
+     "convertidas": 1
+    }
+   ]
+  },
+  "2026-07-25": {
+   "inicio": "2026-07-19",
+   "fim": "2026-07-25",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 4,
+     "vendas_na_semana": 0,
+     "safra_cadastros": 4,
+     "safra_convertidos": 1,
+     "rematriculas": 0,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      },
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 3,
+       "vendas_na_semana": 0
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 4,
+   "vendas_na_semana": 0,
+   "safra_cadastros": 4,
+   "safra_convertidos": 1,
+   "rematriculas": 0,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 25.0,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 3,
+     "vendas_na_semana": 0
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": []
+  },
+  "2026-08-01": {
+   "inicio": "2026-07-26",
+   "fim": "2026-08-01",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 5,
+   "rotulo": "Semana 5 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 10,
+     "vendas_na_semana": 1,
+     "safra_cadastros": 10,
+     "safra_convertidos": 2,
+     "rematriculas": 1,
+     "experimentais": 7,
+     "fechamentos_experimentais": 3,
+     "consultores": {
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 2,
+       "vendas_na_semana": 0
+      },
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 5,
+       "vendas_na_semana": 0
+      },
+      "RAYNY VITORIA PACHECO DOS SANTOS": {
+       "cadastros": 0,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {
+      "RICHARDSON ALMEIDA SILVA": {
+       "atendidas": 7,
+       "convertidas": 3
+      }
+     }
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 10,
+   "vendas_na_semana": 1,
+   "safra_cadastros": 10,
+   "safra_convertidos": 2,
+   "rematriculas": 1,
+   "experimentais": 7,
+   "fechamentos_experimentais": 3,
+   "safra_conversao_pct": 20.0,
+   "consultores": [
+    {
+     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "cadastros": 0,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 5,
+     "vendas_na_semana": 0
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 2,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": [
+    {
+     "nome": "RICHARDSON ALMEIDA SILVA",
+     "atendidas": 7,
+     "convertidas": 3
+    }
+   ],
+   "analise": "Mês de baixo volume e concentrado nas duas primeiras semanas (11 dos 25 cadastros, 7 das 9 vendas). A semana 3 não teve nenhum cadastro novo e a semana 5, apesar de 10 cadastros, converteu só 20% da safra até agora — 2 desses leads fecharam já em agosto, então o número deve subir. República depende de poucas fontes de lead; quando elas param, o funil zera.",
+   "acoes": [
+    "Diversificar origem de leads — investigar por que a semana 3 zerou (campanha pausada? sazonalidade?)",
+    "Acompanhar de perto a safra da semana 5 (10 leads) — follow-up nesta semana pode converter os pendentes",
+    "Richardson concentrou 100% das experimentais do mês — avaliar segundo professor para ampliar horários"
+   ]
+  },
+  "2026-08-08": {
+   "inicio": "2026-08-02",
+   "fim": "2026-08-08",
+   "mes_ref": 8,
+   "ano_ref": 2026,
+   "semana_do_mes": 1,
+   "rotulo": "Semana 1 — Agosto",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 0,
+     "vendas_na_semana": 2,
+     "safra_cadastros": 0,
+     "safra_convertidos": 0,
+     "rematriculas": 0,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "MARIA EDUARDA SANTOS LOUSSURDO": {
+       "cadastros": 0,
+       "vendas_na_semana": 2
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 0,
+   "vendas_na_semana": 2,
+   "safra_cadastros": 0,
+   "safra_convertidos": 0,
+   "rematriculas": 0,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": null,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 0,
+     "vendas_na_semana": 2
+    }
+   ],
+   "professores": []
+  }
+ },
+ "Positiva Club": {
+  "2026-07-04": {
+   "inicio": "2026-06-28",
+   "fim": "2026-07-04",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 1,
+   "rotulo": "Semana 1 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 4,
+     "vendas_na_semana": 0,
+     "safra_cadastros": 4,
+     "safra_convertidos": 1,
+     "rematriculas": 2,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "MARIA EDUARDA LOPES FREITAS": {
+       "cadastros": 4,
+       "vendas_na_semana": 0
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 4,
+   "vendas_na_semana": 0,
+   "safra_cadastros": 4,
+   "safra_convertidos": 1,
+   "rematriculas": 2,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 25.0,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA LOPES FREITAS",
+     "cadastros": 4,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": []
+  },
+  "2026-07-11": {
+   "inicio": "2026-07-05",
+   "fim": "2026-07-11",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 9,
+     "vendas_na_semana": 2,
+     "safra_cadastros": 9,
+     "safra_convertidos": 1,
+     "rematriculas": 3,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "ISABELLY SANTOS MIGUITA": {
+       "cadastros": 7,
+       "vendas_na_semana": 1
+      },
+      "MARIA EDUARDA LOPES FREITAS": {
+       "cadastros": 1,
+       "vendas_na_semana": 1
+      },
+      "MARCOS ROBERTO PEREIRA MONTEIRO": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 9,
+   "vendas_na_semana": 2,
+   "safra_cadastros": 9,
+   "safra_convertidos": 1,
+   "rematriculas": 3,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 11.1,
+   "consultores": [
+    {
+     "nome": "ISABELLY SANTOS MIGUITA",
+     "cadastros": 7,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "MARIA EDUARDA LOPES FREITAS",
+     "cadastros": 1,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "MARCOS ROBERTO PEREIRA MONTEIRO",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": []
+  },
+  "2026-07-18": {
+   "inicio": "2026-07-12",
+   "fim": "2026-07-18",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 14,
+     "vendas_na_semana": 8,
+     "safra_cadastros": 14,
+     "safra_convertidos": 9,
+     "rematriculas": 18,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "MARIA EDUARDA LOPES FREITAS": {
+       "cadastros": 8,
+       "vendas_na_semana": 4
+      },
+      "ISABELLY SANTOS MIGUITA": {
+       "cadastros": 5,
+       "vendas_na_semana": 3
+      },
+      "MARCOS ROBERTO PEREIRA MONTEIRO": {
+       "cadastros": 1,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 14,
+   "vendas_na_semana": 8,
+   "safra_cadastros": 14,
+   "safra_convertidos": 9,
+   "rematriculas": 18,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 64.3,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA LOPES FREITAS",
+     "cadastros": 8,
+     "vendas_na_semana": 4
+    },
+    {
+     "nome": "ISABELLY SANTOS MIGUITA",
+     "cadastros": 5,
+     "vendas_na_semana": 3
+    },
+    {
+     "nome": "MARCOS ROBERTO PEREIRA MONTEIRO",
+     "cadastros": 1,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": []
+  },
+  "2026-07-25": {
+   "inicio": "2026-07-19",
+   "fim": "2026-07-25",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 12,
+     "vendas_na_semana": 7,
+     "safra_cadastros": 12,
+     "safra_convertidos": 7,
+     "rematriculas": 17,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "MARIA EDUARDA LOPES FREITAS": {
+       "cadastros": 8,
+       "vendas_na_semana": 5
+      },
+      "LIVIA OLIVEIRA RODRIGUES DOS SANTOS": {
+       "cadastros": 1,
+       "vendas_na_semana": 1
+      },
+      "SUPORTEEVO.": {
+       "cadastros": 1,
+       "vendas_na_semana": 0
+      },
+      "ISABELLY SANTOS MIGUITA": {
+       "cadastros": 2,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 12,
+   "vendas_na_semana": 7,
+   "safra_cadastros": 12,
+   "safra_convertidos": 7,
+   "rematriculas": 17,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 58.3,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA LOPES FREITAS",
+     "cadastros": 8,
+     "vendas_na_semana": 5
+    },
+    {
+     "nome": "ISABELLY SANTOS MIGUITA",
+     "cadastros": 2,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "cadastros": 1,
+     "vendas_na_semana": 1
+    },
+    {
+     "nome": "SUPORTEEVO.",
+     "cadastros": 1,
+     "vendas_na_semana": 0
+    }
+   ],
+   "professores": []
+  },
+  "2026-08-01": {
+   "inicio": "2026-07-26",
+   "fim": "2026-08-01",
+   "mes_ref": 7,
+   "ano_ref": 2026,
+   "semana_do_mes": 5,
+   "rotulo": "Semana 5 — Julho",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 14,
+     "vendas_na_semana": 8,
+     "safra_cadastros": 14,
+     "safra_convertidos": 8,
+     "rematriculas": 12,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "MARIA EDUARDA LOPES FREITAS": {
+       "cadastros": 6,
+       "vendas_na_semana": 4
+      },
+      "ISABELLY SANTOS MIGUITA": {
+       "cadastros": 6,
+       "vendas_na_semana": 3
+      },
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 2,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 14,
+   "vendas_na_semana": 8,
+   "safra_cadastros": 14,
+   "safra_convertidos": 8,
+   "rematriculas": 12,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": 57.1,
+   "consultores": [
+    {
+     "nome": "MARIA EDUARDA LOPES FREITAS",
+     "cadastros": 6,
+     "vendas_na_semana": 4
+    },
+    {
+     "nome": "ISABELLY SANTOS MIGUITA",
+     "cadastros": 6,
+     "vendas_na_semana": 3
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 2,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": [],
+   "analise": "Club foi a unidade mais consistente: vendas cresceram do início ao fim (0 → 2 → 8 → 7 → 8) e as rematrículas concentraram-se no meio do mês (35 das 52 nas semanas 3-4). O começo lento (4 cadastros e zero vendas na semana 1) sugere que o ciclo comercial do Club demora a engatar após a virada do mês. Sem dados de experimentais neste mês.",
+   "acoes": [
+    "Antecipar a régua de contato para a primeira semana do mês — o funil só engata na semana 3",
+    "Manter o ritmo de rematrículas do meio do mês, que sustentou a entrada",
+    "Voltar a acompanhar experimentais em agosto para enxergar o funil completo"
+   ]
+  },
+  "2026-08-15": {
+   "inicio": "2026-08-09",
+   "fim": "2026-08-15",
+   "mes_ref": 8,
+   "ano_ref": 2026,
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Agosto",
+   "componentes": {
+    "7/2026": {
+     "oportunidades": 0,
+     "vendas_na_semana": 1,
+     "safra_cadastros": 0,
+     "safra_convertidos": 0,
+     "rematriculas": 0,
+     "experimentais": 0,
+     "fechamentos_experimentais": 0,
+     "consultores": {
+      "ADRIELLY SANTANA SABINO": {
+       "cadastros": 0,
+       "vendas_na_semana": 1
+      }
+     },
+     "professores": {}
+    }
+   },
+   "atualizado_em": "2026-08-12",
+   "oportunidades": 0,
+   "vendas_na_semana": 1,
+   "safra_cadastros": 0,
+   "safra_convertidos": 0,
+   "rematriculas": 0,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": null,
+   "consultores": [
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 0,
+     "vendas_na_semana": 1
+    }
+   ],
+   "professores": []
+  }
+ }
+}
