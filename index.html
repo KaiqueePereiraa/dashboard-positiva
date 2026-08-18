@@ -12,28 +12,22 @@ body{font-family:'Avenir','Century Gothic','Trebuchet MS',sans-serif;background:
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* HEADER */
-.header{background:var(--dark);border-bottom:1px solid rgba(255,255,255,.08);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.header-title h1{font-size:1.1rem;font-weight:900;font-style:italic;letter-spacing:1.5px;color:var(--gray-l)}
-.header-title .sub{font-size:.72rem;color:var(--gray-m);font-style:italic;margin-top:2px}
+.header{background:var(--dark);border-bottom:3px solid var(--green);padding:16px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.header-title h1{font-size:1.35rem;font-weight:900;font-style:italic;letter-spacing:1px}
+.header-title .sub{font-size:.78rem;color:var(--green);font-style:italic;margin-top:2px}
+.header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 
 .mode-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--green);border-radius:8px;overflow:hidden}
 .mode-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 20px;font-family:inherit;font-size:.82rem;font-weight:900;font-style:italic;letter-spacing:1px;cursor:pointer;transition:all .2s;text-transform:uppercase}
 .mode-btn.active{background:var(--green);color:var(--navy)}
 .mode-btn:hover:not(.active){color:var(--white)}
 
-/* UNIT BAR — sempre visível, independente do modo */
-.unit-bar{background:var(--dark);border-bottom:3px solid var(--green);padding:14px 32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.unit-bar .unit-label{font-size:.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--gray-m);font-style:italic;white-space:nowrap}
-.unit-switcher{display:flex;background:rgba(255,255,255,.04);border:1.5px solid var(--blue);border-radius:9px;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
-.unit-btn{background:transparent;border:none;color:var(--gray-l);padding:11px 24px;font-family:inherit;font-size:.94rem;font-weight:900;font-style:italic;letter-spacing:.3px;cursor:pointer;transition:all .2s;border-right:1px solid var(--blue);white-space:nowrap;flex-shrink:0}
+.unit-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--blue);border-radius:8px;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.unit-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 18px;font-family:inherit;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;border-right:1px solid var(--blue);white-space:nowrap;flex-shrink:0}
 .unit-btn:last-child{border-right:none}
 .unit-btn.active{background:var(--green);color:var(--navy)}
 .unit-btn.soon{opacity:.35;cursor:default}
 .unit-btn:hover:not(.active):not(.soon){color:var(--white);background:rgba(255,255,255,.06)}
-@media(max-width:600px){
-  .unit-bar{padding:12px 16px}
-  .unit-btn{padding:9px 16px;font-size:.84rem}
-}
 
 /* FILTERS */
 .filters-bar{background:var(--blue);padding:10px 32px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.07)}
@@ -41,11 +35,7 @@ body{font-family:'Avenir','Century Gothic','Trebuchet MS',sans-serif;background:
 select,input[type=number]{background:var(--dark);border:1px solid rgba(255,255,255,.15);color:var(--white);padding:5px 10px;border-radius:5px;font-family:inherit;font-size:.82rem;cursor:pointer;outline:none}
 select:focus{border-color:var(--green)}
 .mes-wrap{display:flex;align-items:center;gap:8px}
-.mes-switcher{display:flex;background:var(--dark);border:1px solid rgba(255,255,255,.12);border-radius:6px;overflow:hidden;flex-wrap:wrap}
-.mes-btn{background:transparent;border:none;border-right:1px solid rgba(255,255,255,.1);color:var(--gray-m);padding:5px 14px;font-family:inherit;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s}
-.mes-btn:last-child{border-right:none}
-.mes-btn.active{background:var(--blue);color:var(--white)}
-.mes-btn:hover:not(.active){color:var(--white)}
+#mes-select,#sem-select{min-width:140px}
 
 /* TABS */
 .tabs-nav{background:var(--dark);display:flex;padding:0 32px;border-bottom:2px solid var(--blue)}
@@ -140,23 +130,20 @@ select:focus{border-color:var(--green)}
     <h1 id="h-titulo">DASHBOARD POSITIVA</h1>
     <div class="sub" id="h-sub">Carregando…</div>
   </div>
-  <div class="mode-switcher">
-    <button class="mode-btn active" id="mode-mensal" onclick="setMode('mensal')">Mensal</button>
-    <button class="mode-btn" id="mode-semanal" onclick="setMode('semanal')">Semanal</button>
+  <div class="header-right">
+    <div class="mode-switcher">
+      <button class="mode-btn active" id="mode-mensal" onclick="setMode('mensal')">Mensal</button>
+      <button class="mode-btn" id="mode-semanal" onclick="setMode('semanal')">Semanal</button>
+    </div>
+    <div class="unit-switcher" id="unit-switcher"></div>
   </div>
-</div>
-
-<!-- UNIT BAR -->
-<div class="unit-bar">
-  <span class="unit-label">Unidade</span>
-  <div class="unit-switcher" id="unit-switcher"></div>
 </div>
 
 <!-- FILTERS (MENSAL) -->
 <div class="filters-bar" id="filters-mensal">
   <div class="mes-wrap">
-    <label>Mês:</label>
-    <div class="mes-switcher" id="mes-switcher"></div>
+    <label for="mes-select">Mês:</label>
+    <select id="mes-select"></select>
   </div>
   <label for="f-consultor">Consultor:</label>
   <select id="f-consultor"><option value="">Todos</option></select>
@@ -167,8 +154,8 @@ select:focus{border-color:var(--green)}
 <!-- FILTERS (SEMANAL) -->
 <div class="filters-bar" id="filters-semanal" style="display:none">
   <div class="mes-wrap">
-    <label>Semana:</label>
-    <div class="mes-switcher" id="sem-switcher"></div>
+    <label for="sem-select">Semana:</label>
+    <select id="sem-select"></select>
   </div>
 </div>
 
@@ -406,31 +393,21 @@ function setUnit(u) {
   }
 }
 
-// ── Mes switcher (mensal) ──────────────────────────────────────────────────
+// ── Mes switcher (mensal) — dropdown ────────────────────────────────────────
 function buildMesSwitcher() {
-  const wrap = $('mes-switcher');
-  wrap.innerHTML = '';
-  Object.keys(TD[curUnit]).forEach(m => {
-    const btn = document.createElement('button');
-    btn.className = 'mes-btn' + (m === curMes ? ' active' : '');
-    btn.textContent = m;
-    btn.onclick = () => { curMes = m; buildMesSwitcher(); buildFilters(); render(); };
-    wrap.appendChild(btn);
-  });
+  const sel = $('mes-select');
+  const meses = Object.keys(TD[curUnit]);
+  sel.innerHTML = meses.map(m => `<option value="${m}"${m===curMes?' selected':''}>${m}</option>`).join('');
+  sel.onchange = () => { curMes = sel.value; buildFilters(); render(); };
 }
 
-// ── Semana switcher (semanal) ──────────────────────────────────────────────
+// ── Semana switcher (semanal) — dropdown ────────────────────────────────────
 function buildSemSwitcher() {
-  const wrap = $('sem-switcher');
-  wrap.innerHTML = '';
-  Object.keys(SD[curUnit] || {}).forEach(s => {
-    const e = SD[curUnit][s];
-    const btn = document.createElement('button');
-    btn.className = 'mes-btn' + (s === curSem ? ' active' : '');
-    btn.textContent = e.rotulo || s;
-    btn.onclick = () => { curSem = s; buildSemSwitcher(); renderSemanal(); };
-    wrap.appendChild(btn);
-  });
+  const sel = $('sem-select');
+  const semanas = SD[curUnit] || {};
+  const keys = Object.keys(semanas);
+  sel.innerHTML = keys.map(s => `<option value="${s}"${s===curSem?' selected':''}>${semanas[s].rotulo || s}</option>`).join('');
+  sel.onchange = () => { curSem = sel.value; renderSemanal(); };
 }
 
 // ── Filters (mensal) ───────────────────────────────────────────────────────
