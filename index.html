@@ -243,29 +243,81 @@ select:focus{border-color:var(--green)}
 
 <!-- ══════════════ MODO SEMANAL ══════════════ -->
 <div id="view-semanal" style="display:none">
-<div class="sem-content" id="sem-content"></div>
+
+<!-- TABS -->
+<div class="tabs-nav">
+  <button class="tab-btn sem-tab-btn active" onclick="setSemTab('geral')">Geral</button>
+  <button class="tab-btn sem-tab-btn" onclick="setSemTab('consultores')">Consultores</button>
+  <button class="tab-btn sem-tab-btn" onclick="setSemTab('professores')">Professores</button>
+  <button class="tab-btn sem-tab-btn" onclick="setSemTab('comparativo')">Comparativo</button>
+</div>
+
+<!-- TAB GERAL -->
+<div class="tab-content sem-tab-content active" id="tab-sem-geral">
+  <div id="sem-vazio-wrap"></div>
+  <div id="sem-av-andamento" class="aviso parcial" style="display:none">⏳ <strong>Semana em andamento</strong> — números parciais até o próximo upload.</div>
+  <div class="kpi-grid">
+    <div class="kpi-card" id="card-sem-oport"><div class="lbl">Oportunidades</div><div class="val" id="kv-sem-oport">—</div><div class="sub">Cadastros na semana</div><div id="dv-sem-oport"></div></div>
+    <div class="kpi-card hi"><div class="lbl">Vendas Novas</div><div class="val" id="kv-sem-vendas">—</div><div class="sub">Cadastro e fechamento na semana</div><div id="dv-sem-vendas"></div></div>
+    <div class="kpi-card hi" id="card-sem-pct"><div class="lbl">% Conversão</div><div class="val" id="kv-sem-pct">—</div><div class="sub">Oportunidades → Vendas</div></div>
+    <div class="kpi-card" id="card-sem-outros"><div class="lbl">Vendas Outro Mês</div><div class="val" id="kv-sem-outros">—</div><div class="sub">Cadastro anterior, fechou nesta semana</div><div id="dv-sem-outros"></div></div>
+    <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val" id="kv-sem-remat">—</div><div class="sub">Renovações na semana</div><div id="dv-sem-remat"></div></div>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card"><h3>Conversão Geral</h3><div class="chart-wrap"><canvas id="ct-sem-donut"></canvas></div></div>
+    <div class="chart-card"><h3>Experimentais</h3><div class="chart-wrap"><canvas id="ct-sem-exp"></canvas></div></div>
+  </div>
+  <div class="chart-card" style="margin-top:20px">
+    <h3>Evolução das últimas semanas</h3>
+    <div class="chart-wrap" style="height:250px"><canvas id="ct-sem-evolucao"></canvas></div>
+  </div>
+  <div id="sem-analise-wrap"></div>
+</div>
+
+<!-- TAB CONSULTORES -->
+<div class="tab-content sem-tab-content" id="tab-sem-consultores">
+  <p class="sec">Ranking de Consultores</p>
+  <div class="chart-card" style="margin-bottom:18px">
+    <h3 id="ct-sem-cpct">% Conversão por Consultor</h3>
+    <div class="chart-wrap" style="height:260px"><canvas id="ct-sem-cbar"></canvas></div>
+  </div>
+  <table class="data-table">
+    <thead><tr><th>#</th><th>Consultor</th><th>Cadastros</th><th>Vendas</th><th>% Conversão</th><th>Performance</th></tr></thead>
+    <tbody id="tb-sem-consultores"></tbody>
+  </table>
+</div>
+
+<!-- TAB PROFESSORES -->
+<div class="tab-content sem-tab-content" id="tab-sem-professores">
+  <p class="sec">Totais de Experimentais</p>
+  <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:22px">
+    <div class="kpi-card"><div class="lbl">Total Experimentais</div><div class="val" id="pv-sem-total">—</div><div class="sub">Aulas experimentais realizadas</div></div>
+    <div class="kpi-card hi"><div class="lbl">Fechamentos</div><div class="val" id="pv-sem-fecha">—</div><div class="sub">Convertidos para matrícula</div></div>
+    <div class="kpi-card hi" id="pcard-sem-pct"><div class="lbl">% Conversão</div><div class="val" id="pv-sem-pct">—</div><div class="sub">Fechamentos / Experimentais</div></div>
+    <div class="kpi-card neg"><div class="lbl">Não Convertidos</div><div class="val" id="pv-sem-nao">—</div><div class="sub">Saíram sem matricular</div></div>
+  </div>
+  <p class="sec">Ranking Individual — Professores</p>
+  <div class="chart-card" style="margin-bottom:18px">
+    <h3>Experimentais por Professor</h3>
+    <div class="chart-wrap" style="height:260px"><canvas id="ct-sem-pbar"></canvas></div>
+  </div>
+  <table class="data-table">
+    <thead><tr><th>#</th><th>Professor</th><th>Atendidas</th><th>Convertidas</th><th>% Conversão</th><th>Performance</th></tr></thead>
+    <tbody id="tb-sem-professores"></tbody>
+  </table>
+</div>
+
+<!-- TAB COMPARATIVO -->
+<div class="tab-content sem-tab-content" id="tab-sem-comparativo">
+  <div id="cmp-sem-wrap"></div>
+</div>
+
 </div>
 
 <script>
 // ── Dados (carregados de data/*.json) ─────────────────────────────────────
 let TD = {};   // mensal
 let SD = {};   // semanal
-
-// ── Metas semanais por unidade (política de comissionamento 2026) ─────────
-// Semana de meta: segunda a domingo. Faixas: contagem de vendas elegíveis
-// (novas + rematrículas, sem Transferência/Sem Fidelidade/legados/Recreio).
-const METAS = {
-  'Positiva Club':              { super: 12, real: 9, basico: 6 },
-  'Positiva Acqua Laranjeiras': { super: 4,  real: 3, basico: 2 },
-  'Positiva Acqua República':   { super: 4,  real: 3, basico: 2 },
-};
-
-function faixaMeta(m, v) {
-  if (v >= m.super)  return { nome: 'Super Meta', selo: '🏆', comissao: 100, cls: 'super', falta: null };
-  if (v >= m.real)   return { nome: 'Meta Real',  selo: '🥈', comissao: 70,  cls: 'real',   falta: `faltam ${m.super - v} p/ Super` };
-  if (v >= m.basico) return { nome: 'Básico',     selo: '🥉', comissao: 50,  cls: 'basico', falta: `faltam ${m.real - v} p/ Meta Real` };
-  return { nome: 'Abaixo do básico', selo: '', comissao: 0, cls: 'abaixo', falta: `faltam ${m.basico - v} p/ Básico` };
-}
 
 // Estado global
 let curMode = 'mensal';
@@ -472,9 +524,9 @@ function render() {
   renderComparativo();
 }
 
-// ── Consultores (mensal) ───────────────────────────────────────────────────
-function renderConsultores(cons, temOp) {
-  const tbody = $('tb-consultores');
+// ── Consultores (genérico — mensal e semanal) ──────────────────────────────
+function renderConsultoresGeneric(ids, cons, temOp) {
+  const tbody = $(ids.tbody);
   const maxV = Math.max(...cons.map(c => c.vendas), 1);
   tbody.innerHTML = cons.map((c, i) => `
     <tr class="${i===0?'leader':''}">
@@ -486,12 +538,12 @@ function renderConsultores(cons, temOp) {
       <td><div class="bar-bg"><div class="bar-fill" style="width:${Math.round(c.vendas/maxV*100)}%"></div></div></td>
     </tr>`).join('');
 
-  destroyChart('ct-cbar');
+  destroyChart(ids.chart);
   if (cons.length === 0) return;
   const nomes = cons.map(c => c.nome.split(' ')[0]);
   const vals  = cons.map(c => temOp && c.conversao_pct !== null ? c.conversao_pct : c.vendas);
-  $('ct-cpct').textContent = temOp ? '% Conversão por Consultor' : 'Vendas por Consultor';
-  charts['ct-cbar'] = new Chart($('ct-cbar'), {
+  $(ids.title).textContent = temOp ? '% Conversão por Consultor' : 'Vendas por Consultor';
+  charts[ids.chart] = new Chart($(ids.chart), {
     type: 'bar',
     data: { labels: nomes, datasets: [{ data: vals, backgroundColor: 'rgba(190,245,117,.8)', borderRadius: 4 }] },
     options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
@@ -502,22 +554,28 @@ function renderConsultores(cons, temOp) {
                          y: { grid: { display: false }, ticks: { color: '#FFF' } } } }
   });
 }
+function renderConsultores(cons, temOp) {
+  renderConsultoresGeneric({ tbody: 'tb-consultores', title: 'ct-cpct', chart: 'ct-cbar' }, cons, temOp);
+}
 
-// ── Professores (mensal) ───────────────────────────────────────────────────
-function renderTotaisProfessores(D) {
+// ── Professores (genérico — mensal e semanal) ──────────────────────────────
+function renderTotaisProfessoresGeneric(ids, D) {
   const total  = D.total_experimentais || 0;
   const fecha  = D.fechamentos_experimentais || 0;
   const nao    = total - fecha;
   const pct    = D.conversao_experimentais_pct || 0;
-  $('pv-total').textContent = total;
-  $('pv-fecha').textContent = fecha;
-  $('pv-pct').textContent   = pct + '%';
-  $('pv-nao').textContent   = nao;
-  $('pcard-pct').className  = pct >= 60 ? 'kpi-card hi' : pct >= 40 ? 'kpi-card' : 'kpi-card neg';
+  $(ids.total).textContent = total;
+  $(ids.fecha).textContent = fecha;
+  $(ids.pct).textContent   = pct + '%';
+  $(ids.nao).textContent   = nao;
+  $(ids.card).className    = pct >= 60 ? 'kpi-card hi' : pct >= 40 ? 'kpi-card' : 'kpi-card neg';
+}
+function renderTotaisProfessores(D) {
+  renderTotaisProfessoresGeneric({ total: 'pv-total', fecha: 'pv-fecha', pct: 'pv-pct', nao: 'pv-nao', card: 'pcard-pct' }, D);
 }
 
-function renderProfessores(profs) {
-  const tbody = $('tb-professores');
+function renderProfessoresGeneric(ids, profs) {
+  const tbody = $(ids.tbody);
   const maxV = Math.max(...profs.map(p => p.atendidas), 1);
   tbody.innerHTML = profs.map((p, i) => `
     <tr class="${i===0?'leader':''}">
@@ -529,9 +587,9 @@ function renderProfessores(profs) {
       <td><div class="bar-bg"><div class="bar-fill" style="width:${Math.round(p.atendidas/maxV*100)}%"></div></div></td>
     </tr>`).join('');
 
-  destroyChart('ct-pbar');
+  destroyChart(ids.chart);
   if (profs.length === 0) return;
-  charts['ct-pbar'] = new Chart($('ct-pbar'), {
+  charts[ids.chart] = new Chart($(ids.chart), {
     type: 'bar',
     data: { labels: profs.map(p => p.nome.split(' ')[0]),
             datasets: [
@@ -544,53 +602,57 @@ function renderProfessores(profs) {
                          y: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#788192' } } } }
   });
 }
+function renderProfessores(profs) {
+  renderProfessoresGeneric({ tbody: 'tb-professores', chart: 'ct-pbar' }, profs);
+}
 
-// ── Comparativo (mensal) ───────────────────────────────────────────────────
-function renderComparativo() {
-  const wrap = $('cmp-wrap');
-  const meses = Object.keys(TD[curUnit]);
+// ── Comparativo (genérico — mensal e semanal) ──────────────────────────────
+function renderComparativoGeneric(cfg) {
+  // cfg: {wrapId, selAId, selBId, onchange, periodos, labelFn(k), getData(k), comSaidaSaldo}
+  const wrap = $(cfg.wrapId);
+  const periodos = cfg.periodos;
 
-  if (meses.length < 2) {
-    wrap.innerHTML = '<div class="no-cmp">📊 Adicione dados de pelo menos 2 meses para ver o comparativo.</div>';
+  if (periodos.length < 2) {
+    wrap.innerHTML = `<div class="no-cmp">📊 Adicione dados de pelo menos 2 ${cfg.unidadeTexto || 'períodos'} para ver o comparativo.</div>`;
     return;
   }
 
-  const selA = wrap.querySelector('#cmp-a')?.value || meses[0];
-  const selB = wrap.querySelector('#cmp-b')?.value || meses[1];
+  const selA = wrap.querySelector('#' + cfg.selAId)?.value || periodos[0];
+  const selB = wrap.querySelector('#' + cfg.selBId)?.value || periodos[1];
 
   wrap.innerHTML = `
     <div class="cmp-controls">
-      <label>Mês A:</label>
-      <select id="cmp-a" onchange="renderComparativo()">${meses.map(m=>`<option${m===selA?' selected':''}>${m}</option>`).join('')}</select>
-      <label>Mês B:</label>
-      <select id="cmp-b" onchange="renderComparativo()">${meses.map(m=>`<option${m===selB?' selected':''}>${m}</option>`).join('')}</select>
+      <label>${cfg.labelA}:</label>
+      <select id="${cfg.selAId}" onchange="${cfg.onchange}()">${periodos.map(k=>`<option value="${k}"${k===selA?' selected':''}>${cfg.labelFn(k)}</option>`).join('')}</select>
+      <label>${cfg.labelB}:</label>
+      <select id="${cfg.selBId}" onchange="${cfg.onchange}()">${periodos.map(k=>`<option value="${k}"${k===selB?' selected':''}>${cfg.labelFn(k)}</option>`).join('')}</select>
     </div>`;
 
-  const dA = TD[curUnit][selA];
-  const dB = TD[curUnit][selB];
+  const dA = cfg.getData(selA);
+  const dB = cfg.getData(selB);
 
-  const entradaA = dA.vendas + (dA.vendas_outro_mes || 0) + dA.rematriculas;
-  const entradaB = dB.vendas + (dB.vendas_outro_mes || 0) + dB.rematriculas;
-  const saldoA = entradaA - dA.saida_total;
-  const saldoB = entradaB - dB.saida_total;
   const mets = [
     { l: 'Vendas Novas',        a: dA.vendas,              b: dB.vendas,              maior: true },
-    { l: 'Vendas Outros Meses', a: dA.vendas_outro_mes||0, b: dB.vendas_outro_mes||0, maior: true },
+    { l: 'Vendas Outro(s) Mês(es)', a: dA.vendas_outro_mes||0, b: dB.vendas_outro_mes||0, maior: true },
     { l: 'Rematrículas',        a: dA.rematriculas,        b: dB.rematriculas,        maior: true },
-    { l: 'Entrada Total',       a: entradaA,               b: entradaB,               maior: true },
-    { l: 'Saída',               a: dA.saida_total,         b: dB.saida_total,         maior: false },
-    { l: 'Saldo',               a: saldoA,                 b: saldoB,                 maior: true },
-    { l: 'Experimentais',       a: dA.total_experimentais, b: dB.total_experimentais, maior: true },
-    { l: 'Fechamentos Exp',     a: dA.fechamentos_experimentais, b: dB.fechamentos_experimentais, maior: true },
-    { l: '% Conv. Experimentais', a: dA.conversao_experimentais_pct, b: dB.conversao_experimentais_pct, maior: true, pct: true },
   ];
-  if (dA.tem_oportunidades && dB.tem_oportunidades) {
+  if (cfg.comSaidaSaldo) {
+    const entradaA = dA.vendas + (dA.vendas_outro_mes || 0) + dA.rematriculas;
+    const entradaB = dB.vendas + (dB.vendas_outro_mes || 0) + dB.rematriculas;
+    mets.push({ l: 'Entrada Total', a: entradaA, b: entradaB, maior: true });
+    mets.push({ l: 'Saída',         a: dA.saida_total, b: dB.saida_total, maior: false });
+    mets.push({ l: 'Saldo',         a: entradaA - dA.saida_total, b: entradaB - dB.saida_total, maior: true });
+  }
+  mets.push({ l: 'Experimentais',       a: dA.total_experimentais, b: dB.total_experimentais, maior: true });
+  mets.push({ l: 'Fechamentos Exp',     a: dA.fechamentos_experimentais, b: dB.fechamentos_experimentais, maior: true });
+  mets.push({ l: '% Conv. Experimentais', a: dA.conversao_experimentais_pct, b: dB.conversao_experimentais_pct, maior: true, pct: true });
+  if (dA.tem_oportunidades !== false && dB.tem_oportunidades !== false) {
     mets.unshift({ l: 'Oportunidades', a: dA.oportunidades, b: dB.oportunidades, maior: true });
     mets.splice(2, 0, { l: '% Conversão', a: dA.conversao_pct, b: dB.conversao_pct, maior: true, pct: true });
   }
 
   function deltaTag(a, b, maior) {
-    if (a === null || b === null) return '<span class="delta neu">—</span>';
+    if (a === null || a === undefined || b === null || b === undefined) return '<span class="delta neu">—</span>';
     const diff = Math.round((b - a) * 10) / 10;
     if (diff === 0) return '<span class="delta neu">= 0</span>';
     const melhor = maior ? diff > 0 : diff < 0;
@@ -598,35 +660,36 @@ function renderComparativo() {
     return `<span class="delta ${melhor?'pos':'neg'}">${sinal}${diff}</span>`;
   }
 
+  const val = (v, pct) => (v !== null && v !== undefined) ? (pct ? v+'%' : v) : '—';
   const rows = mets.map(m => `
     <div class="cmp-row">
       <span class="ml">${m.l}</span>
-      <span class="mv">${m.a !== null ? (m.pct ? m.a+'%' : m.a) : '—'}</span>
+      <span class="mv">${val(m.a, m.pct)}</span>
     </div>`).join('');
   const rowsB = mets.map(m => `
     <div class="cmp-row">
       <span class="ml">${m.l}</span>
-      <span class="mv">${m.b !== null ? (m.pct ? m.b+'%' : m.b) : '—'}</span>
+      <span class="mv">${val(m.b, m.pct)}</span>
     </div>`).join('');
   const rowsDelta = mets.map(m => deltaTag(m.a, m.b, m.maior)).join('');
 
   wrap.innerHTML += `
     <div class="cmp-grid">
-      <div class="cmp-col left"><h4>${selA}</h4>${rows}</div>
+      <div class="cmp-col left"><h4>${cfg.labelFn(selA)}</h4>${rows}</div>
       <div class="cmp-col mid">${rowsDelta}</div>
-      <div class="cmp-col right"><h4>${selB}</h4>${rowsB}</div>
+      <div class="cmp-col right"><h4>${cfg.labelFn(selB)}</h4>${rowsB}</div>
     </div>`;
 
-  wrap.innerHTML += `<div class="chart-card"><h3>Comparativo de métricas</h3><div class="chart-wrap"><canvas id="ct-cmp"></canvas></div></div>`;
-  destroyChart('ct-cmp');
-  const lbls = mets.filter(m=>m.a!==null&&m.b!==null&&!m.pct).map(m=>m.l);
-  const valsA = mets.filter(m=>m.a!==null&&m.b!==null&&!m.pct).map(m=>m.a);
-  const valsB = mets.filter(m=>m.a!==null&&m.b!==null&&!m.pct).map(m=>m.b);
-  charts['ct-cmp'] = new Chart(document.getElementById('ct-cmp'), {
+  wrap.innerHTML += `<div class="chart-card"><h3>Comparativo de métricas</h3><div class="chart-wrap"><canvas id="${cfg.chartId}"></canvas></div></div>`;
+  destroyChart(cfg.chartId);
+  const lbls = mets.filter(m=>m.a!==null&&m.a!==undefined&&m.b!==null&&m.b!==undefined&&!m.pct).map(m=>m.l);
+  const valsA = mets.filter(m=>m.a!==null&&m.a!==undefined&&m.b!==null&&m.b!==undefined&&!m.pct).map(m=>m.a);
+  const valsB = mets.filter(m=>m.a!==null&&m.a!==undefined&&m.b!==null&&m.b!==undefined&&!m.pct).map(m=>m.b);
+  charts[cfg.chartId] = new Chart(document.getElementById(cfg.chartId), {
     type: 'bar',
     data: { labels: lbls, datasets: [
-      { label: selA, data: valsA, backgroundColor: 'rgba(52,66,92,.9)', borderRadius: 3 },
-      { label: selB, data: valsB, backgroundColor: 'rgba(190,245,117,.85)', borderRadius: 3 }
+      { label: cfg.labelFn(selA), data: valsA, backgroundColor: 'rgba(52,66,92,.9)', borderRadius: 3 },
+      { label: cfg.labelFn(selB), data: valsB, backgroundColor: 'rgba(190,245,117,.85)', borderRadius: 3 }
     ]},
     options: { responsive: true, maintainAspectRatio: false,
                plugins: { legend: { labels: { color: '#BBC0C9' } } },
@@ -635,93 +698,38 @@ function renderComparativo() {
   });
 }
 
+function renderComparativo() {
+  renderComparativoGeneric({
+    wrapId: 'cmp-wrap', selAId: 'cmp-a', selBId: 'cmp-b', onchange: 'renderComparativo',
+    periodos: Object.keys(TD[curUnit]), labelFn: k => k, getData: k => TD[curUnit][k],
+    labelA: 'Mês A', labelB: 'Mês B', unidadeTexto: 'meses', comSaidaSaldo: true, chartId: 'ct-cmp',
+  });
+}
+
 // ── Tab switching (mensal) ─────────────────────────────────────────────────
 function setTab(id) {
-  document.querySelectorAll('.tab-btn').forEach((b,i) => {
+  document.querySelectorAll('#view-mensal .tab-btn').forEach((b,i) => {
     b.classList.toggle('active', ['geral','consultores','professores','comparativo'][i] === id);
   });
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#view-mensal .tab-content').forEach(t => t.classList.remove('active'));
   document.getElementById('tab-'+id).classList.add('active');
   if (id === 'comparativo') renderComparativo();
+}
+
+// ── Tab switching (semanal) ────────────────────────────────────────────────
+function setSemTab(id) {
+  document.querySelectorAll('#view-semanal .sem-tab-btn').forEach((b,i) => {
+    b.classList.toggle('active', ['geral','consultores','professores','comparativo'][i] === id);
+  });
+  document.querySelectorAll('#view-semanal .sem-tab-content').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-sem-'+id).classList.add('active');
+  if (id === 'comparativo') renderSemComparativo();
 }
 
 // ── Render SEMANAL ─────────────────────────────────────────────────────────
 function fmtData(iso) {
   const [a, m, d] = iso.split('-');
   return d + '/' + m;
-}
-
-// ── Edição de responsável (staged, só no navegador) ────────────────────────
-// O site é estático e público — não há como salvar direto no servidor.
-// A edição fica pendente aqui até você copiar o resumo e mandar no chat
-// para o Claude aplicar a correção permanentemente (data/overrides.json).
-let pendingEdits = {}; // chave `unidade|semana|vendaId` -> {unidade, semanaKey, vendaId, nomeCliente, tipo, original, novo, rotulo}
-
-function chaveEdit(unidade, semanaKey, vendaId) { return `${unidade}|${semanaKey}|${vendaId}`; }
-
-function escJs(s) { return String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
-
-function edicoesDaSemana(unidade, semanaKey) {
-  return Object.values(pendingEdits).filter(e => e.unidade === unidade && e.semanaKey === semanaKey);
-}
-
-function previewConsultores(E, edicoes) {
-  const mapa = {};
-  (E.consultores || []).forEach(c => { mapa[c.nome] = { ...c }; });
-  const garante = nome => mapa[nome] || (mapa[nome] = { nome, cadastros: 0, vendas_na_semana: 0, vendas_outro_mes: 0, remat: 0, meta: 0 });
-  edicoes.forEach(ed => {
-    const v = (E.vendas_detalhe || []).find(x => x.id === ed.vendaId);
-    if (!v) return;
-    const campo = v.tipo === 'remat' ? 'remat' : v.tipo === 'nova_outro_mes' ? 'vendas_outro_mes' : 'vendas_na_semana';
-    const de = garante(v.consultor || 'Sem responsável');
-    const para = garante(ed.novo);
-    de[campo] = Math.max(0, (de[campo] || 0) - 1);
-    para[campo] = (para[campo] || 0) + 1;
-    if (v.conta_meta) {
-      de.meta = Math.max(0, (de.meta || 0) - 1);
-      para.meta = (para.meta || 0) + 1;
-    }
-  });
-  return Object.values(mapa).sort((a, b) => (b.meta - a.meta) || (b.vendas_na_semana - a.vendas_na_semana) || (b.cadastros - a.cadastros));
-}
-
-function editarVenda(vendaId, selectEl) {
-  const unidade = curUnit, semanaKey = curSem;
-  const E = SD[unidade][semanaKey];
-  const v = E.vendas_detalhe.find(x => x.id === vendaId);
-  let novo = selectEl.value;
-  if (novo === '__outro__') {
-    novo = prompt('Nome do novo responsável:', '');
-    if (!novo || !novo.trim()) { renderSemanal(); return; }
-    novo = novo.trim().toUpperCase();
-  }
-  const key = chaveEdit(unidade, semanaKey, vendaId);
-  if (novo === (v.consultor || '')) {
-    delete pendingEdits[key];
-  } else {
-    pendingEdits[key] = { unidade, semanaKey, vendaId, nomeCliente: v.nome, tipo: v.tipo,
-                           original: v.consultor, novo, rotulo: E.rotulo };
-  }
-  renderSemanal();
-}
-
-function copiarResumo(unidade, semanaKey) {
-  const linhas = edicoesDaSemana(unidade, semanaKey).map(e =>
-    `${e.unidade} — ${e.rotulo}: "${e.nomeCliente}" (${e.tipo === 'remat' ? 'rematrícula' : e.tipo === 'nova_outro_mes' ? 'venda nova de outro mês' : 'venda nova'}) — de ${e.original || 'sem responsável'} para ${e.novo}`);
-  const texto = 'Correções de responsável:\n' + linhas.join('\n');
-  const ok = () => alert('Resumo copiado! Cole aqui no chat com o Claude para aplicar a correção.');
-  if (navigator.clipboard?.writeText) {
-    navigator.clipboard.writeText(texto).then(ok).catch(() => prompt('Copie o resumo abaixo:', texto));
-  } else {
-    prompt('Copie o resumo abaixo:', texto);
-  }
-}
-
-function desfazerEdicoes(unidade, semanaKey) {
-  Object.keys(pendingEdits).forEach(k => {
-    if (pendingEdits[k].unidade === unidade && pendingEdits[k].semanaKey === semanaKey) delete pendingEdits[k];
-  });
-  renderSemanal();
 }
 
 function deltaHtml(atual, anterior, invertido) {
@@ -734,181 +742,68 @@ function deltaHtml(atual, anterior, invertido) {
   return `<span class="delta ${bom?'up':'down'}">${seta} ${sinal}${diff} vs sem. anterior</span>`;
 }
 
-function renderSemanal() {
-  const wrap = $('sem-content');
-  const semanas = SD[curUnit] || {};
-  const keys = Object.keys(semanas);
+// ── Render SEMANAL — espelha o mensal, com recorte de 4 semanas/mês ────────
+function renderSemGeral(E, P) {
+  const andamento = E.fim >= new Date().toISOString().slice(0, 10);
+  $('sem-av-andamento').style.display = andamento ? 'block' : 'none';
 
-  if (!curSem || !keys.length) {
-    $('h-titulo').textContent = (curUnit || 'DASHBOARD POSITIVA').toUpperCase();
-    $('h-sub').textContent = 'Monitoramento semanal';
-    wrap.innerHTML = '<div class="sem-vazio">📅 Ainda não há dados semanais para esta unidade.<br>Suba os arquivos de sábado para começar o monitoramento.</div>';
-    return;
+  $('kv-sem-oport').textContent = E.oportunidades;
+  $('dv-sem-oport').innerHTML = deltaHtml(E.oportunidades, P?.oportunidades);
+  $('kv-sem-vendas').textContent = E.vendas;
+  $('dv-sem-vendas').innerHTML = deltaHtml(E.vendas, P?.vendas);
+  $('kv-sem-pct').textContent = (E.conversao_pct !== null && E.conversao_pct !== undefined) ? E.conversao_pct + '%' : '—';
+  $('kv-sem-outros').textContent = E.vendas_outro_mes || 0;
+  $('card-sem-outros').className = (E.vendas_outro_mes > 0) ? 'kpi-card hi' : 'kpi-card';
+  $('dv-sem-outros').innerHTML = deltaHtml(E.vendas_outro_mes || 0, P?.vendas_outro_mes);
+  $('kv-sem-remat').textContent = E.rematriculas;
+  $('dv-sem-remat').innerHTML = deltaHtml(E.rematriculas, P?.rematriculas);
+
+  destroyChart('ct-sem-donut');
+  if (E.oportunidades > 0) {
+    charts['ct-sem-donut'] = new Chart($('ct-sem-donut'), {
+      type: 'doughnut',
+      data: { labels: ['Convertidos', 'Não convertidos'],
+              datasets: [{ data: [E.vendas, E.oportunidades - E.vendas],
+                           backgroundColor: ['#BEF575','rgba(52,66,92,.8)'],
+                           borderWidth: 0, hoverOffset: 5 }] },
+      options: { responsive: true, maintainAspectRatio: false,
+                 plugins: { legend: { labels: { color: '#BBC0C9', font: { size: 11 } } } } }
+    });
+  } else {
+    const ctx = $('ct-sem-donut').getContext('2d');
+    ctx.clearRect(0, 0, $('ct-sem-donut').width, $('ct-sem-donut').height);
+    ctx.fillStyle = '#788192'; ctx.font = '14px Avenir, sans-serif';
+    ctx.textAlign = 'center'; ctx.fillText('Sem dados', $('ct-sem-donut').width/2, $('ct-sem-donut').height/2);
   }
 
-  const E = semanas[curSem];
-  const idx = keys.indexOf(curSem);
-  const P = idx > 0 ? semanas[keys[idx - 1]] : null;
-
-  $('h-titulo').textContent = curUnit.toUpperCase();
-  $('h-sub').textContent = E.rotulo + ' · ' + fmtData(E.inicio) + ' a ' + fmtData(E.fim);
-
-  const safra = E.safra_conversao_pct !== null && E.safra_conversao_pct !== undefined ? E.safra_conversao_pct + '%' : '—';
-  const safraSub = E.safra_cadastros > 0
-    ? `${E.safra_convertidos}/${E.safra_cadastros} leads da semana já fecharam`
-    : 'Sem cadastros nesta semana';
+  destroyChart('ct-sem-exp');
+  if (E.total_experimentais > 0) {
+    charts['ct-sem-exp'] = new Chart($('ct-sem-exp'), {
+      type: 'doughnut',
+      data: { labels: ['Fechamentos', 'Não fechados'],
+              datasets: [{ data: [E.fechamentos_experimentais, E.total_experimentais - E.fechamentos_experimentais],
+                           backgroundColor: ['#BEF575','rgba(52,66,92,.8)'],
+                           borderWidth: 0, hoverOffset: 5 }] },
+      options: { responsive: true, maintainAspectRatio: false,
+                 plugins: { legend: { labels: { color: '#BBC0C9', font: { size: 11 } } },
+                            title: { display: true, text: (E.conversao_experimentais_pct||0) + '% conversão (' + E.fechamentos_experimentais + '/' + E.total_experimentais + ')',
+                                     color: '#BEF575', font: { size: 12 } } } }
+    });
+  } else {
+    const ctx = $('ct-sem-exp').getContext('2d');
+    ctx.clearRect(0, 0, $('ct-sem-exp').width, $('ct-sem-exp').height);
+    ctx.fillStyle = '#788192'; ctx.font = '14px Avenir, sans-serif';
+    ctx.textAlign = 'center'; ctx.fillText('Sem dados', $('ct-sem-exp').width/2, $('ct-sem-exp').height/2);
+  }
 
   let html = '';
-  if (E.fim >= new Date().toISOString().slice(0, 10)) {
-    html += `<div class="aviso parcial">⏳ <strong>Semana em andamento</strong> — números parciais até o próximo upload.</div>`;
-  }
-  html += `
-    <div class="kpi-grid">
-      <div class="kpi-card"><div class="lbl">Oportunidades</div><div class="val">${E.oportunidades}</div><div class="sub">Cadastros na semana</div>${deltaHtml(E.oportunidades, P?.oportunidades)}</div>
-      <div class="kpi-card hi"><div class="lbl">Vendas na Semana</div><div class="val">${E.vendas_na_semana}</div><div class="sub">Contratos fechados na semana</div>${deltaHtml(E.vendas_na_semana, P?.vendas_na_semana)}</div>
-      <div class="kpi-card${E.vendas_outro_mes > 0 ? ' hi' : ''}"><div class="lbl">Vendas Outro Mês</div><div class="val">${E.vendas_outro_mes || 0}</div><div class="sub">Cadastro anterior, fechou nesta semana</div>${deltaHtml(E.vendas_outro_mes || 0, P?.vendas_outro_mes)}</div>
-      <div class="kpi-card hi"><div class="lbl">Conversão da Safra</div><div class="val">${safra}</div><div class="sub">${safraSub}</div></div>
-      <div class="kpi-card"><div class="lbl">Experimentais</div><div class="val">${E.experimentais}</div><div class="sub">Aulas na semana</div>${deltaHtml(E.experimentais, P?.experimentais)}</div>
-      <div class="kpi-card hi"><div class="lbl">Fechamentos Exp.</div><div class="val">${E.fechamentos_experimentais}</div><div class="sub">Experimentais → matrícula</div>${deltaHtml(E.fechamentos_experimentais, P?.fechamentos_experimentais)}</div>
-      <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val">${E.rematriculas}</div><div class="sub">Renovações na semana</div>${deltaHtml(E.rematriculas, P?.rematriculas)}</div>
-    </div>
+  if (E.analise) html += `<div class="analise-card"><h3>📊 Análise da Semana</h3><p>${E.analise}</p></div>`;
+  if (E.acoes && E.acoes.length) html += `<div class="analise-card"><h3>✅ Ações para a Próxima Semana</h3><ul class="acoes-list">${E.acoes.map(a => `<li>${a}</li>`).join('')}</ul></div>`;
+  if (!E.analise && !E.acoes) html += `<div class="aviso parcial">ℹ️ Semana sem análise registrada.</div>`;
+  $('sem-analise-wrap').innerHTML = html;
+}
 
-    <div class="chart-card" style="margin-bottom:20px">
-      <h3>Evolução das últimas semanas</h3>
-      <div class="chart-wrap" style="height:250px"><canvas id="ct-sem-evolucao"></canvas></div>
-    </div>`;
-
-  if (E.analise) {
-    html += `
-    <div class="analise-card">
-      <h3>📊 Análise da Semana</h3>
-      <p>${E.analise}</p>
-    </div>`;
-  }
-  if (E.acoes && E.acoes.length) {
-    html += `
-    <div class="analise-card">
-      <h3>✅ Ações para a Próxima Semana</h3>
-      <ul class="acoes-list">${E.acoes.map(a => `<li>${a}</li>`).join('')}</ul>
-    </div>`;
-  }
-  if (!E.analise && !E.acoes) {
-    html += `<div class="aviso parcial">ℹ️ Semana sem análise registrada — os números foram atualizados retroativamente.</div>`;
-  }
-
-  // ✏️ Edições pendentes desta semana (staged localmente)
-  const edicoes = edicoesDaSemana(curUnit, curSem);
-  if (edicoes.length) {
-    html += `
-    <div class="analise-card" style="border-left-color:#F5C542">
-      <h3 style="color:#F5C542">✏️ ${edicoes.length} edição(ões) pendente(s) — ainda não publicadas</h3>
-      <ul class="acoes-list">${edicoes.map(e => `<li>${e.nomeCliente} (${e.tipo==='remat'?'rematrícula':e.tipo==='nova_outro_mes'?'venda nova de outro mês':'venda nova'}): <strong>${e.original||'sem responsável'}</strong> → <strong>${e.novo}</strong></li>`).join('')}</ul>
-      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-        <button onclick="copiarResumo('${escJs(curUnit)}','${curSem}')" style="background:var(--green);color:var(--navy);border:none;padding:8px 16px;border-radius:6px;font-weight:900;cursor:pointer;font-family:inherit">📋 Copiar resumo p/ mandar no chat</button>
-        <button onclick="desfazerEdicoes('${escJs(curUnit)}','${curSem}')" style="background:transparent;color:var(--gray-l);border:1px solid var(--gray-m);padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-family:inherit">↩️ Desfazer</button>
-      </div>
-      <div class="meta-nota">A tabela de metas abaixo já mostra o efeito dessas mudanças (prévia). Nada é salvo até você mandar o resumo no chat.</div>
-    </div>`;
-  }
-
-  // 🎯 Metas da semana por consultor (política de comissionamento)
-  const meta = METAS[curUnit];
-  const consultoresView = edicoes.length ? previewConsultores(E, edicoes) : (E.consultores || []);
-  const consAtivos = consultoresView.filter(c =>
-    (c.cadastros || 0) + (c.vendas_na_semana || 0) + (c.vendas_outro_mes || 0) + (c.remat || 0) + (c.meta || 0) > 0);
-  if (meta && consAtivos.length && consAtivos.some(c => c.meta !== undefined)) {
-    const linhas = consAtivos.map(c => {
-      const v = c.meta || 0;
-      const f = faixaMeta(meta, v);
-      const pctReal = Math.round(v / meta.real * 100);
-      const outroMes = c.vendas_outro_mes || 0;
-      return `
-      <tr>
-        <td>${c.nome}</td>
-        <td>${c.vendas_na_semana || 0}${outroMes ? ` <span style="color:var(--gray-m);font-size:.72rem">+${outroMes} outro mês</span>` : ''}</td>
-        <td>${c.remat || 0}</td>
-        <td style="font-weight:900;font-style:italic">${v}</td>
-        <td><span class="faixa ${f.cls}">${f.selo} ${f.nome}</span></td>
-        <td style="font-weight:900;color:${f.comissao > 0 ? 'var(--green)' : 'var(--red)'}">${f.comissao}%</td>
-        <td>${pctReal}%${f.falta ? ` <span style="color:var(--gray-m);font-size:.72rem">· ${f.falta}</span>` : ''}</td>
-      </tr>`;
-    }).join('');
-    html += `
-    <div class="chart-card" style="margin-top:20px">
-      <h3>🎯 Metas da Semana — Consultores</h3>
-      <table class="data-table">
-        <thead><tr><th>Consultor</th><th>Novas</th><th>Remat</th><th>P/ Meta</th><th>Faixa batida</th><th>Comissão</th><th>% da Meta Real</th></tr></thead>
-        <tbody>${linhas}</tbody>
-      </table>
-      <div class="meta-nota">Faixas desta unidade: 🏆 Super ${meta.super} · 🥈 Real ${meta.real} · 🥉 Básico ${meta.basico} (política de comissionamento; mês dividido em 4 semanas, semanas 1 e 4 podem incluir dias extras de virada de mês).
-      "P/ Meta" = vendas novas (inclui outro mês) + rematrículas elegíveis, sem duplicar a mesma pessoa e sem Transferência de Dias, Sem Fidelidade, planos legados e Recreio.</div>
-    </div>`;
-  }
-
-  // ✏️ Editar responsável das vendas da semana
-  if ((E.vendas_detalhe || []).length) {
-    const nomesConhecidos = Array.from(new Set((E.consultores || []).map(c => c.nome))).sort();
-    const linhasVendas = E.vendas_detalhe.map(v => {
-      const editado = pendingEdits[chaveEdit(curUnit, curSem, v.id)];
-      const atual = editado ? editado.novo : (v.consultor || '');
-      const opts = nomesConhecidos.map(n => `<option value="${n}"${n === atual ? ' selected' : ''}>${n}</option>`).join('');
-      const semResp = atual ? '' : `<option value="" selected>— sem responsável —</option>`;
-      const badge = editado ? ' <span class="faixa real" style="margin-left:6px">editado</span>' : '';
-      return `
-      <tr>
-        <td>${fmtData(v.data)}</td>
-        <td>${v.nome}${badge}</td>
-        <td>${v.tipo === 'remat' ? 'Rematrícula' : v.tipo === 'nova_outro_mes' ? 'Nova (outro mês)' : 'Nova'}</td>
-        <td style="font-size:.78rem;color:var(--gray-m)">${v.contrato || '—'}</td>
-        <td>${v.conta_meta ? '✅' : '—'}</td>
-        <td><select onchange="editarVenda('${escJs(v.id)}', this)" style="font-size:.78rem;padding:4px 8px;max-width:220px">${semResp}${opts}<option value="__outro__">Outro…</option></select></td>
-      </tr>`;
-    }).join('');
-    html += `
-    <div class="chart-card" style="margin-top:20px">
-      <details>
-        <summary style="cursor:pointer;font-size:.74rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray-l);font-style:italic">✏️ Editar responsável das vendas da semana (${E.vendas_detalhe.length})</summary>
-        <div style="margin-top:14px;overflow-x:auto">
-          <table class="data-table">
-            <thead><tr><th>Data</th><th>Cliente</th><th>Tipo</th><th>Contrato</th><th>P/ Meta</th><th>Responsável</th></tr></thead>
-            <tbody>${linhasVendas}</tbody>
-          </table>
-        </div>
-        <div class="meta-nota">Editar aqui NÃO publica automaticamente — é só uma prévia. Copie o resumo (acima, quando houver edição) e mande no chat para o Claude aplicar a correção de vez.</div>
-      </details>
-    </div>`;
-  }
-
-  const temCons = consAtivos.length > 0 && !meta;
-  const temProf = (E.professores || []).length > 0;
-  if (temCons || temProf) {
-    html += `<div class="charts-row" style="margin-top:20px">`;
-    if (temCons) {
-      html += `
-      <div class="chart-card">
-        <h3>Consultores na semana</h3>
-        <table class="data-table">
-          <thead><tr><th>Consultor</th><th>Cadastros</th><th>Vendas</th></tr></thead>
-          <tbody>${consAtivos.map((c,i) => `<tr class="${i===0&&c.vendas_na_semana>0?'leader':''}"><td>${c.nome}</td><td>${c.cadastros}</td><td>${c.vendas_na_semana}</td></tr>`).join('')}</tbody>
-        </table>
-      </div>`;
-    }
-    if (temProf) {
-      html += `
-      <div class="chart-card">
-        <h3>Professores na semana</h3>
-        <table class="data-table">
-          <thead><tr><th>Professor</th><th>Atendidas</th><th>Convertidas</th></tr></thead>
-          <tbody>${E.professores.map((p,i) => `<tr class="${i===0&&p.convertidas>0?'leader':''}"><td>${p.nome}</td><td>${p.atendidas}</td><td>${p.convertidas}</td></tr>`).join('')}</tbody>
-        </table>
-      </div>`;
-    }
-    html += `</div>`;
-  }
-
-  wrap.innerHTML = html;
-
-  // Gráfico de evolução (últimas 8 semanas até a selecionada)
+function renderSemEvolucao(keys, semanas, idx) {
   destroyChart('ct-sem-evolucao');
   const inicio = Math.max(0, idx - 7);
   const janela = keys.slice(inicio, idx + 1);
@@ -919,9 +814,9 @@ function renderSemanal() {
       datasets: [
         { label: 'Oportunidades', data: janela.map(k => semanas[k].oportunidades),
           borderColor: '#788192', backgroundColor: '#788192', tension: .3, pointRadius: 4 },
-        { label: 'Vendas', data: janela.map(k => semanas[k].vendas_na_semana),
+        { label: 'Vendas', data: janela.map(k => semanas[k].vendas),
           borderColor: '#BEF575', backgroundColor: '#BEF575', tension: .3, pointRadius: 4 },
-        { label: 'Experimentais', data: janela.map(k => semanas[k].experimentais),
+        { label: 'Experimentais', data: janela.map(k => semanas[k].total_experimentais),
           borderColor: '#6FA8DC', backgroundColor: '#6FA8DC', tension: .3, pointRadius: 4 }
       ]
     },
@@ -930,6 +825,48 @@ function renderSemanal() {
                scales: { x: { grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#788192', font: { size: 10 } } },
                          y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,.04)' }, ticks: { color: '#788192', precision: 0 } } } }
   });
+}
+
+function renderSemComparativo() {
+  const semanas = SD[curUnit] || {};
+  const keys = Object.keys(semanas);
+  renderComparativoGeneric({
+    wrapId: 'cmp-sem-wrap', selAId: 'cmp-sem-a', selBId: 'cmp-sem-b', onchange: 'renderSemComparativo',
+    periodos: keys, labelFn: k => semanas[k]?.rotulo || k, getData: k => semanas[k],
+    labelA: 'Semana A', labelB: 'Semana B', unidadeTexto: 'semanas', comSaidaSaldo: false, chartId: 'ct-sem-cmp',
+  });
+}
+
+function renderSemanal() {
+  const semanas = SD[curUnit] || {};
+  const keys = Object.keys(semanas);
+
+  if (!curSem || !keys.length) {
+    $('h-titulo').textContent = (curUnit || 'DASHBOARD POSITIVA').toUpperCase();
+    $('h-sub').textContent = 'Monitoramento semanal';
+    $('sem-vazio-wrap').innerHTML = '<div class="sem-vazio">📅 Ainda não há dados semanais para esta unidade.<br>Suba os arquivos para começar o monitoramento.</div>';
+    $('sem-av-andamento').style.display = 'none';
+    ['kv-sem-oport','kv-sem-vendas','kv-sem-pct','kv-sem-outros','kv-sem-remat'].forEach(id => $(id).textContent = '—');
+    ['dv-sem-oport','dv-sem-vendas','dv-sem-outros','dv-sem-remat','sem-analise-wrap'].forEach(id => $(id).innerHTML = '');
+    $('tb-sem-consultores').innerHTML = ''; $('tb-sem-professores').innerHTML = '';
+    ['ct-sem-donut','ct-sem-exp','ct-sem-evolucao','ct-sem-cbar','ct-sem-pbar','ct-sem-cmp'].forEach(destroyChart);
+    return;
+  }
+  $('sem-vazio-wrap').innerHTML = '';
+
+  const E = semanas[curSem];
+  const idx = keys.indexOf(curSem);
+  const P = idx > 0 ? semanas[keys[idx - 1]] : null;
+
+  $('h-titulo').textContent = curUnit.toUpperCase();
+  $('h-sub').textContent = E.rotulo + ' · ' + fmtData(E.inicio) + ' a ' + fmtData(E.fim);
+
+  renderSemGeral(E, P);
+  renderSemEvolucao(keys, semanas, idx);
+  renderConsultoresGeneric({ tbody: 'tb-sem-consultores', title: 'ct-sem-cpct', chart: 'ct-sem-cbar' }, E.consultores || [], true);
+  renderTotaisProfessoresGeneric({ total: 'pv-sem-total', fecha: 'pv-sem-fecha', pct: 'pv-sem-pct', nao: 'pv-sem-nao', card: 'pcard-sem-pct' }, E);
+  renderProfessoresGeneric({ tbody: 'tb-sem-professores', chart: 'ct-sem-pbar' }, E.professores || []);
+  renderSemComparativo();
 }
 
 // ── Init ───────────────────────────────────────────────────────────────────
