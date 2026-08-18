@@ -258,6 +258,7 @@ select:focus{border-color:var(--green)}
     <div class="kpi-card hi" id="card-sem-pct"><div class="lbl">Conversão da Safra</div><div class="val" id="kv-sem-pct">—</div><div class="sub" id="sub-sem-pct">Leads desta semana que já fecharam</div></div>
     <div class="kpi-card" id="card-sem-outros"><div class="lbl">Vendas Outro Mês</div><div class="val" id="kv-sem-outros">—</div><div class="sub">Cadastro anterior, fechou nesta semana</div><div id="dv-sem-outros"></div></div>
     <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val" id="kv-sem-remat">—</div><div class="sub">Renovações na semana</div><div id="dv-sem-remat"></div></div>
+    <div class="kpi-card hi"><div class="lbl">Entrada Total</div><div class="val" id="kv-sem-entrada">—</div><div class="sub">Vendas novas + Outro mês + Rematrículas</div><div id="dv-sem-entrada"></div></div>
   </div>
   <div class="charts-row">
     <div class="chart-card"><h3>Conversão Geral</h3><div class="chart-wrap"><canvas id="ct-sem-donut"></canvas></div></div>
@@ -617,17 +618,17 @@ function renderComparativoGeneric(cfg) {
   const dA = cfg.getData(selA);
   const dB = cfg.getData(selB);
 
+  const entradaA = dA.vendas + (dA.vendas_outro_mes || 0) + dA.rematriculas;
+  const entradaB = dB.vendas + (dB.vendas_outro_mes || 0) + dB.rematriculas;
   const mets = [
     { l: 'Vendas Novas',        a: dA.vendas,              b: dB.vendas,              maior: true },
     { l: 'Vendas Outro(s) Mês(es)', a: dA.vendas_outro_mes||0, b: dB.vendas_outro_mes||0, maior: true },
     { l: 'Rematrículas',        a: dA.rematriculas,        b: dB.rematriculas,        maior: true },
+    { l: 'Entrada Total',       a: entradaA,               b: entradaB,               maior: true },
   ];
   if (cfg.comSaidaSaldo) {
-    const entradaA = dA.vendas + (dA.vendas_outro_mes || 0) + dA.rematriculas;
-    const entradaB = dB.vendas + (dB.vendas_outro_mes || 0) + dB.rematriculas;
-    mets.push({ l: 'Entrada Total', a: entradaA, b: entradaB, maior: true });
-    mets.push({ l: 'Saída',         a: dA.saida_total, b: dB.saida_total, maior: false });
-    mets.push({ l: 'Saldo',         a: entradaA - dA.saida_total, b: entradaB - dB.saida_total, maior: true });
+    mets.push({ l: 'Saída',  a: dA.saida_total, b: dB.saida_total, maior: false });
+    mets.push({ l: 'Saldo',  a: entradaA - dA.saida_total, b: entradaB - dB.saida_total, maior: true });
   }
   mets.push({ l: 'Experimentais',       a: dA.total_experimentais, b: dB.total_experimentais, maior: true });
   mets.push({ l: 'Fechamentos Exp',     a: dA.fechamentos_experimentais, b: dB.fechamentos_experimentais, maior: true });
@@ -744,6 +745,10 @@ function renderSemGeral(E, P) {
   $('dv-sem-outros').innerHTML = deltaHtml(E.vendas_outro_mes || 0, P?.vendas_outro_mes);
   $('kv-sem-remat').textContent = E.rematriculas;
   $('dv-sem-remat').innerHTML = deltaHtml(E.rematriculas, P?.rematriculas);
+  const entradaTotal = E.vendas + (E.vendas_outro_mes || 0) + E.rematriculas;
+  const entradaAnterior = P ? (P.vendas + (P.vendas_outro_mes || 0) + P.rematriculas) : undefined;
+  $('kv-sem-entrada').textContent = entradaTotal;
+  $('dv-sem-entrada').innerHTML = deltaHtml(entradaTotal, entradaAnterior);
 
   destroyChart('ct-sem-donut');
   if (E.oportunidades > 0) {
@@ -833,8 +838,8 @@ function renderSemanal() {
     $('h-sub').textContent = 'Monitoramento semanal';
     $('sem-vazio-wrap').innerHTML = '<div class="sem-vazio">📅 Ainda não há dados semanais para esta unidade.<br>Suba os arquivos para começar o monitoramento.</div>';
     $('sem-av-andamento').style.display = 'none';
-    ['kv-sem-oport','kv-sem-vendas','kv-sem-pct','kv-sem-outros','kv-sem-remat'].forEach(id => $(id).textContent = '—');
-    ['dv-sem-oport','dv-sem-vendas','dv-sem-outros','dv-sem-remat','sem-analise-wrap'].forEach(id => $(id).innerHTML = '');
+    ['kv-sem-oport','kv-sem-vendas','kv-sem-pct','kv-sem-outros','kv-sem-remat','kv-sem-entrada'].forEach(id => $(id).textContent = '—');
+    ['dv-sem-oport','dv-sem-vendas','dv-sem-outros','dv-sem-remat','dv-sem-entrada','sem-analise-wrap'].forEach(id => $(id).innerHTML = '');
     $('tb-sem-consultores').innerHTML = ''; $('tb-sem-professores').innerHTML = '';
     ['ct-sem-donut','ct-sem-exp','ct-sem-evolucao','ct-sem-cbar','ct-sem-pbar','ct-sem-cmp'].forEach(destroyChart);
     return;
