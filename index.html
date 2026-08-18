@@ -12,22 +12,28 @@ body{font-family:'Avenir','Century Gothic','Trebuchet MS',sans-serif;background:
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* HEADER */
-.header{background:var(--dark);border-bottom:3px solid var(--green);padding:16px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.header-title h1{font-size:1.35rem;font-weight:900;font-style:italic;letter-spacing:1px}
-.header-title .sub{font-size:.78rem;color:var(--green);font-style:italic;margin-top:2px}
-.header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.header{background:var(--dark);border-bottom:1px solid rgba(255,255,255,.08);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.header-title h1{font-size:1.1rem;font-weight:900;font-style:italic;letter-spacing:1.5px;color:var(--gray-l)}
+.header-title .sub{font-size:.72rem;color:var(--gray-m);font-style:italic;margin-top:2px}
 
 .mode-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--green);border-radius:8px;overflow:hidden}
 .mode-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 20px;font-family:inherit;font-size:.82rem;font-weight:900;font-style:italic;letter-spacing:1px;cursor:pointer;transition:all .2s;text-transform:uppercase}
 .mode-btn.active{background:var(--green);color:var(--navy)}
 .mode-btn:hover:not(.active){color:var(--white)}
 
-.unit-switcher{display:flex;background:rgba(255,255,255,.05);border:1.5px solid var(--blue);border-radius:8px;overflow:hidden}
-.unit-btn{background:transparent;border:none;color:var(--gray-m);padding:8px 18px;font-family:inherit;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;border-right:1px solid var(--blue);white-space:nowrap}
+/* UNIT BAR — sempre visível, independente do modo */
+.unit-bar{background:var(--dark);border-bottom:3px solid var(--green);padding:14px 32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.unit-bar .unit-label{font-size:.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--gray-m);font-style:italic;white-space:nowrap}
+.unit-switcher{display:flex;background:rgba(255,255,255,.04);border:1.5px solid var(--blue);border-radius:9px;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+.unit-btn{background:transparent;border:none;color:var(--gray-l);padding:11px 24px;font-family:inherit;font-size:.94rem;font-weight:900;font-style:italic;letter-spacing:.3px;cursor:pointer;transition:all .2s;border-right:1px solid var(--blue);white-space:nowrap;flex-shrink:0}
 .unit-btn:last-child{border-right:none}
 .unit-btn.active{background:var(--green);color:var(--navy)}
 .unit-btn.soon{opacity:.35;cursor:default}
 .unit-btn:hover:not(.active):not(.soon){color:var(--white);background:rgba(255,255,255,.06)}
+@media(max-width:600px){
+  .unit-bar{padding:12px 16px}
+  .unit-btn{padding:9px 16px;font-size:.84rem}
+}
 
 /* FILTERS */
 .filters-bar{background:var(--blue);padding:10px 32px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.07)}
@@ -134,13 +140,16 @@ select:focus{border-color:var(--green)}
     <h1 id="h-titulo">DASHBOARD POSITIVA</h1>
     <div class="sub" id="h-sub">Carregando…</div>
   </div>
-  <div class="header-right">
-    <div class="mode-switcher">
-      <button class="mode-btn active" id="mode-mensal" onclick="setMode('mensal')">Mensal</button>
-      <button class="mode-btn" id="mode-semanal" onclick="setMode('semanal')">Semanal</button>
-    </div>
-    <div class="unit-switcher" id="unit-switcher"></div>
+  <div class="mode-switcher">
+    <button class="mode-btn active" id="mode-mensal" onclick="setMode('mensal')">Mensal</button>
+    <button class="mode-btn" id="mode-semanal" onclick="setMode('semanal')">Semanal</button>
   </div>
+</div>
+
+<!-- UNIT BAR -->
+<div class="unit-bar">
+  <span class="unit-label">Unidade</span>
+  <div class="unit-switcher" id="unit-switcher"></div>
 </div>
 
 <!-- FILTERS (MENSAL) -->
