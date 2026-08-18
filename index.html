@@ -668,11 +668,11 @@ function edicoesDaSemana(unidade, semanaKey) {
 function previewConsultores(E, edicoes) {
   const mapa = {};
   (E.consultores || []).forEach(c => { mapa[c.nome] = { ...c }; });
-  const garante = nome => mapa[nome] || (mapa[nome] = { nome, cadastros: 0, vendas_na_semana: 0, remat: 0, meta: 0 });
+  const garante = nome => mapa[nome] || (mapa[nome] = { nome, cadastros: 0, vendas_na_semana: 0, vendas_outro_mes: 0, remat: 0, meta: 0 });
   edicoes.forEach(ed => {
     const v = (E.vendas_detalhe || []).find(x => x.id === ed.vendaId);
     if (!v) return;
-    const campo = v.tipo === 'remat' ? 'remat' : 'vendas_na_semana';
+    const campo = v.tipo === 'remat' ? 'remat' : v.tipo === 'nova_outro_mes' ? 'vendas_outro_mes' : 'vendas_na_semana';
     const de = garante(v.consultor || 'Sem responsável');
     const para = garante(ed.novo);
     de[campo] = Math.max(0, (de[campo] || 0) - 1);
@@ -707,7 +707,7 @@ function editarVenda(vendaId, selectEl) {
 
 function copiarResumo(unidade, semanaKey) {
   const linhas = edicoesDaSemana(unidade, semanaKey).map(e =>
-    `${e.unidade} — ${e.rotulo}: "${e.nomeCliente}" (${e.tipo === 'remat' ? 'rematrícula' : 'venda nova'}) — de ${e.original || 'sem responsável'} para ${e.novo}`);
+    `${e.unidade} — ${e.rotulo}: "${e.nomeCliente}" (${e.tipo === 'remat' ? 'rematrícula' : e.tipo === 'nova_outro_mes' ? 'venda nova de outro mês' : 'venda nova'}) — de ${e.original || 'sem responsável'} para ${e.novo}`);
   const texto = 'Correções de responsável:\n' + linhas.join('\n');
   const ok = () => alert('Resumo copiado! Cole aqui no chat com o Claude para aplicar a correção.');
   if (navigator.clipboard?.writeText) {
@@ -766,6 +766,7 @@ function renderSemanal() {
     <div class="kpi-grid">
       <div class="kpi-card"><div class="lbl">Oportunidades</div><div class="val">${E.oportunidades}</div><div class="sub">Cadastros na semana</div>${deltaHtml(E.oportunidades, P?.oportunidades)}</div>
       <div class="kpi-card hi"><div class="lbl">Vendas na Semana</div><div class="val">${E.vendas_na_semana}</div><div class="sub">Contratos fechados na semana</div>${deltaHtml(E.vendas_na_semana, P?.vendas_na_semana)}</div>
+      <div class="kpi-card${E.vendas_outro_mes > 0 ? ' hi' : ''}"><div class="lbl">Vendas Outro Mês</div><div class="val">${E.vendas_outro_mes || 0}</div><div class="sub">Cadastro anterior, fechou nesta semana</div>${deltaHtml(E.vendas_outro_mes || 0, P?.vendas_outro_mes)}</div>
       <div class="kpi-card hi"><div class="lbl">Conversão da Safra</div><div class="val">${safra}</div><div class="sub">${safraSub}</div></div>
       <div class="kpi-card"><div class="lbl">Experimentais</div><div class="val">${E.experimentais}</div><div class="sub">Aulas na semana</div>${deltaHtml(E.experimentais, P?.experimentais)}</div>
       <div class="kpi-card hi"><div class="lbl">Fechamentos Exp.</div><div class="val">${E.fechamentos_experimentais}</div><div class="sub">Experimentais → matrícula</div>${deltaHtml(E.fechamentos_experimentais, P?.fechamentos_experimentais)}</div>
@@ -801,7 +802,7 @@ function renderSemanal() {
     html += `
     <div class="analise-card" style="border-left-color:#F5C542">
       <h3 style="color:#F5C542">✏️ ${edicoes.length} edição(ões) pendente(s) — ainda não publicadas</h3>
-      <ul class="acoes-list">${edicoes.map(e => `<li>${e.nomeCliente} (${e.tipo==='remat'?'rematrícula':'venda nova'}): <strong>${e.original||'sem responsável'}</strong> → <strong>${e.novo}</strong></li>`).join('')}</ul>
+      <ul class="acoes-list">${edicoes.map(e => `<li>${e.nomeCliente} (${e.tipo==='remat'?'rematrícula':e.tipo==='nova_outro_mes'?'venda nova de outro mês':'venda nova'}): <strong>${e.original||'sem responsável'}</strong> → <strong>${e.novo}</strong></li>`).join('')}</ul>
       <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
         <button onclick="copiarResumo('${escJs(curUnit)}','${curSem}')" style="background:var(--green);color:var(--navy);border:none;padding:8px 16px;border-radius:6px;font-weight:900;cursor:pointer;font-family:inherit">📋 Copiar resumo p/ mandar no chat</button>
         <button onclick="desfazerEdicoes('${escJs(curUnit)}','${curSem}')" style="background:transparent;color:var(--gray-l);border:1px solid var(--gray-m);padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-family:inherit">↩️ Desfazer</button>
@@ -814,16 +815,17 @@ function renderSemanal() {
   const meta = METAS[curUnit];
   const consultoresView = edicoes.length ? previewConsultores(E, edicoes) : (E.consultores || []);
   const consAtivos = consultoresView.filter(c =>
-    (c.cadastros || 0) + (c.vendas_na_semana || 0) + (c.remat || 0) + (c.meta || 0) > 0);
+    (c.cadastros || 0) + (c.vendas_na_semana || 0) + (c.vendas_outro_mes || 0) + (c.remat || 0) + (c.meta || 0) > 0);
   if (meta && consAtivos.length && consAtivos.some(c => c.meta !== undefined)) {
     const linhas = consAtivos.map(c => {
       const v = c.meta || 0;
       const f = faixaMeta(meta, v);
       const pctReal = Math.round(v / meta.real * 100);
+      const outroMes = c.vendas_outro_mes || 0;
       return `
       <tr>
         <td>${c.nome}</td>
-        <td>${c.vendas_na_semana || 0}</td>
+        <td>${c.vendas_na_semana || 0}${outroMes ? ` <span style="color:var(--gray-m);font-size:.72rem">+${outroMes} outro mês</span>` : ''}</td>
         <td>${c.remat || 0}</td>
         <td style="font-weight:900;font-style:italic">${v}</td>
         <td><span class="faixa ${f.cls}">${f.selo} ${f.nome}</span></td>
@@ -839,7 +841,7 @@ function renderSemanal() {
         <tbody>${linhas}</tbody>
       </table>
       <div class="meta-nota">Faixas desta unidade: 🏆 Super ${meta.super} · 🥈 Real ${meta.real} · 🥉 Básico ${meta.basico} (política de comissionamento; mês dividido em 4 semanas, semanas 1 e 4 podem incluir dias extras de virada de mês).
-      "P/ Meta" = vendas novas + rematrículas elegíveis, sem duplicar a mesma pessoa e sem Transferência de Dias, Sem Fidelidade, planos legados e Recreio.</div>
+      "P/ Meta" = vendas novas (inclui outro mês) + rematrículas elegíveis, sem duplicar a mesma pessoa e sem Transferência de Dias, Sem Fidelidade, planos legados e Recreio.</div>
     </div>`;
   }
 
@@ -856,7 +858,7 @@ function renderSemanal() {
       <tr>
         <td>${fmtData(v.data)}</td>
         <td>${v.nome}${badge}</td>
-        <td>${v.tipo === 'remat' ? 'Rematrícula' : 'Nova'}</td>
+        <td>${v.tipo === 'remat' ? 'Rematrícula' : v.tipo === 'nova_outro_mes' ? 'Nova (outro mês)' : 'Nova'}</td>
         <td style="font-size:.78rem;color:var(--gray-m)">${v.contrato || '—'}</td>
         <td>${v.conta_meta ? '✅' : '—'}</td>
         <td><select onchange="editarVenda('${escJs(v.id)}', this)" style="font-size:.78rem;padding:4px 8px;max-width:220px">${semResp}${opts}<option value="__outro__">Outro…</option></select></td>
