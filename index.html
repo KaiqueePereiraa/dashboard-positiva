@@ -118,6 +118,12 @@ select:focus{border-color:var(--green)}
 .acoes-list li:last-child{border-bottom:none}
 .acoes-list li::before{content:'✅';position:absolute;left:0;top:8px;font-size:.85rem}
 .sem-vazio{text-align:center;padding:64px 32px;color:var(--gray-m);font-size:.95rem;line-height:1.8}
+.faixa{display:inline-block;font-size:.7rem;font-weight:900;padding:3px 10px;border-radius:9px;white-space:nowrap}
+.faixa.super{background:var(--green);color:var(--navy)}
+.faixa.real{background:rgba(190,245,117,.18);color:var(--green)}
+.faixa.basico{background:rgba(255,255,255,.1);color:var(--gray-l)}
+.faixa.abaixo{background:rgba(255,107,107,.15);color:var(--red)}
+.meta-nota{font-size:.7rem;color:var(--gray-m);margin-top:10px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -244,6 +250,22 @@ select:focus{border-color:var(--green)}
 // ── Dados (carregados de data/*.json) ─────────────────────────────────────
 let TD = {};   // mensal
 let SD = {};   // semanal
+
+// ── Metas semanais por unidade (política de comissionamento 2026) ─────────
+// Semana de meta: segunda a domingo. Faixas: contagem de vendas elegíveis
+// (novas + rematrículas, sem Transferência/Sem Fidelidade/legados/Recreio).
+const METAS = {
+  'Positiva Club':              { super: 12, real: 9, basico: 6 },
+  'Positiva Acqua Laranjeiras': { super: 4,  real: 3, basico: 2 },
+  'Positiva Acqua República':   { super: 4,  real: 3, basico: 2 },
+};
+
+function faixaMeta(m, v) {
+  if (v >= m.super)  return { nome: 'Super Meta', selo: '🏆', comissao: 100, cls: 'super', falta: null };
+  if (v >= m.real)   return { nome: 'Meta Real',  selo: '🥈', comissao: 70,  cls: 'real',   falta: `faltam ${m.super - v} p/ Super` };
+  if (v >= m.basico) return { nome: 'Básico',     selo: '🥉', comissao: 50,  cls: 'basico', falta: `faltam ${m.real - v} p/ Meta Real` };
+  return { nome: 'Abaixo do básico', selo: '', comissao: 0, cls: 'abaixo', falta: `faltam ${m.basico - v} p/ Básico` };
+}
 
 // Estado global
 let curMode = 'mensal';
@@ -663,7 +685,11 @@ function renderSemanal() {
     ? `${E.safra_convertidos}/${E.safra_cadastros} leads da semana já fecharam`
     : 'Sem cadastros nesta semana';
 
-  let html = `
+  let html = '';
+  if (E.fim >= new Date().toISOString().slice(0, 10)) {
+    html += `<div class="aviso parcial">⏳ <strong>Semana em andamento</strong> — números parciais até o próximo upload.</div>`;
+  }
+  html += `
     <div class="kpi-grid">
       <div class="kpi-card"><div class="lbl">Oportunidades</div><div class="val">${E.oportunidades}</div><div class="sub">Cadastros na semana</div>${deltaHtml(E.oportunidades, P?.oportunidades)}</div>
       <div class="kpi-card hi"><div class="lbl">Vendas na Semana</div><div class="val">${E.vendas_na_semana}</div><div class="sub">Contratos fechados na semana</div>${deltaHtml(E.vendas_na_semana, P?.vendas_na_semana)}</div>
@@ -696,7 +722,39 @@ function renderSemanal() {
     html += `<div class="aviso parcial">ℹ️ Semana sem análise registrada — os números foram atualizados retroativamente.</div>`;
   }
 
-  const temCons = (E.consultores || []).length > 0;
+  // 🎯 Metas da semana por consultor (política de comissionamento)
+  const meta = METAS[curUnit];
+  const consAtivos = (E.consultores || []).filter(c =>
+    (c.cadastros || 0) + (c.vendas_na_semana || 0) + (c.remat || 0) + (c.meta || 0) > 0);
+  if (meta && consAtivos.length && consAtivos.some(c => c.meta !== undefined)) {
+    const linhas = consAtivos.map(c => {
+      const v = c.meta || 0;
+      const f = faixaMeta(meta, v);
+      const pctReal = Math.round(v / meta.real * 100);
+      return `
+      <tr>
+        <td>${c.nome}</td>
+        <td>${c.vendas_na_semana || 0}</td>
+        <td>${c.remat || 0}</td>
+        <td style="font-weight:900;font-style:italic">${v}</td>
+        <td><span class="faixa ${f.cls}">${f.selo} ${f.nome}</span></td>
+        <td style="font-weight:900;color:${f.comissao > 0 ? 'var(--green)' : 'var(--red)'}">${f.comissao}%</td>
+        <td>${pctReal}%${f.falta ? ` <span style="color:var(--gray-m);font-size:.72rem">· ${f.falta}</span>` : ''}</td>
+      </tr>`;
+    }).join('');
+    html += `
+    <div class="chart-card" style="margin-top:20px">
+      <h3>🎯 Metas da Semana — Consultores</h3>
+      <table class="data-table">
+        <thead><tr><th>Consultor</th><th>Novas</th><th>Remat</th><th>P/ Meta</th><th>Faixa batida</th><th>Comissão</th><th>% da Meta Real</th></tr></thead>
+        <tbody>${linhas}</tbody>
+      </table>
+      <div class="meta-nota">Faixas desta unidade: 🏆 Super ${meta.super} · 🥈 Real ${meta.real} · 🥉 Básico ${meta.basico} (semana seg–dom, política de comissionamento).
+      "P/ Meta" = vendas novas + rematrículas elegíveis, sem duplicar a mesma pessoa e sem Transferência de Dias, Sem Fidelidade, planos legados e Recreio.</div>
+    </div>`;
+  }
+
+  const temCons = consAtivos.length > 0 && !meta;
   const temProf = (E.professores || []).length > 0;
   if (temCons || temProf) {
     html += `<div class="charts-row" style="margin-top:20px">`;
@@ -706,7 +764,7 @@ function renderSemanal() {
         <h3>Consultores na semana</h3>
         <table class="data-table">
           <thead><tr><th>Consultor</th><th>Cadastros</th><th>Vendas</th></tr></thead>
-          <tbody>${E.consultores.map((c,i) => `<tr class="${i===0&&c.vendas_na_semana>0?'leader':''}"><td>${c.nome}</td><td>${c.cadastros}</td><td>${c.vendas_na_semana}</td></tr>`).join('')}</tbody>
+          <tbody>${consAtivos.map((c,i) => `<tr class="${i===0&&c.vendas_na_semana>0?'leader':''}"><td>${c.nome}</td><td>${c.cadastros}</td><td>${c.vendas_na_semana}</td></tr>`).join('')}</tbody>
         </table>
       </div>`;
     }
