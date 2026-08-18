@@ -2033,9 +2033,9 @@
      "nome": "MARIA EDUARDA LOPES FREITAS",
      "cadastros": 8,
      "vendas_na_semana": 3,
-     "vendas_outro_mes": 0,
+     "vendas_outro_mes": 1,
      "remat": 10,
-     "meta": 11
+     "meta": 12
     },
     {
      "nome": "ISABELLY SANTOS MIGUITA",
@@ -2046,15 +2046,7 @@
      "meta": 7
     },
     {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 0,
-     "vendas_na_semana": 0,
-     "vendas_outro_mes": 1,
-     "remat": 0,
-     "meta": 1
-    },
-    {
-     "nome": "JESSICA KETULLIN CASTRO RANGEL",
+     "nome": "KAIQUE PEREIRA SIQUEIRA",
      "cadastros": 0,
      "vendas_na_semana": 0,
      "vendas_outro_mes": 1,
@@ -2232,10 +2224,10 @@
      "nome": "ABNER GUIMARAES SILVEIRA",
      "contrato": "Seja Positiva Anual Antecipado 12xR$96",
      "consultor_original": "JESSICA KETULLIN CASTRO RANGEL",
-     "consultor": "JESSICA KETULLIN CASTRO RANGEL",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
      "data": "2026-08-05",
      "conta_meta": true,
-     "override": false
+     "override": true
     },
     {
      "id": "remat:13763",
@@ -2309,10 +2301,10 @@
      "nome": "SIRLY BARROS BARBOSA",
      "contrato": "Evolução Positiva 12 meses - DCC",
      "consultor_original": "ADRIELLY SANTANA SABINO",
-     "consultor": "ADRIELLY SANTANA SABINO",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
      "data": "2026-08-09",
      "conta_meta": true,
-     "override": false
+     "override": true
     }
    ],
    "vendas_outro_mes": 2
