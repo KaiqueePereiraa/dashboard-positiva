@@ -258,8 +258,8 @@ select:focus{border-color:var(--green)}
   <div id="sem-av-andamento" class="aviso parcial" style="display:none">⏳ <strong>Semana em andamento</strong> — números parciais até o próximo upload.</div>
   <div class="kpi-grid">
     <div class="kpi-card" id="card-sem-oport"><div class="lbl">Oportunidades</div><div class="val" id="kv-sem-oport">—</div><div class="sub">Cadastros na semana</div><div id="dv-sem-oport"></div></div>
-    <div class="kpi-card hi"><div class="lbl">Vendas Novas</div><div class="val" id="kv-sem-vendas">—</div><div class="sub">Cadastro e fechamento na semana</div><div id="dv-sem-vendas"></div></div>
-    <div class="kpi-card hi" id="card-sem-pct"><div class="lbl">% Conversão</div><div class="val" id="kv-sem-pct">—</div><div class="sub">Oportunidades → Vendas</div></div>
+    <div class="kpi-card hi"><div class="lbl">Vendas Novas</div><div class="val" id="kv-sem-vendas">—</div><div class="sub">Cadastro na semana, já fechou</div><div id="dv-sem-vendas"></div></div>
+    <div class="kpi-card hi" id="card-sem-pct"><div class="lbl">Conversão da Safra</div><div class="val" id="kv-sem-pct">—</div><div class="sub" id="sub-sem-pct">Leads desta semana que já fecharam</div></div>
     <div class="kpi-card" id="card-sem-outros"><div class="lbl">Vendas Outro Mês</div><div class="val" id="kv-sem-outros">—</div><div class="sub">Cadastro anterior, fechou nesta semana</div><div id="dv-sem-outros"></div></div>
     <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val" id="kv-sem-remat">—</div><div class="sub">Renovações na semana</div><div id="dv-sem-remat"></div></div>
   </div>
@@ -752,6 +752,7 @@ function renderSemGeral(E, P) {
   $('kv-sem-vendas').textContent = E.vendas;
   $('dv-sem-vendas').innerHTML = deltaHtml(E.vendas, P?.vendas);
   $('kv-sem-pct').textContent = (E.conversao_pct !== null && E.conversao_pct !== undefined) ? E.conversao_pct + '%' : '—';
+  $('sub-sem-pct').textContent = E.oportunidades > 0 ? `${E.vendas}/${E.oportunidades} leads da semana já fecharam` : 'Sem cadastros nesta semana';
   $('kv-sem-outros').textContent = E.vendas_outro_mes || 0;
   $('card-sem-outros').className = (E.vendas_outro_mes > 0) ? 'kpi-card hi' : 'kpi-card';
   $('dv-sem-outros').innerHTML = deltaHtml(E.vendas_outro_mes || 0, P?.vendas_outro_mes);
