@@ -443,7 +443,8 @@
      "conversao_pct": 25.0
     }
    ],
-   "conversoes_futuras": 4
+   "conversoes_futuras": 4,
+   "tempo_medio_fechamento_dias": 4.7
   }
  },
  "Positiva Club": {
@@ -1038,7 +1039,8 @@
      "conversao_pct": 73.9
     }
    ],
-   "conversoes_futuras": 2
+   "conversoes_futuras": 2,
+   "tempo_medio_fechamento_dias": 2.7
   }
  }
 }

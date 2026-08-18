@@ -187,6 +187,7 @@ select:focus{border-color:var(--green)}
     <div class="kpi-card hi"><div class="lbl">Entrada Total</div><div class="val" id="kv-entrada">—</div><div class="sub">Vendas novas + Outros meses + Rematrículas</div></div>
     <div class="kpi-card neg"><div class="lbl">Saída</div><div class="val" id="kv-saida">—</div><div class="sub">Cancelamentos no período</div></div>
     <div class="kpi-card" id="card-saldo"><div class="lbl">Saldo</div><div class="val" id="kv-saldo">—</div><div class="sub">Entrada − Saída</div></div>
+    <div class="kpi-card" id="card-tmedio"><div class="lbl">Tempo Médio de Fechamento</div><div class="val" id="kv-tmedio">—</div><div class="sub">Cadastro → conversão, sobre as vendas do mês</div></div>
   </div>
   <div id="av-futuras" class="aviso cross" style="display:none">
     ℹ️ <strong id="av-futuras-n">0</strong> lead(s) cadastrado(s) neste mês ainda não fecharam — conversão registrada em mês futuro. Não entram nas vendas do período.
@@ -260,7 +261,6 @@ select:focus{border-color:var(--green)}
     <div class="kpi-card" id="card-sem-outros"><div class="lbl">Vendas Outro Mês</div><div class="val" id="kv-sem-outros">—</div><div class="sub">Cadastro anterior, fechou nesta semana</div><div id="dv-sem-outros"></div></div>
     <div class="kpi-card"><div class="lbl">Rematrículas</div><div class="val" id="kv-sem-remat">—</div><div class="sub">Renovações na semana</div><div id="dv-sem-remat"></div></div>
     <div class="kpi-card hi"><div class="lbl">Entrada Total</div><div class="val" id="kv-sem-entrada">—</div><div class="sub">Vendas novas + Outro mês + Rematrículas</div><div id="dv-sem-entrada"></div></div>
-    <div class="kpi-card" id="card-sem-tmedio"><div class="lbl">Tempo Médio de Fechamento</div><div class="val" id="kv-sem-tmedio">—</div><div class="sub">Da safra desta semana, cadastro → conversão</div></div>
   </div>
   <div class="charts-row">
     <div class="chart-card"><h3>Conversão Geral</h3><div class="chart-wrap"><canvas id="ct-sem-donut"></canvas></div></div>
@@ -468,6 +468,8 @@ function render() {
   $('kv-saida').textContent  = D.saida_total;
   $('kv-saldo').textContent  = (saldo >= 0 ? '+' : '') + saldo;
   $('card-saldo').className  = 'kpi-card ' + (saldo >= 0 ? 'hi' : 'neg');
+  $('kv-tmedio').textContent = (D.tempo_medio_fechamento_dias !== null && D.tempo_medio_fechamento_dias !== undefined)
+    ? D.tempo_medio_fechamento_dias.toLocaleString('pt-BR') + ' dias' : '—';
 
   destroyChart('ct-donut');
   if (D.tem_oportunidades && D.oportunidades > 0) {
@@ -759,8 +761,6 @@ function renderSemGeral(E, P) {
   const entradaAnterior = P ? (P.vendas + (P.vendas_outro_mes || 0) + P.rematriculas) : undefined;
   $('kv-sem-entrada').textContent = entradaTotal;
   $('dv-sem-entrada').innerHTML = deltaHtml(entradaTotal, entradaAnterior);
-  $('kv-sem-tmedio').textContent = (E.tempo_medio_fechamento_dias !== null && E.tempo_medio_fechamento_dias !== undefined)
-    ? E.tempo_medio_fechamento_dias.toLocaleString('pt-BR') + ' dias' : '—';
 
   destroyChart('ct-sem-donut');
   if (E.oportunidades > 0) {
@@ -850,7 +850,7 @@ function renderSemanal() {
     $('h-sub').textContent = 'Monitoramento semanal';
     $('sem-vazio-wrap').innerHTML = '<div class="sem-vazio">📅 Ainda não há dados semanais para esta unidade.<br>Suba os arquivos para começar o monitoramento.</div>';
     $('sem-av-andamento').style.display = 'none';
-    ['kv-sem-oport','kv-sem-vendas','kv-sem-pct','kv-sem-pct-real','kv-sem-outros','kv-sem-remat','kv-sem-entrada','kv-sem-tmedio'].forEach(id => $(id).textContent = '—');
+    ['kv-sem-oport','kv-sem-vendas','kv-sem-pct','kv-sem-pct-real','kv-sem-outros','kv-sem-remat','kv-sem-entrada'].forEach(id => $(id).textContent = '—');
     ['dv-sem-oport','dv-sem-vendas','dv-sem-outros','dv-sem-remat','dv-sem-entrada','sem-analise-wrap'].forEach(id => $(id).innerHTML = '');
     $('tb-sem-consultores').innerHTML = ''; $('tb-sem-professores').innerHTML = '';
     ['ct-sem-donut','ct-sem-exp','ct-sem-evolucao','ct-sem-cbar','ct-sem-pbar','ct-sem-cmp'].forEach(destroyChart);
