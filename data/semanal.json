@@ -47,7 +47,42 @@
        "atendidas": 1,
        "convertidas": 0
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20387",
+       "tipo": "nova",
+       "nome": "ANGELA MARIA DE FREITAS FROIS",
+       "contrato": "HIDRO ANTECIPADO 6 MESES- 2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-01",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20388",
+       "tipo": "nova",
+       "nome": "MICAEL DOS SANTOS BISPO",
+       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-01",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20389",
+       "tipo": "nova",
+       "nome": "NATHALIA HIBNER VIEIRA COSTA",
+       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-01",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -95,6 +130,41 @@
      "nome": "BRUNO MARTINS FAZIO",
      "atendidas": 1,
      "convertidas": 0
+    }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20387",
+     "tipo": "nova",
+     "nome": "ANGELA MARIA DE FREITAS FROIS",
+     "contrato": "HIDRO ANTECIPADO 6 MESES- 2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-01",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20388",
+     "tipo": "nova",
+     "nome": "MICAEL DOS SANTOS BISPO",
+     "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-01",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20389",
+     "tipo": "nova",
+     "nome": "NATHALIA HIBNER VIEIRA COSTA",
+     "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-01",
+     "conta_meta": true,
+     "override": false
     }
    ]
   },
@@ -151,7 +221,97 @@
        "atendidas": 2,
        "convertidas": 2
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20409",
+       "tipo": "nova",
+       "nome": "ALINE HERTEL RODRIGUES SIQUEIRA",
+       "contrato": "HIDRO ANTECIPADO 6 MESES- 3",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-07",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20398",
+       "tipo": "nova",
+       "nome": "ANTÔNIO MARTINS VITOR JÚNIOR",
+       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20400",
+       "tipo": "nova",
+       "nome": "BISMARK DE SOUZA NETO",
+       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20401",
+       "tipo": "nova",
+       "nome": "BRYAN WERNECH NETO",
+       "contrato": "BEBE II PM 6 meses- DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20424",
+       "tipo": "nova",
+       "nome": "CLAYTON HERMES RAMOS",
+       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20402",
+       "tipo": "nova",
+       "nome": "IRANI APARECIDA GIRASSOLO MANNO",
+       "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20416",
+       "tipo": "nova",
+       "nome": "JORGE RASS BRAUER D’ANGELO",
+       "contrato": "BEBE I P1 - 1 - RELAMPAGO",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-08",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20405",
+       "tipo": "nova",
+       "nome": "MATHEUS SCOPEL CEZÁRIO DE OLIVEIRA",
+       "contrato": "Natação Livre 2x - DCC",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-07",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -207,6 +367,96 @@
      "atendidas": 1,
      "convertidas": 1
     }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20398",
+     "tipo": "nova",
+     "nome": "ANTÔNIO MARTINS VITOR JÚNIOR",
+     "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20400",
+     "tipo": "nova",
+     "nome": "BISMARK DE SOUZA NETO",
+     "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20401",
+     "tipo": "nova",
+     "nome": "BRYAN WERNECH NETO",
+     "contrato": "BEBE II PM 6 meses- DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20402",
+     "tipo": "nova",
+     "nome": "IRANI APARECIDA GIRASSOLO MANNO",
+     "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20409",
+     "tipo": "nova",
+     "nome": "ALINE HERTEL RODRIGUES SIQUEIRA",
+     "contrato": "HIDRO ANTECIPADO 6 MESES- 3",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-07",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20405",
+     "tipo": "nova",
+     "nome": "MATHEUS SCOPEL CEZÁRIO DE OLIVEIRA",
+     "contrato": "Natação Livre 2x - DCC",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-07",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20416",
+     "tipo": "nova",
+     "nome": "JORGE RASS BRAUER D’ANGELO",
+     "contrato": "BEBE I P1 - 1 - RELAMPAGO",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-08",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20424",
+     "tipo": "nova",
+     "nome": "CLAYTON HERMES RAMOS",
+     "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-10",
+     "conta_meta": true,
+     "override": false
+    }
    ]
   },
   "2026-07-19": {
@@ -258,7 +508,20 @@
        "atendidas": 2,
        "convertidas": 0
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20437",
+       "tipo": "nova",
+       "nome": "AYLA DA SILVA DE SOUZA",
+       "contrato": "BEBE I PM 12 meses- DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -309,6 +572,19 @@
      "atendidas": 2,
      "convertidas": 0
     }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20437",
+     "tipo": "nova",
+     "nome": "AYLA DA SILVA DE SOUZA",
+     "contrato": "BEBE I PM 12 meses- DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
+    }
    ]
   },
   "2026-07-26": {
@@ -341,7 +617,20 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "remat:9721",
+       "tipo": "remat",
+       "nome": "ELOA ALMEIDA VIEIRA",
+       "contrato": "BEBE III PM 12 meses - DCC1",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-23",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -369,7 +658,20 @@
      "meta": 0
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "remat:9721",
+     "tipo": "remat",
+     "nome": "ELOA ALMEIDA VIEIRA",
+     "contrato": "BEBE III PM 12 meses - DCC1",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-23",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-08-02": {
    "inicio": "2026-07-27",
@@ -438,7 +740,229 @@
        "atendidas": 5,
        "convertidas": 5
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20490",
+       "tipo": "nova",
+       "nome": "ANA PAULA CARDOSO MORO LAIGNIER",
+       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-29",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20473",
+       "tipo": "nova",
+       "nome": "ARTHUR MAGRI DAUD",
+       "contrato": "BEBE II PM 6 meses - DCC1",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20507",
+       "tipo": "nova",
+       "nome": "CLÁUDIO LUIZ CALZAVARA",
+       "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20493",
+       "tipo": "nova",
+       "nome": "EDUARDO MARTINS FERNANDES",
+       "contrato": "BEBE III - 1 -  RELAMPAGO",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-29",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20506",
+       "tipo": "nova",
+       "nome": "HANRY VIEIRA FERNANDES",
+       "contrato": "BEBE 3 Anual 12x256 - DCC2",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20484",
+       "tipo": "nova",
+       "nome": "HEITOR GAEL OLIVEIRA DOS SANTOS",
+       "contrato": "BEBE 1 Anual Recorrente - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20505",
+       "tipo": "nova",
+       "nome": "JOÃO SAMUEL VIEIRA DE AZEVEDO",
+       "contrato": "BEBE 3 Anual 12x256 - DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20516",
+       "tipo": "nova",
+       "nome": "LÍVIA BERNABÉ FALQUETO",
+       "contrato": "BEBE II PM 6 meses - DCC1",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20481",
+       "tipo": "nova",
+       "nome": "LORENZO MOREIRA LOPES",
+       "contrato": "APERF. 1,2,3 Anual 12x256 - DCC2",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20518",
+       "tipo": "nova",
+       "nome": "LUZIANA DALMASCHIO GIRALDELI",
+       "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20468",
+       "tipo": "nova",
+       "nome": "MATHEUS INACIO FREDERICH",
+       "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20469",
+       "tipo": "nova",
+       "nome": "MATHEUS EDUARDO ESTRELA ALVES",
+       "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20510",
+       "tipo": "nova",
+       "nome": "MELISSA MAGACHO LOCATELI",
+       "contrato": "INICIAÇÃO - 1 RELAMPAGO",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20486",
+       "tipo": "nova",
+       "nome": "ROMULO AMARAL SANTOS",
+       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 1",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-29",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20476",
+       "tipo": "nova",
+       "nome": "SUZIENI PARRINI DANTAS",
+       "contrato": "HIDRO Anual 12x146 - DCC2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20480",
+       "tipo": "nova",
+       "nome": "VALENTINA MOREIRA LOPES",
+       "contrato": "INICIACAO Anual 12x256 - DCC2",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:18277",
+       "tipo": "remat",
+       "nome": "JOÃO CARLOS RANGEL NETO",
+       "contrato": "INICIAÇÃO - 1 RELAMPAGO",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-29",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:6772",
+       "tipo": "remat",
+       "nome": "MARIA LUIZA TRAPIA MOREIRA GARCIA",
+       "contrato": "INICIAÇÃO - 2 RELAMPAGO",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:7003",
+       "tipo": "remat",
+       "nome": "JOSE OTAVIO MARQUES PEREIRA",
+       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11470",
+       "tipo": "remat",
+       "nome": "ESTHER ZUPELLI DA SILVA",
+       "contrato": "INICIACAO Anual 12x256 - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -512,6 +1036,228 @@
      "convertidas": 0
     }
    ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20473",
+     "tipo": "nova",
+     "nome": "ARTHUR MAGRI DAUD",
+     "contrato": "BEBE II PM 6 meses - DCC1",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20468",
+     "tipo": "nova",
+     "nome": "MATHEUS INACIO FREDERICH",
+     "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20469",
+     "tipo": "nova",
+     "nome": "MATHEUS EDUARDO ESTRELA ALVES",
+     "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20476",
+     "tipo": "nova",
+     "nome": "SUZIENI PARRINI DANTAS",
+     "contrato": "HIDRO Anual 12x146 - DCC2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:11470",
+     "tipo": "remat",
+     "nome": "ESTHER ZUPELLI DA SILVA",
+     "contrato": "INICIACAO Anual 12x256 - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20484",
+     "tipo": "nova",
+     "nome": "HEITOR GAEL OLIVEIRA DOS SANTOS",
+     "contrato": "BEBE 1 Anual Recorrente - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20481",
+     "tipo": "nova",
+     "nome": "LORENZO MOREIRA LOPES",
+     "contrato": "APERF. 1,2,3 Anual 12x256 - DCC2",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20480",
+     "tipo": "nova",
+     "nome": "VALENTINA MOREIRA LOPES",
+     "contrato": "INICIACAO Anual 12x256 - DCC2",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:7003",
+     "tipo": "remat",
+     "nome": "JOSE OTAVIO MARQUES PEREIRA",
+     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20490",
+     "tipo": "nova",
+     "nome": "ANA PAULA CARDOSO MORO LAIGNIER",
+     "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-29",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20493",
+     "tipo": "nova",
+     "nome": "EDUARDO MARTINS FERNANDES",
+     "contrato": "BEBE III - 1 -  RELAMPAGO",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-29",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20486",
+     "tipo": "nova",
+     "nome": "ROMULO AMARAL SANTOS",
+     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 1",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-29",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:18277",
+     "tipo": "remat",
+     "nome": "JOÃO CARLOS RANGEL NETO",
+     "contrato": "INICIAÇÃO - 1 RELAMPAGO",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-29",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20507",
+     "tipo": "nova",
+     "nome": "CLÁUDIO LUIZ CALZAVARA",
+     "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20506",
+     "tipo": "nova",
+     "nome": "HANRY VIEIRA FERNANDES",
+     "contrato": "BEBE 3 Anual 12x256 - DCC2",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20505",
+     "tipo": "nova",
+     "nome": "JOÃO SAMUEL VIEIRA DE AZEVEDO",
+     "contrato": "BEBE 3 Anual 12x256 - DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20516",
+     "tipo": "nova",
+     "nome": "LÍVIA BERNABÉ FALQUETO",
+     "contrato": "BEBE II PM 6 meses - DCC1",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20518",
+     "tipo": "nova",
+     "nome": "LUZIANA DALMASCHIO GIRALDELI",
+     "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20510",
+     "tipo": "nova",
+     "nome": "MELISSA MAGACHO LOCATELI",
+     "contrato": "INICIAÇÃO - 1 RELAMPAGO",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:6772",
+     "tipo": "remat",
+     "nome": "MARIA LUIZA TRAPIA MOREIRA GARCIA",
+     "contrato": "INICIAÇÃO - 2 RELAMPAGO",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    }
+   ],
    "analise": "Julho terminou em ritmo forte: a semana 5 concentrou 22 cadastros (37% do mês), 16 vendas e 24 experimentais — o mês foi salvo no fim. O alerta está no meio do mês: as semanas 3 e 4 somaram só 16 cadastros, zero vendas fechadas na semana 4 e nenhuma experimental registrada. A safra da semana 4 (66,7%) mostra que os leads eram bons — eles só fecharam depois, na onda da semana 5.",
    "acoes": [
     "Distribuir as campanhas de captação ao longo do mês para evitar o vale das semanas 3-4",
@@ -543,7 +1289,53 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20527",
+       "tipo": "nova",
+       "nome": "BERNARDO CORDEIRO BEBER",
+       "contrato": "BEBE 1 Anual 12x226 - DCC1",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20553",
+       "tipo": "nova",
+       "nome": "JOICE FEACADOR SOUZA",
+       "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-08-07",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20524",
+       "tipo": "nova",
+       "nome": "SHELIANA NASCIMENTO LOPES",
+       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20537",
+       "tipo": "nova",
+       "nome": "THIAGO PEIXOTO NUNES RAMOS",
+       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -564,7 +1356,53 @@
      "meta": 1
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20527",
+     "tipo": "nova",
+     "nome": "BERNARDO CORDEIRO BEBER",
+     "contrato": "BEBE 1 Anual 12x226 - DCC1",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20524",
+     "tipo": "nova",
+     "nome": "SHELIANA NASCIMENTO LOPES",
+     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20537",
+     "tipo": "nova",
+     "nome": "THIAGO PEIXOTO NUNES RAMOS",
+     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20553",
+     "tipo": "nova",
+     "nome": "JOICE FEACADOR SOUZA",
+     "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-08-07",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   }
  },
  "Positiva Acqua República": {
@@ -597,7 +1435,31 @@
        "atendidas": 4,
        "convertidas": 3
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20393.0",
+       "tipo": "nova",
+       "nome": "ANALÚ KER DE ANDRADE FERRAZ",
+       "contrato": "BEBE I & II PM 6 meses- DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-02",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20396.0",
+       "tipo": "nova",
+       "nome": "VALLENTINA LOPES CASSIMIRO",
+       "contrato": "BEBE I & II PM 12 meses - DCC1",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-03",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -623,6 +1485,30 @@
      "nome": "RICHARDSON ALMEIDA SILVA",
      "atendidas": 4,
      "convertidas": 3
+    }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20393.0",
+     "tipo": "nova",
+     "nome": "ANALÚ KER DE ANDRADE FERRAZ",
+     "contrato": "BEBE I & II PM 6 meses- DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-02",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20396.0",
+     "tipo": "nova",
+     "nome": "VALLENTINA LOPES CASSIMIRO",
+     "contrato": "BEBE I & II PM 12 meses - DCC1",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-03",
+     "conta_meta": true,
+     "override": false
     }
    ]
   },
@@ -667,7 +1553,86 @@
        "atendidas": 11,
        "convertidas": 10
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20421.0",
+       "tipo": "nova",
+       "nome": "ALBERTO CALMON MARTINS FERNANDES",
+       "contrato": "BEBE I & II PM 6 meses- DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20408.0",
+       "tipo": "nova",
+       "nome": "ANALIVIA KER DE ANDRADE FERRAZ",
+       "contrato": "BEBE I & II PM 6 meses- DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-07",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20415.0",
+       "tipo": "nova",
+       "nome": "CECÍLIA DALVI DONATO",
+       "contrato": "BEBE I & II PM 6 meses- DCC2",
+       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "data": "2026-07-08",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20417.0",
+       "tipo": "nova",
+       "nome": "LAURA SOUZA ANDRADE SOUZA",
+       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+       "consultor_original": null,
+       "consultor": null,
+       "data": "2026-07-09",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20423.0",
+       "tipo": "nova",
+       "nome": "MATTEO DRAGO PIANCA",
+       "contrato": "BEBE I & II PM 12 meses- DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:18532",
+       "tipo": "remat",
+       "nome": "MARIA LUIZA TAVARES ALVES",
+       "contrato": "BEBE I & II PM 12 meses- DCC2",
+       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19875",
+       "tipo": "remat",
+       "nome": "LUAN ROSÁRIO DALAPICULA",
+       "contrato": "BEBE I & II PM 6 meses- DCC2",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -708,6 +1673,85 @@
      "atendidas": 11,
      "convertidas": 10
     }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "remat:18532",
+     "tipo": "remat",
+     "nome": "MARIA LUIZA TAVARES ALVES",
+     "contrato": "BEBE I & II PM 12 meses- DCC2",
+     "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19875",
+     "tipo": "remat",
+     "nome": "LUAN ROSÁRIO DALAPICULA",
+     "contrato": "BEBE I & II PM 6 meses- DCC2",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20408.0",
+     "tipo": "nova",
+     "nome": "ANALIVIA KER DE ANDRADE FERRAZ",
+     "contrato": "BEBE I & II PM 6 meses- DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-07",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20415.0",
+     "tipo": "nova",
+     "nome": "CECÍLIA DALVI DONATO",
+     "contrato": "BEBE I & II PM 6 meses- DCC2",
+     "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "data": "2026-07-08",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20417.0",
+     "tipo": "nova",
+     "nome": "LAURA SOUZA ANDRADE SOUZA",
+     "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
+     "consultor_original": null,
+     "consultor": null,
+     "data": "2026-07-09",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20421.0",
+     "tipo": "nova",
+     "nome": "ALBERTO CALMON MARTINS FERNANDES",
+     "contrato": "BEBE I & II PM 6 meses- DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-10",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20423.0",
+     "tipo": "nova",
+     "nome": "MATTEO DRAGO PIANCA",
+     "contrato": "BEBE I & II PM 12 meses- DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-10",
+     "conta_meta": true,
+     "override": false
+    }
    ]
   },
   "2026-07-19": {
@@ -739,7 +1783,20 @@
        "atendidas": 1,
        "convertidas": 1
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20433.0",
+       "tipo": "nova",
+       "nome": "MIGUEL CELANTE OLIVEIRA",
+       "contrato": "BEBE I & II PM 12 meses- DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -765,6 +1822,19 @@
      "nome": "RICHARDSON ALMEIDA SILVA",
      "atendidas": 1,
      "convertidas": 1
+    }
+   ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20433.0",
+     "tipo": "nova",
+     "nome": "MIGUEL CELANTE OLIVEIRA",
+     "contrato": "BEBE I & II PM 12 meses- DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
     }
    ]
   },
@@ -798,7 +1868,8 @@
        "meta": 0
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": []
     }
    },
    "atualizado_em": "2026-08-18",
@@ -826,7 +1897,8 @@
      "meta": 0
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": []
   },
   "2026-08-02": {
    "inicio": "2026-07-27",
@@ -869,7 +1941,31 @@
        "atendidas": 7,
        "convertidas": 3
       }
-     }
+     },
+     "vendas_detalhe": [
+      {
+       "id": "venda:20485.0",
+       "tipo": "nova",
+       "nome": "JOÃO GAMA PAIER ARGOLO",
+       "contrato": "BEBE 1 e 2 Anual 12x256 - DCC2",
+       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:17554",
+       "tipo": "remat",
+       "nome": "LÍVIA PATRICIO MORONARI",
+       "contrato": "ADAPTAÇÃO PM 12 meses - DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -911,6 +2007,30 @@
      "convertidas": 3
     }
    ],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20485.0",
+     "tipo": "nova",
+     "nome": "JOÃO GAMA PAIER ARGOLO",
+     "contrato": "BEBE 1 e 2 Anual 12x256 - DCC2",
+     "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:17554",
+     "tipo": "remat",
+     "nome": "LÍVIA PATRICIO MORONARI",
+     "contrato": "ADAPTAÇÃO PM 12 meses - DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    }
+   ],
    "analise": "Mês de baixo volume e concentrado nas duas primeiras semanas (11 dos 25 cadastros, 7 das 9 vendas). A semana 3 não teve nenhum cadastro novo e a semana 5, apesar de 10 cadastros, converteu só 20% da safra até agora — 2 desses leads fecharam já em agosto, então o número deve subir. República depende de poucas fontes de lead; quando elas param, o funil zera.",
    "acoes": [
     "Diversificar origem de leads — investigar por que a semana 3 zerou (campanha pausada? sazonalidade?)",
@@ -942,7 +2062,31 @@
        "meta": 2
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20538.0",
+       "tipo": "nova",
+       "nome": "BERNARDO CASOTTI BARONE",
+       "contrato": "BEBE 3 Anual 12x256 - DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20535.0",
+       "tipo": "nova",
+       "nome": "DAVI DE ALENCAR TOREZANI",
+       "contrato": "BEBE 3 Anual 12x256 - DCC2",
+       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+       "data": "2026-08-04",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -963,7 +2107,31 @@
      "meta": 2
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20535.0",
+     "tipo": "nova",
+     "nome": "DAVI DE ALENCAR TOREZANI",
+     "contrato": "BEBE 3 Anual 12x256 - DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-08-04",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20538.0",
+     "tipo": "nova",
+     "nome": "BERNARDO CASOTTI BARONE",
+     "contrato": "BEBE 3 Anual 12x256 - DCC2",
+     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   }
  },
  "Positiva Club": {
@@ -991,7 +2159,31 @@
        "meta": 2
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "remat:14083",
+       "tipo": "remat",
+       "nome": "MONIQUE SIQUEIRA",
+       "contrato": "Evolução Positiva - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-01",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:8476",
+       "tipo": "remat",
+       "nome": "HERBERT HENRIQUE DE SOUZA",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-01",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1012,7 +2204,31 @@
      "meta": 2
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "remat:14083",
+     "tipo": "remat",
+     "nome": "MONIQUE SIQUEIRA",
+     "contrato": "Evolução Positiva - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-01",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:8476",
+     "tipo": "remat",
+     "nome": "HERBERT HENRIQUE DE SOUZA",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-01",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-07-12": {
    "inicio": "2026-07-06",
@@ -1050,7 +2266,64 @@
        "meta": 0
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20407",
+       "tipo": "nova",
+       "nome": "GERALDO THEODORO DE MORAIS",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-07",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20404",
+       "tipo": "nova",
+       "nome": "RAFAEL GOMES BARBOSA",
+       "contrato": "Evolução Positiva - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:8937",
+       "tipo": "remat",
+       "nome": "CLAUDIA BRITO DA CRUZ",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:15920",
+       "tipo": "remat",
+       "nome": "ITALO GABRIEL DE CARVALHO MENEZES",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:15744",
+       "tipo": "remat",
+       "nome": "PEDRO HENRIQUE NEVES LOOSE",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-07",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1085,7 +2358,64 @@
      "meta": 0
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20404",
+     "tipo": "nova",
+     "nome": "RAFAEL GOMES BARBOSA",
+     "contrato": "Evolução Positiva - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:8937",
+     "tipo": "remat",
+     "nome": "CLAUDIA BRITO DA CRUZ",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20407",
+     "tipo": "nova",
+     "nome": "GERALDO THEODORO DE MORAIS",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-07",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:15744",
+     "tipo": "remat",
+     "nome": "PEDRO HENRIQUE NEVES LOOSE",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-07",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:15920",
+     "tipo": "remat",
+     "nome": "ITALO GABRIEL DE CARVALHO MENEZES",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-10",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-07-19": {
    "inicio": "2026-07-13",
@@ -1135,7 +2465,295 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20444",
+       "tipo": "nova",
+       "nome": "DANIEL FELIPE RIVEIRA RUIZ",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20439",
+       "tipo": "nova",
+       "nome": "ESTER RODRIGUES TOSTES",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-15",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20446",
+       "tipo": "nova",
+       "nome": "IZABELA DOS SANTOS ALVES",
+       "contrato": "Transferência de Dias",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-17",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "venda:20440",
+       "tipo": "nova",
+       "nome": "LUAN BAPTISTA",
+       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-16",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20438",
+       "tipo": "nova",
+       "nome": "MAYNARA DO CARMO DOS REIS",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-15",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20445",
+       "tipo": "nova",
+       "nome": "SANTIAGO GIRALDO ECHEVARRIA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20443",
+       "tipo": "nova",
+       "nome": "TAMIRES DOS SANTOS OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARCOS ROBERTO PEREIRA MONTEIRO",
+       "consultor": "MARCOS ROBERTO PEREIRA MONTEIRO",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20442",
+       "tipo": "nova",
+       "nome": "VALÉRIA LOPES DE OLIVEIRA",
+       "contrato": "Domínio Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:18346",
+       "tipo": "remat",
+       "nome": "HELEN FREITAS",
+       "contrato": "Domínio Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-15",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19102",
+       "tipo": "remat",
+       "nome": "DAYANE ANDRADE DA SILVA",
+       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:16906",
+       "tipo": "remat",
+       "nome": "CRISIA SOARES SO NASCIMENTO",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-13",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:18420",
+       "tipo": "remat",
+       "nome": "JOSE AUGUSTO FRANÇA CARDOSO",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-13",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11361",
+       "tipo": "remat",
+       "nome": "SUELLEN GOMES",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:14916",
+       "tipo": "remat",
+       "nome": "BEATRIZ BERNARDINO BARCELOS",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-13",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:5209",
+       "tipo": "remat",
+       "nome": "Thiago Siqueira Rodrigues",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:14828",
+       "tipo": "remat",
+       "nome": "LILLIAN PEROVANO FONSECA RODRIGUES",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:196",
+       "tipo": "remat",
+       "nome": "POLYANA SILVERIO MASSARIOL",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-15",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:10524",
+       "tipo": "remat",
+       "nome": "CLAUDIO LUIS DE OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "Kimberlly Castro Rangel",
+       "consultor": "Kimberlly Castro Rangel",
+       "data": "2026-07-13",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:1697",
+       "tipo": "remat",
+       "nome": "PRISCILA CARDOSO SANTOS DA SILVA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-13",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:2858",
+       "tipo": "remat",
+       "nome": "ALINE ANDREATTA FERREIRA BARBOSA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:13045",
+       "tipo": "remat",
+       "nome": "SEBASTIAO SANTOS DE OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:17009",
+       "tipo": "remat",
+       "nome": "THALES SANTOS DE OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:1176",
+       "tipo": "remat",
+       "nome": "NEIDIVALDA BATISTA CARDOSO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-15",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:17001",
+       "tipo": "remat",
+       "nome": "ALINE RUBIM FREITAS",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:3083",
+       "tipo": "remat",
+       "nome": "DIEGO DA SILVA BARBOSA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:16906",
+       "tipo": "remat",
+       "nome": "CRISIA SOARES SO NASCIMENTO",
+       "contrato": "Sem Fidelidade",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-13",
+       "conta_meta": false,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1184,7 +2802,295 @@
      "meta": 1
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "remat:16906",
+     "tipo": "remat",
+     "nome": "CRISIA SOARES SO NASCIMENTO",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:18420",
+     "tipo": "remat",
+     "nome": "JOSE AUGUSTO FRANÇA CARDOSO",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:14916",
+     "tipo": "remat",
+     "nome": "BEATRIZ BERNARDINO BARCELOS",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:10524",
+     "tipo": "remat",
+     "nome": "CLAUDIO LUIS DE OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "Kimberlly Castro Rangel",
+     "consultor": "Kimberlly Castro Rangel",
+     "data": "2026-07-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:1697",
+     "tipo": "remat",
+     "nome": "PRISCILA CARDOSO SANTOS DA SILVA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:16906",
+     "tipo": "remat",
+     "nome": "CRISIA SOARES SO NASCIMENTO",
+     "contrato": "Sem Fidelidade",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-13",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:11361",
+     "tipo": "remat",
+     "nome": "SUELLEN GOMES",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:5209",
+     "tipo": "remat",
+     "nome": "Thiago Siqueira Rodrigues",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:14828",
+     "tipo": "remat",
+     "nome": "LILLIAN PEROVANO FONSECA RODRIGUES",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:17001",
+     "tipo": "remat",
+     "nome": "ALINE RUBIM FREITAS",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-14",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20439",
+     "tipo": "nova",
+     "nome": "ESTER RODRIGUES TOSTES",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-15",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20438",
+     "tipo": "nova",
+     "nome": "MAYNARA DO CARMO DOS REIS",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-15",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:18346",
+     "tipo": "remat",
+     "nome": "HELEN FREITAS",
+     "contrato": "Domínio Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-15",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:196",
+     "tipo": "remat",
+     "nome": "POLYANA SILVERIO MASSARIOL",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-15",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:1176",
+     "tipo": "remat",
+     "nome": "NEIDIVALDA BATISTA CARDOSO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-15",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20440",
+     "tipo": "nova",
+     "nome": "LUAN BAPTISTA",
+     "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-16",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20444",
+     "tipo": "nova",
+     "nome": "DANIEL FELIPE RIVEIRA RUIZ",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20446",
+     "tipo": "nova",
+     "nome": "IZABELA DOS SANTOS ALVES",
+     "contrato": "Transferência de Dias",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-17",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "venda:20445",
+     "tipo": "nova",
+     "nome": "SANTIAGO GIRALDO ECHEVARRIA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20443",
+     "tipo": "nova",
+     "nome": "TAMIRES DOS SANTOS OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARCOS ROBERTO PEREIRA MONTEIRO",
+     "consultor": "MARCOS ROBERTO PEREIRA MONTEIRO",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20442",
+     "tipo": "nova",
+     "nome": "VALÉRIA LOPES DE OLIVEIRA",
+     "contrato": "Domínio Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19102",
+     "tipo": "remat",
+     "nome": "DAYANE ANDRADE DA SILVA",
+     "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:2858",
+     "tipo": "remat",
+     "nome": "ALINE ANDREATTA FERREIRA BARBOSA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:13045",
+     "tipo": "remat",
+     "nome": "SEBASTIAO SANTOS DE OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:17009",
+     "tipo": "remat",
+     "nome": "THALES SANTOS DE OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:3083",
+     "tipo": "remat",
+     "nome": "DIEGO DA SILVA BARBOSA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-17",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-07-26": {
    "inicio": "2026-07-20",
@@ -1252,7 +3158,284 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20451",
+       "tipo": "nova",
+       "nome": "AUGUSTO LEITAO",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20460",
+       "tipo": "nova",
+       "nome": "CLEIDINE LINHARES RODRIGUES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20458",
+       "tipo": "nova",
+       "nome": "EMERSON DE LOURDES DE SANTANA",
+       "contrato": "Evolução Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20455",
+       "tipo": "nova",
+       "nome": "GLEUZA DE SÁ NASCIMENTO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20457",
+       "tipo": "nova",
+       "nome": "LEONARDO OLIVEIRA WILDEMBERG",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20456",
+       "tipo": "nova",
+       "nome": "RICARDO CARVALHO NEVES",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20452",
+       "tipo": "nova",
+       "nome": "ROSINILDO PIMENTA DOS SANTOS",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20466",
+       "tipo": "nova",
+       "nome": "SHELIANA NASCIMENTO LOPES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-07-26",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:423",
+       "tipo": "remat",
+       "nome": "WALACE JUNKER OLIVEIRA",
+       "contrato": "Aniversario Antecipado 12xR$76",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-23",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19784",
+       "tipo": "remat",
+       "nome": "LIVIA FRAGA NARCISO",
+       "contrato": "Recreio Kids",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-20",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "remat:17186",
+       "tipo": "remat",
+       "nome": "MARIA DA PENHA SILVA",
+       "contrato": "Seja Positiva - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:10049",
+       "tipo": "remat",
+       "nome": "RONIELE SOUZA DOS SANTOS",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-23",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11355",
+       "tipo": "remat",
+       "nome": "MARIA EDUARDA BORGES",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19228",
+       "tipo": "remat",
+       "nome": "SOLINEA TOMASI",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:15961",
+       "tipo": "remat",
+       "nome": "SHEILA MAIA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11040",
+       "tipo": "remat",
+       "nome": "LEIDYANE DE OLIVEIRA LENZI",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:4045",
+       "tipo": "remat",
+       "nome": "NATHÁLIA JUSTINO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-23",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11668",
+       "tipo": "remat",
+       "nome": "GISLENE PEREIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:10889",
+       "tipo": "remat",
+       "nome": "WILDSON NUNES VALVERDE",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "DIEGO NETTO DE OLIVEIRA",
+       "consultor": "DIEGO NETTO DE OLIVEIRA",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:14351",
+       "tipo": "remat",
+       "nome": "GILCIMARA PINTO RANGEL",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19783",
+       "tipo": "remat",
+       "nome": "MARIANE CONRADO FRAGA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19781",
+       "tipo": "remat",
+       "nome": "JHONISSON DE OLIVEIRA NARCISO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:4050",
+       "tipo": "remat",
+       "nome": "SOCRATES DA SILVA PINTO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "JESSICA KETULLIN CASTRO RANGEL",
+       "consultor": "JESSICA KETULLIN CASTRO RANGEL",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:9624",
+       "tipo": "remat",
+       "nome": "CESAR AUGUSTO RODRIGUES REZENDE",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-20",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:17832",
+       "tipo": "remat",
+       "nome": "ROBERTA WILDEMBERG",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-21",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1322,7 +3505,284 @@
      "meta": 0
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20451",
+     "tipo": "nova",
+     "nome": "AUGUSTO LEITAO",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20452",
+     "tipo": "nova",
+     "nome": "ROSINILDO PIMENTA DOS SANTOS",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19784",
+     "tipo": "remat",
+     "nome": "LIVIA FRAGA NARCISO",
+     "contrato": "Recreio Kids",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-20",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:11668",
+     "tipo": "remat",
+     "nome": "GISLENE PEREIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19783",
+     "tipo": "remat",
+     "nome": "MARIANE CONRADO FRAGA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19781",
+     "tipo": "remat",
+     "nome": "JHONISSON DE OLIVEIRA NARCISO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:4050",
+     "tipo": "remat",
+     "nome": "SOCRATES DA SILVA PINTO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "JESSICA KETULLIN CASTRO RANGEL",
+     "consultor": "JESSICA KETULLIN CASTRO RANGEL",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:9624",
+     "tipo": "remat",
+     "nome": "CESAR AUGUSTO RODRIGUES REZENDE",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-20",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20460",
+     "tipo": "nova",
+     "nome": "CLEIDINE LINHARES RODRIGUES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20458",
+     "tipo": "nova",
+     "nome": "EMERSON DE LOURDES DE SANTANA",
+     "contrato": "Evolução Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20455",
+     "tipo": "nova",
+     "nome": "GLEUZA DE SÁ NASCIMENTO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20457",
+     "tipo": "nova",
+     "nome": "LEONARDO OLIVEIRA WILDEMBERG",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20456",
+     "tipo": "nova",
+     "nome": "RICARDO CARVALHO NEVES",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:17186",
+     "tipo": "remat",
+     "nome": "MARIA DA PENHA SILVA",
+     "contrato": "Seja Positiva - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:11355",
+     "tipo": "remat",
+     "nome": "MARIA EDUARDA BORGES",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19228",
+     "tipo": "remat",
+     "nome": "SOLINEA TOMASI",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:15961",
+     "tipo": "remat",
+     "nome": "SHEILA MAIA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:11040",
+     "tipo": "remat",
+     "nome": "LEIDYANE DE OLIVEIRA LENZI",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:10889",
+     "tipo": "remat",
+     "nome": "WILDSON NUNES VALVERDE",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "DIEGO NETTO DE OLIVEIRA",
+     "consultor": "DIEGO NETTO DE OLIVEIRA",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:14351",
+     "tipo": "remat",
+     "nome": "GILCIMARA PINTO RANGEL",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:17832",
+     "tipo": "remat",
+     "nome": "ROBERTA WILDEMBERG",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-21",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:423",
+     "tipo": "remat",
+     "nome": "WALACE JUNKER OLIVEIRA",
+     "contrato": "Aniversario Antecipado 12xR$76",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-23",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:10049",
+     "tipo": "remat",
+     "nome": "RONIELE SOUZA DOS SANTOS",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-23",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:4045",
+     "tipo": "remat",
+     "nome": "NATHÁLIA JUSTINO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-23",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20466",
+     "tipo": "nova",
+     "nome": "SHELIANA NASCIMENTO LOPES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-07-26",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-08-02": {
    "inicio": "2026-07-27",
@@ -1372,7 +3832,218 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20475",
+       "tipo": "nova",
+       "nome": "ANA BEATRIZ CRSTO SANTOS",
+       "contrato": "Domínio Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20498",
+       "tipo": "nova",
+       "nome": "DANIELLA MAZEGA PEREIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20514",
+       "tipo": "nova",
+       "nome": "GERRY ADRIANO OLIVEIRA DOS SANTOS",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20512",
+       "tipo": "nova",
+       "nome": "LIVIA RIBEIRO BREMER",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-31",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20500",
+       "tipo": "nova",
+       "nome": "NAUMIR DELESPORTE",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20508",
+       "tipo": "nova",
+       "nome": "ROSILANE CHAGAS",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:20482",
+       "tipo": "nova",
+       "nome": "RYAN ALMEIDA DE SÁ ROCHA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19069",
+       "tipo": "remat",
+       "nome": "JOSIMARA DA SILVA",
+       "contrato": "Evolução Positiva Anual Antecipado 12xR$136",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19984",
+       "tipo": "remat",
+       "nome": "YASMIN CARVALHO REIS",
+       "contrato": "Recreio Kids",
+       "consultor_original": "LUANA APARECIDA FERNANDES",
+       "consultor": "LUANA APARECIDA FERNANDES",
+       "data": "2026-07-27",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "remat:13139",
+       "tipo": "remat",
+       "nome": "VANUSIA ALVES FERNANDES MARQUES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:4413",
+       "tipo": "remat",
+       "nome": "RAIANE MARQUES DA SILVA PAULINO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:13816",
+       "tipo": "remat",
+       "nome": "PAULO ROBLES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:9521",
+       "tipo": "remat",
+       "nome": "KELY CRISTINA GUIMARAES DEI SANTI",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:7406",
+       "tipo": "remat",
+       "nome": "MARIANNA XAVIER MACHADO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "Kimberlly Castro Rangel",
+       "consultor": "Kimberlly Castro Rangel",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:11473",
+       "tipo": "remat",
+       "nome": "REINALDO EUSTAQUIO DE LACERDA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+       "consultor": "KAIQUE PEREIRA SIQUEIRA",
+       "data": "2026-07-29",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:18522",
+       "tipo": "remat",
+       "nome": "MICHELE SANGALLI",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:14821",
+       "tipo": "remat",
+       "nome": "MARIANA DA SILVA DOS SANTOS",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-27",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:12216",
+       "tipo": "remat",
+       "nome": "LUCAS OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "Kimberlly Castro Rangel",
+       "consultor": "Kimberlly Castro Rangel",
+       "data": "2026-07-30",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:10946",
+       "tipo": "remat",
+       "nome": "LUCAS CUNHA LOPES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-07-28",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     },
     "8/2026": {
      "oportunidades": 2,
@@ -1390,7 +4061,8 @@
        "meta": 0
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": []
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1440,6 +4112,217 @@
     }
    ],
    "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:20475",
+     "tipo": "nova",
+     "nome": "ANA BEATRIZ CRSTO SANTOS",
+     "contrato": "Domínio Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19984",
+     "tipo": "remat",
+     "nome": "YASMIN CARVALHO REIS",
+     "contrato": "Recreio Kids",
+     "consultor_original": "LUANA APARECIDA FERNANDES",
+     "consultor": "LUANA APARECIDA FERNANDES",
+     "data": "2026-07-27",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:13139",
+     "tipo": "remat",
+     "nome": "VANUSIA ALVES FERNANDES MARQUES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:14821",
+     "tipo": "remat",
+     "nome": "MARIANA DA SILVA DOS SANTOS",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-27",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20482",
+     "tipo": "nova",
+     "nome": "RYAN ALMEIDA DE SÁ ROCHA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:4413",
+     "tipo": "remat",
+     "nome": "RAIANE MARQUES DA SILVA PAULINO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:9521",
+     "tipo": "remat",
+     "nome": "KELY CRISTINA GUIMARAES DEI SANTI",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:10946",
+     "tipo": "remat",
+     "nome": "LUCAS CUNHA LOPES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-28",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:11473",
+     "tipo": "remat",
+     "nome": "REINALDO EUSTAQUIO DE LACERDA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
+     "consultor": "KAIQUE PEREIRA SIQUEIRA",
+     "data": "2026-07-29",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20498",
+     "tipo": "nova",
+     "nome": "DANIELLA MAZEGA PEREIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20500",
+     "tipo": "nova",
+     "nome": "NAUMIR DELESPORTE",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20508",
+     "tipo": "nova",
+     "nome": "ROSILANE CHAGAS",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19069",
+     "tipo": "remat",
+     "nome": "JOSIMARA DA SILVA",
+     "contrato": "Evolução Positiva Anual Antecipado 12xR$136",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:13816",
+     "tipo": "remat",
+     "nome": "PAULO ROBLES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:7406",
+     "tipo": "remat",
+     "nome": "MARIANNA XAVIER MACHADO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "Kimberlly Castro Rangel",
+     "consultor": "Kimberlly Castro Rangel",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:18522",
+     "tipo": "remat",
+     "nome": "MICHELE SANGALLI",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:12216",
+     "tipo": "remat",
+     "nome": "LUCAS OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "Kimberlly Castro Rangel",
+     "consultor": "Kimberlly Castro Rangel",
+     "data": "2026-07-30",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20514",
+     "tipo": "nova",
+     "nome": "GERRY ADRIANO OLIVEIRA DOS SANTOS",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:20512",
+     "tipo": "nova",
+     "nome": "LIVIA RIBEIRO BREMER",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-07-31",
+     "conta_meta": true,
+     "override": false
+    }
+   ],
    "analise": "Club foi a unidade mais consistente de julho: vendas cresceram do início ao fim (0 → 2 → 8 → 8 → 7) e as rematrículas concentraram-se no meio do mês (35 das 52 nas semanas 3-4). O começo lento (4 cadastros e zero vendas na semana 1) sugere que o ciclo comercial do Club demora a engatar após a virada do mês. Sem dados de experimentais neste mês.",
    "acoes": [
     "Antecipar a régua de contato para a primeira semana do mês — o funil só engata na semana 3",
@@ -1471,7 +4354,20 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:20554",
+       "tipo": "nova",
+       "nome": "SIRLY BARROS BARBOSA",
+       "contrato": "Evolução Positiva 12 meses - DCC",
+       "consultor_original": "ADRIELLY SANTANA SABINO",
+       "consultor": "ADRIELLY SANTANA SABINO",
+       "data": "2026-08-09",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     },
     "8/2026": {
      "oportunidades": 13,
@@ -1501,7 +4397,229 @@
        "meta": 0
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:31231",
+       "tipo": "nova",
+       "nome": "ARIEL REZENDE CONCEIÇÃO DO NASCIMENTO",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31255",
+       "tipo": "nova",
+       "nome": "CLEOMAR RADAELI GUMIERO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31254",
+       "tipo": "nova",
+       "nome": "FABIANA LORETO CORREA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31263",
+       "tipo": "nova",
+       "nome": "GIOAVANA MAIA PROVEDEL",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31224",
+       "tipo": "nova",
+       "nome": "MARIA LUIZA MARQUES RODRIGUES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31265",
+       "tipo": "nova",
+       "nome": "REINARA DE ANDRADE REIS SOARES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31257",
+       "tipo": "nova",
+       "nome": "SANTIAGO CHACON GARCIA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:13763",
+       "tipo": "remat",
+       "nome": "HIZABELA CALIARI FABEM",
+       "contrato": "Domínio Positiva - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-05",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:13499",
+       "tipo": "remat",
+       "nome": "ANA PAULA ROOS DA SILVA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-04",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:16074",
+       "tipo": "remat",
+       "nome": "RYAN MARTINS XAVIER",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19648",
+       "tipo": "remat",
+       "nome": "RAYSSA VITORIA PINTO DO NASCIMENTO",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19950",
+       "tipo": "remat",
+       "nome": "FRANCIANE SANCHES MOREIRA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:5712",
+       "tipo": "remat",
+       "nome": "KEDMA LUIZA RIBEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:7961",
+       "tipo": "remat",
+       "nome": "MYLENA BASTOS ZUNTA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:9264",
+       "tipo": "remat",
+       "nome": "ANDRE NEITZEL THOM",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:12194",
+       "tipo": "remat",
+       "nome": "PAULO HENRIQUE NICOLE",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:12195",
+       "tipo": "remat",
+       "nome": "FLAVIA SOUZA BASTOS NICOLE",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:20210",
+       "tipo": "remat",
+       "nome": "CLEOMARA GONÇALVES",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-06",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:16074",
+       "tipo": "remat",
+       "nome": "RYAN MARTINS XAVIER",
+       "contrato": "Sem Fidelidade",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-03",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "remat:19950",
+       "tipo": "remat",
+       "nome": "FRANCIANE SANCHES MOREIRA",
+       "contrato": "Sem Fidelidade",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-06",
+       "conta_meta": false,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1543,7 +4661,240 @@
      "meta": 0
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:31231",
+     "tipo": "nova",
+     "nome": "ARIEL REZENDE CONCEIÇÃO DO NASCIMENTO",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31224",
+     "tipo": "nova",
+     "nome": "MARIA LUIZA MARQUES RODRIGUES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:16074",
+     "tipo": "remat",
+     "nome": "RYAN MARTINS XAVIER",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19648",
+     "tipo": "remat",
+     "nome": "RAYSSA VITORIA PINTO DO NASCIMENTO",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:5712",
+     "tipo": "remat",
+     "nome": "KEDMA LUIZA RIBEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:7961",
+     "tipo": "remat",
+     "nome": "MYLENA BASTOS ZUNTA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:9264",
+     "tipo": "remat",
+     "nome": "ANDRE NEITZEL THOM",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:12194",
+     "tipo": "remat",
+     "nome": "PAULO HENRIQUE NICOLE",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:12195",
+     "tipo": "remat",
+     "nome": "FLAVIA SOUZA BASTOS NICOLE",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:16074",
+     "tipo": "remat",
+     "nome": "RYAN MARTINS XAVIER",
+     "contrato": "Sem Fidelidade",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-03",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:13499",
+     "tipo": "remat",
+     "nome": "ANA PAULA ROOS DA SILVA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-04",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31255",
+     "tipo": "nova",
+     "nome": "CLEOMAR RADAELI GUMIERO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31254",
+     "tipo": "nova",
+     "nome": "FABIANA LORETO CORREA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31257",
+     "tipo": "nova",
+     "nome": "SANTIAGO CHACON GARCIA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:13763",
+     "tipo": "remat",
+     "nome": "HIZABELA CALIARI FABEM",
+     "contrato": "Domínio Positiva - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-05",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31263",
+     "tipo": "nova",
+     "nome": "GIOAVANA MAIA PROVEDEL",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31265",
+     "tipo": "nova",
+     "nome": "REINARA DE ANDRADE REIS SOARES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19950",
+     "tipo": "remat",
+     "nome": "FRANCIANE SANCHES MOREIRA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:20210",
+     "tipo": "remat",
+     "nome": "CLEOMARA GONÇALVES",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-06",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19950",
+     "tipo": "remat",
+     "nome": "FRANCIANE SANCHES MOREIRA",
+     "contrato": "Sem Fidelidade",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-06",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "venda:20554",
+     "tipo": "nova",
+     "nome": "SIRLY BARROS BARBOSA",
+     "contrato": "Evolução Positiva 12 meses - DCC",
+     "consultor_original": "ADRIELLY SANTANA SABINO",
+     "consultor": "ADRIELLY SANTANA SABINO",
+     "data": "2026-08-09",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   },
   "2026-08-16": {
    "inicio": "2026-08-10",
@@ -1581,7 +4932,163 @@
        "meta": 0
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "venda:31308",
+       "tipo": "nova",
+       "nome": "AILSA DA CUNHA PEREIRA",
+       "contrato": "Transferência de Dias",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-13",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "venda:31276",
+       "tipo": "nova",
+       "nome": "ALEXANDRO FERREIRA SILVA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31318",
+       "tipo": "nova",
+       "nome": "ALLANA SACHL DOS SANTOS SATIRO",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31317",
+       "tipo": "nova",
+       "nome": "AMANDA SACHL DOS SANTOS SILVA",
+       "contrato": "Evolução Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-14",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31296",
+       "tipo": "nova",
+       "nome": "ANGELINA JUCA MONTEIRO DE BARROS",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-11",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31297",
+       "tipo": "nova",
+       "nome": "GEOVANA COIMBRA CALAZANS",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-11",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31291",
+       "tipo": "nova",
+       "nome": "ISABELA DUTRA FONSECA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-11",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31279",
+       "tipo": "nova",
+       "nome": "JOSE ELIAS FURTADO SILVA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31278",
+       "tipo": "nova",
+       "nome": "LIDIANE GAMO SOARES SILVA",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31275",
+       "tipo": "nova",
+       "nome": "ROBERTA PEREIRA DE ARAUJO",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-10",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "venda:31298",
+       "tipo": "nova",
+       "nome": "SAMARA ROCHA CARVALHO",
+       "contrato": "POSITIVA GYM antigo",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-11",
+       "conta_meta": false,
+       "override": false
+      },
+      {
+       "id": "remat:561",
+       "tipo": "remat",
+       "nome": "LORHAN AMILTON MOREIRA BERGER",
+       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-11",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:339",
+       "tipo": "remat",
+       "nome": "LARA FONSECA FROEDE",
+       "contrato": "Seja Positiva 12 meses - DCC",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-11",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:2350",
+       "tipo": "remat",
+       "nome": "LUDMILLA OLIVEIRA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-13",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1617,6 +5124,162 @@
     }
    ],
    "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "venda:31276",
+     "tipo": "nova",
+     "nome": "ALEXANDRO FERREIRA SILVA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-10",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31279",
+     "tipo": "nova",
+     "nome": "JOSE ELIAS FURTADO SILVA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-10",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31278",
+     "tipo": "nova",
+     "nome": "LIDIANE GAMO SOARES SILVA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-10",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31275",
+     "tipo": "nova",
+     "nome": "ROBERTA PEREIRA DE ARAUJO",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-10",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31296",
+     "tipo": "nova",
+     "nome": "ANGELINA JUCA MONTEIRO DE BARROS",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-11",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31297",
+     "tipo": "nova",
+     "nome": "GEOVANA COIMBRA CALAZANS",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-11",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31291",
+     "tipo": "nova",
+     "nome": "ISABELA DUTRA FONSECA",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-11",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31298",
+     "tipo": "nova",
+     "nome": "SAMARA ROCHA CARVALHO",
+     "contrato": "POSITIVA GYM antigo",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-11",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:561",
+     "tipo": "remat",
+     "nome": "LORHAN AMILTON MOREIRA BERGER",
+     "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-11",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:339",
+     "tipo": "remat",
+     "nome": "LARA FONSECA FROEDE",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-11",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31308",
+     "tipo": "nova",
+     "nome": "AILSA DA CUNHA PEREIRA",
+     "contrato": "Transferência de Dias",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-13",
+     "conta_meta": false,
+     "override": false
+    },
+    {
+     "id": "remat:2350",
+     "tipo": "remat",
+     "nome": "LUDMILLA OLIVEIRA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-13",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31318",
+     "tipo": "nova",
+     "nome": "ALLANA SACHL DOS SANTOS SATIRO",
+     "contrato": "Seja Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-14",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "venda:31317",
+     "tipo": "nova",
+     "nome": "AMANDA SACHL DOS SANTOS SILVA",
+     "contrato": "Evolução Positiva 12 meses - DCC",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-14",
+     "conta_meta": true,
+     "override": false
+    }
+   ],
    "analise": "Semana forte em vendas novas (11, melhor semana do ano no Club), mas o placar de metas conta outra história: Maria Eduarda fechou 9 elegíveis e bateu a Meta Real em cima (100% — leva 70% da comissão; faltaram 3 para a Super), enquanto Isabelly caiu de 7 para 3 e ficou abaixo do Básico (0% da comissão). Atenção: na semana 1 Maria Eduarda fez 11 e ficou a UMA venda da Super Meta — duas semanas seguidas batendo na trave. As rematrículas despencaram de 13 para 3, o que derrubou a contagem de meta das duas.",
    "acoes": [
     "Maria Eduarda está a 1-3 vendas da Super Meta há duas semanas — revisar com ela os leads pendentes de fechamento na segunda-feira",
@@ -1655,7 +5318,31 @@
        "meta": 1
       }
      },
-     "professores": {}
+     "professores": {},
+     "vendas_detalhe": [
+      {
+       "id": "remat:14037",
+       "tipo": "remat",
+       "nome": "KELY CRISTINA MANARA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "ISABELLY SANTOS MIGUITA",
+       "consultor": "ISABELLY SANTOS MIGUITA",
+       "data": "2026-08-17",
+       "conta_meta": true,
+       "override": false
+      },
+      {
+       "id": "remat:19560",
+       "tipo": "remat",
+       "nome": "JULIA ARAUJO MAIA",
+       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+       "consultor": "MARIA EDUARDA LOPES FREITAS",
+       "data": "2026-08-17",
+       "conta_meta": true,
+       "override": false
+      }
+     ]
     }
    },
    "atualizado_em": "2026-08-18",
@@ -1683,7 +5370,31 @@
      "meta": 1
     }
    ],
-   "professores": []
+   "professores": [],
+   "vendas_detalhe": [
+    {
+     "id": "remat:14037",
+     "tipo": "remat",
+     "nome": "KELY CRISTINA MANARA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "ISABELLY SANTOS MIGUITA",
+     "consultor": "ISABELLY SANTOS MIGUITA",
+     "data": "2026-08-17",
+     "conta_meta": true,
+     "override": false
+    },
+    {
+     "id": "remat:19560",
+     "tipo": "remat",
+     "nome": "JULIA ARAUJO MAIA",
+     "contrato": "Seja Positiva Anual Antecipado 12xR$96",
+     "consultor_original": "MARIA EDUARDA LOPES FREITAS",
+     "consultor": "MARIA EDUARDA LOPES FREITAS",
+     "data": "2026-08-17",
+     "conta_meta": true,
+     "override": false
+    }
+   ]
   }
  }
 }

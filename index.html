@@ -651,6 +651,79 @@ function fmtData(iso) {
   return d + '/' + m;
 }
 
+// ── Edição de responsável (staged, só no navegador) ────────────────────────
+// O site é estático e público — não há como salvar direto no servidor.
+// A edição fica pendente aqui até você copiar o resumo e mandar no chat
+// para o Claude aplicar a correção permanentemente (data/overrides.json).
+let pendingEdits = {}; // chave `unidade|semana|vendaId` -> {unidade, semanaKey, vendaId, nomeCliente, tipo, original, novo, rotulo}
+
+function chaveEdit(unidade, semanaKey, vendaId) { return `${unidade}|${semanaKey}|${vendaId}`; }
+
+function escJs(s) { return String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
+
+function edicoesDaSemana(unidade, semanaKey) {
+  return Object.values(pendingEdits).filter(e => e.unidade === unidade && e.semanaKey === semanaKey);
+}
+
+function previewConsultores(E, edicoes) {
+  const mapa = {};
+  (E.consultores || []).forEach(c => { mapa[c.nome] = { ...c }; });
+  const garante = nome => mapa[nome] || (mapa[nome] = { nome, cadastros: 0, vendas_na_semana: 0, remat: 0, meta: 0 });
+  edicoes.forEach(ed => {
+    const v = (E.vendas_detalhe || []).find(x => x.id === ed.vendaId);
+    if (!v) return;
+    const campo = v.tipo === 'remat' ? 'remat' : 'vendas_na_semana';
+    const de = garante(v.consultor || 'Sem responsável');
+    const para = garante(ed.novo);
+    de[campo] = Math.max(0, (de[campo] || 0) - 1);
+    para[campo] = (para[campo] || 0) + 1;
+    if (v.conta_meta) {
+      de.meta = Math.max(0, (de.meta || 0) - 1);
+      para.meta = (para.meta || 0) + 1;
+    }
+  });
+  return Object.values(mapa).sort((a, b) => (b.meta - a.meta) || (b.vendas_na_semana - a.vendas_na_semana) || (b.cadastros - a.cadastros));
+}
+
+function editarVenda(vendaId, selectEl) {
+  const unidade = curUnit, semanaKey = curSem;
+  const E = SD[unidade][semanaKey];
+  const v = E.vendas_detalhe.find(x => x.id === vendaId);
+  let novo = selectEl.value;
+  if (novo === '__outro__') {
+    novo = prompt('Nome do novo responsável:', '');
+    if (!novo || !novo.trim()) { renderSemanal(); return; }
+    novo = novo.trim().toUpperCase();
+  }
+  const key = chaveEdit(unidade, semanaKey, vendaId);
+  if (novo === (v.consultor || '')) {
+    delete pendingEdits[key];
+  } else {
+    pendingEdits[key] = { unidade, semanaKey, vendaId, nomeCliente: v.nome, tipo: v.tipo,
+                           original: v.consultor, novo, rotulo: E.rotulo };
+  }
+  renderSemanal();
+}
+
+function copiarResumo(unidade, semanaKey) {
+  const linhas = edicoesDaSemana(unidade, semanaKey).map(e =>
+    `${e.unidade} — ${e.rotulo}: "${e.nomeCliente}" (${e.tipo === 'remat' ? 'rematrícula' : 'venda nova'}) — de ${e.original || 'sem responsável'} para ${e.novo}`);
+  const texto = 'Correções de responsável:\n' + linhas.join('\n');
+  const ok = () => alert('Resumo copiado! Cole aqui no chat com o Claude para aplicar a correção.');
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(texto).then(ok).catch(() => prompt('Copie o resumo abaixo:', texto));
+  } else {
+    prompt('Copie o resumo abaixo:', texto);
+  }
+}
+
+function desfazerEdicoes(unidade, semanaKey) {
+  Object.keys(pendingEdits).forEach(k => {
+    if (pendingEdits[k].unidade === unidade && pendingEdits[k].semanaKey === semanaKey) delete pendingEdits[k];
+  });
+  renderSemanal();
+}
+
 function deltaHtml(atual, anterior, invertido) {
   if (anterior === undefined || anterior === null) return '';
   const diff = Math.round((atual - anterior) * 10) / 10;
@@ -722,9 +795,25 @@ function renderSemanal() {
     html += `<div class="aviso parcial">ℹ️ Semana sem análise registrada — os números foram atualizados retroativamente.</div>`;
   }
 
+  // ✏️ Edições pendentes desta semana (staged localmente)
+  const edicoes = edicoesDaSemana(curUnit, curSem);
+  if (edicoes.length) {
+    html += `
+    <div class="analise-card" style="border-left-color:#F5C542">
+      <h3 style="color:#F5C542">✏️ ${edicoes.length} edição(ões) pendente(s) — ainda não publicadas</h3>
+      <ul class="acoes-list">${edicoes.map(e => `<li>${e.nomeCliente} (${e.tipo==='remat'?'rematrícula':'venda nova'}): <strong>${e.original||'sem responsável'}</strong> → <strong>${e.novo}</strong></li>`).join('')}</ul>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="copiarResumo('${escJs(curUnit)}','${curSem}')" style="background:var(--green);color:var(--navy);border:none;padding:8px 16px;border-radius:6px;font-weight:900;cursor:pointer;font-family:inherit">📋 Copiar resumo p/ mandar no chat</button>
+        <button onclick="desfazerEdicoes('${escJs(curUnit)}','${curSem}')" style="background:transparent;color:var(--gray-l);border:1px solid var(--gray-m);padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-family:inherit">↩️ Desfazer</button>
+      </div>
+      <div class="meta-nota">A tabela de metas abaixo já mostra o efeito dessas mudanças (prévia). Nada é salvo até você mandar o resumo no chat.</div>
+    </div>`;
+  }
+
   // 🎯 Metas da semana por consultor (política de comissionamento)
   const meta = METAS[curUnit];
-  const consAtivos = (E.consultores || []).filter(c =>
+  const consultoresView = edicoes.length ? previewConsultores(E, edicoes) : (E.consultores || []);
+  const consAtivos = consultoresView.filter(c =>
     (c.cadastros || 0) + (c.vendas_na_semana || 0) + (c.remat || 0) + (c.meta || 0) > 0);
   if (meta && consAtivos.length && consAtivos.some(c => c.meta !== undefined)) {
     const linhas = consAtivos.map(c => {
@@ -751,6 +840,40 @@ function renderSemanal() {
       </table>
       <div class="meta-nota">Faixas desta unidade: 🏆 Super ${meta.super} · 🥈 Real ${meta.real} · 🥉 Básico ${meta.basico} (semana seg–dom, política de comissionamento).
       "P/ Meta" = vendas novas + rematrículas elegíveis, sem duplicar a mesma pessoa e sem Transferência de Dias, Sem Fidelidade, planos legados e Recreio.</div>
+    </div>`;
+  }
+
+  // ✏️ Editar responsável das vendas da semana
+  if ((E.vendas_detalhe || []).length) {
+    const nomesConhecidos = Array.from(new Set((E.consultores || []).map(c => c.nome))).sort();
+    const linhasVendas = E.vendas_detalhe.map(v => {
+      const editado = pendingEdits[chaveEdit(curUnit, curSem, v.id)];
+      const atual = editado ? editado.novo : (v.consultor || '');
+      const opts = nomesConhecidos.map(n => `<option value="${n}"${n === atual ? ' selected' : ''}>${n}</option>`).join('');
+      const semResp = atual ? '' : `<option value="" selected>— sem responsável —</option>`;
+      const badge = editado ? ' <span class="faixa real" style="margin-left:6px">editado</span>' : '';
+      return `
+      <tr>
+        <td>${fmtData(v.data)}</td>
+        <td>${v.nome}${badge}</td>
+        <td>${v.tipo === 'remat' ? 'Rematrícula' : 'Nova'}</td>
+        <td style="font-size:.78rem;color:var(--gray-m)">${v.contrato || '—'}</td>
+        <td>${v.conta_meta ? '✅' : '—'}</td>
+        <td><select onchange="editarVenda('${escJs(v.id)}', this)" style="font-size:.78rem;padding:4px 8px;max-width:220px">${semResp}${opts}<option value="__outro__">Outro…</option></select></td>
+      </tr>`;
+    }).join('');
+    html += `
+    <div class="chart-card" style="margin-top:20px">
+      <details>
+        <summary style="cursor:pointer;font-size:.74rem;text-transform:uppercase;letter-spacing:1px;color:var(--gray-l);font-style:italic">✏️ Editar responsável das vendas da semana (${E.vendas_detalhe.length})</summary>
+        <div style="margin-top:14px;overflow-x:auto">
+          <table class="data-table">
+            <thead><tr><th>Data</th><th>Cliente</th><th>Tipo</th><th>Contrato</th><th>P/ Meta</th><th>Responsável</th></tr></thead>
+            <tbody>${linhasVendas}</tbody>
+          </table>
+        </div>
+        <div class="meta-nota">Editar aqui NÃO publica automaticamente — é só uma prévia. Copie o resumo (acima, quando houver edição) e mande no chat para o Claude aplicar a correção de vez.</div>
+      </details>
     </div>`;
   }
 
