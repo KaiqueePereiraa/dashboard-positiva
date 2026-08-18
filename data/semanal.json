@@ -11,6 +11,9 @@
    "vendas": 14,
    "vendas_outro_mes": 0,
    "conversao_pct": 63.6,
+   "vendas_na_semana": 11,
+   "conversao_na_semana_pct": 50.0,
+   "tempo_medio_fechamento_dias": 5.2,
    "rematriculas": 0,
    "consultores": [
     {
@@ -80,6 +83,9 @@
    "vendas": 1,
    "vendas_outro_mes": 0,
    "conversao_pct": 25.0,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": 0.0,
+   "tempo_medio_fechamento_dias": 18.0,
    "rematriculas": 0,
    "consultores": [
     {
@@ -131,6 +137,9 @@
    "vendas": 7,
    "vendas_outro_mes": 0,
    "conversao_pct": 58.3,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": 0.0,
+   "tempo_medio_fechamento_dias": 5.4,
    "rematriculas": 1,
    "consultores": [
     {
@@ -163,6 +172,9 @@
    "vendas": 6,
    "vendas_outro_mes": 0,
    "conversao_pct": 27.3,
+   "vendas_na_semana": 6,
+   "conversao_na_semana_pct": 27.3,
+   "tempo_medio_fechamento_dias": 0.3,
    "rematriculas": 4,
    "consultores": [
     {
@@ -251,6 +263,9 @@
    "vendas": 8,
    "vendas_outro_mes": 0,
    "conversao_pct": 72.7,
+   "vendas_na_semana": 7,
+   "conversao_na_semana_pct": 63.6,
+   "tempo_medio_fechamento_dias": 2.1,
    "rematriculas": 2,
    "consultores": [
     {
@@ -290,6 +305,9 @@
    "vendas": 0,
    "vendas_outro_mes": 0,
    "conversao_pct": null,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": null,
+   "tempo_medio_fechamento_dias": null,
    "rematriculas": 0,
    "consultores": [],
    "total_experimentais": 1,
@@ -316,6 +334,9 @@
    "vendas": 1,
    "vendas_outro_mes": 0,
    "conversao_pct": 25.0,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": 0.0,
+   "tempo_medio_fechamento_dias": 7.0,
    "rematriculas": 0,
    "consultores": [
     {
@@ -348,6 +369,9 @@
    "vendas": 0,
    "vendas_outro_mes": 0,
    "conversao_pct": 0.0,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": 0.0,
+   "tempo_medio_fechamento_dias": null,
    "rematriculas": 1,
    "consultores": [
     {
@@ -394,6 +418,9 @@
    "vendas": 2,
    "vendas_outro_mes": 0,
    "conversao_pct": 15.4,
+   "vendas_na_semana": 2,
+   "conversao_na_semana_pct": 15.4,
+   "tempo_medio_fechamento_dias": 1.0,
    "rematriculas": 5,
    "consultores": [
     {
@@ -432,6 +459,9 @@
    "vendas": 9,
    "vendas_outro_mes": 0,
    "conversao_pct": 64.3,
+   "vendas_na_semana": 8,
+   "conversao_na_semana_pct": 57.1,
+   "tempo_medio_fechamento_dias": 0.6,
    "rematriculas": 18,
    "consultores": [
     {
@@ -470,6 +500,9 @@
    "vendas": 8,
    "vendas_outro_mes": 0,
    "conversao_pct": 57.1,
+   "vendas_na_semana": 7,
+   "conversao_na_semana_pct": 50.0,
+   "tempo_medio_fechamento_dias": 0.9,
    "rematriculas": 17,
    "consultores": [
     {
@@ -520,6 +553,9 @@
    "vendas": 6,
    "vendas_outro_mes": 0,
    "conversao_pct": 50.0,
+   "vendas_na_semana": 6,
+   "conversao_na_semana_pct": 50.0,
+   "tempo_medio_fechamento_dias": 0.7,
    "rematriculas": 12,
    "consultores": [
     {
@@ -557,6 +593,9 @@
    "vendas": 7,
    "vendas_outro_mes": 2,
    "conversao_pct": 46.7,
+   "vendas_na_semana": 7,
+   "conversao_na_semana_pct": 46.7,
+   "tempo_medio_fechamento_dias": 0.0,
    "rematriculas": 13,
    "consultores": [
     {
@@ -595,6 +634,9 @@
    "vendas": 11,
    "vendas_outro_mes": 2,
    "conversao_pct": 57.9,
+   "vendas_na_semana": 11,
+   "conversao_na_semana_pct": 57.9,
+   "tempo_medio_fechamento_dias": 0.0,
    "rematriculas": 3,
    "consultores": [
     {
@@ -638,6 +680,9 @@
    "vendas": 0,
    "vendas_outro_mes": 1,
    "conversao_pct": 0.0,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": 0.0,
+   "tempo_medio_fechamento_dias": null,
    "rematriculas": 2,
    "consultores": [
     {
@@ -664,6 +709,9 @@
    "vendas": 0,
    "vendas_outro_mes": 0,
    "conversao_pct": null,
+   "vendas_na_semana": 0,
+   "conversao_na_semana_pct": null,
+   "tempo_medio_fechamento_dias": null,
    "rematriculas": 0,
    "consultores": [],
    "total_experimentais": 0,
