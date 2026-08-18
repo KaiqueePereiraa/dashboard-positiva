@@ -128,16 +128,16 @@
    "semana_do_mes": 3,
    "rotulo": "Semana 3 — Julho",
    "oportunidades": 12,
-   "vendas": 8,
+   "vendas": 7,
    "vendas_outro_mes": 0,
-   "conversao_pct": 66.7,
+   "conversao_pct": 58.3,
    "rematriculas": 1,
    "consultores": [
     {
      "nome": "ADRIELLY SANTANA SABINO",
      "cadastros": 4,
-     "vendas": 3,
-     "conversao_pct": 75.0
+     "vendas": 2,
+     "conversao_pct": 50.0
     },
     {
      "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
@@ -160,9 +160,9 @@
    "semana_do_mes": 4,
    "rotulo": "Semana 4 — Julho",
    "oportunidades": 22,
-   "vendas": 9,
+   "vendas": 6,
    "vendas_outro_mes": 0,
-   "conversao_pct": 40.9,
+   "conversao_pct": 27.3,
    "rematriculas": 4,
    "consultores": [
     {
@@ -232,10 +232,10 @@
     }
    ],
    "atualizado_em": "2026-08-18",
-   "analise": "Julho começou muito forte: a Semana 1 (1-12/07) trouxe 22 cadastros, dos quais 14 já fecharam (63,6% de conversão da safra). A Semana 2 esfriou bastante (4 cadastros, 1 venda). As semanas 3 e 4 mostram o efeito retroativo da safra: os 12 cadastros da semana 3 já converteram 66,7% (8 vendas) e os 22 da semana 4 já estão em 40,9% (9 vendas) — e esse número tende a subir ainda mais conforme leads mais recentes continuam fechando nas próximas semanas.",
+   "analise": "Julho começou muito forte: a Semana 1 (1-12/07) já trouxe 22 cadastros e 14 vendas dentro do mês (63,6% de conversão da safra). O meio do mês esfriou — Semana 2 com só 4 cadastros e 1 venda — mas a Semana 3 recuperou parte do ritmo (12 cadastros, 58,3%). A Semana 4 fechou o mês com o maior volume de cadastros (22) mas a menor conversão até o fim de julho (27,3%) — parte desses leads pode ter fechado só em agosto, e nesse caso entra como venda de outro mês no relatório de agosto, não aqui.",
    "acoes": [
     "Investigar o vazio da Semana 2 — foi sazonalidade ou campanha parada?",
-    "Acompanhar a safra da Semana 4 (22 leads, 40,9% até agora) — ainda deve subir nas próximas atualizações"
+    "Os cadastros da Semana 4 que não converteram em julho podem ainda fechar em agosto — acompanhar no relatório de agosto como 'vendas de outro mês'"
    ]
   }
  },
@@ -345,20 +345,20 @@
    "semana_do_mes": 4,
    "rotulo": "Semana 4 — Julho",
    "oportunidades": 10,
-   "vendas": 2,
+   "vendas": 0,
    "vendas_outro_mes": 0,
-   "conversao_pct": 20.0,
+   "conversao_pct": 0.0,
    "rematriculas": 1,
    "consultores": [
     {
-     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "cadastros": 5,
-     "vendas": 2,
-     "conversao_pct": 40.0
-    },
-    {
      "nome": "ADRIELLY SANTANA SABINO",
      "cadastros": 2,
+     "vendas": 0,
+     "conversao_pct": 0.0
+    },
+    {
+     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
+     "cadastros": 5,
      "vendas": 0,
      "conversao_pct": 0.0
     }
@@ -375,10 +375,10 @@
     }
    ],
    "atualizado_em": "2026-08-18",
-   "analise": "Mês concentrado na Semana 1 (11 dos 25 cadastros do mês, 8 vendas, conversão de safra de 72,7%). A Semana 2 não teve nenhum cadastro novo. A safra da Semana 4 já subiu para 20% (2 vendas de 10 leads) — leads dessa semana continuam fechando aos poucos.",
+   "analise": "Mês concentrado na Semana 1 (11 dos 25 cadastros do mês, 8 vendas, 72,7% de conversão). A Semana 2 não teve nenhum cadastro novo, e as semanas 3-4 tiveram baixo volume (4 e 10 cadastros) com conversão fraca dentro do próprio mês — só 1 venda fechada nas duas juntas até 31/07.",
    "acoes": [
     "Entender por que a Semana 2 zerou — unidade pequena, qualquer interrupção na captação já derruba o mês inteiro",
-    "Acompanhar a safra da Semana 4, que ainda está baixa (20%) mas tende a subir"
+    "Os 10 cadastros da Semana 4 sem conversão em julho podem aparecer como vendas de agosto — acompanhar no próximo relatório"
    ]
   }
  },
@@ -467,17 +467,11 @@
    "semana_do_mes": 3,
    "rotulo": "Semana 3 — Julho",
    "oportunidades": 14,
-   "vendas": 9,
+   "vendas": 8,
    "vendas_outro_mes": 0,
-   "conversao_pct": 64.3,
+   "conversao_pct": 57.1,
    "rematriculas": 17,
    "consultores": [
-    {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 2,
-     "vendas": 2,
-     "conversao_pct": 100.0
-    },
     {
      "nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
      "cadastros": 1,
@@ -489,6 +483,12 @@
      "cadastros": 8,
      "vendas": 5,
      "conversao_pct": 62.5
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 2,
+     "vendas": 1,
+     "conversao_pct": 50.0
     },
     {
      "nome": "ISABELLY SANTOS MIGUITA",
@@ -540,7 +540,7 @@
    "conversao_experimentais_pct": 0.0,
    "professores": [],
    "atualizado_em": "2026-08-18",
-   "analise": "Club teve a curva mais estável: começou devagar (Semana 1: 13 cadastros, 15,4% de conversão de safra) e acelerou nas semanas seguintes (64,3% nas semanas 2 e 3). As rematrículas ficaram concentradas no meio do mês — 18 na semana 2 e 17 na semana 3, contra só 5 na semana 1 e 12 na semana 4.",
+   "analise": "Club teve a curva mais estável: começou devagar (Semana 1: 13 cadastros, só 2 vendas, 15,4%) e acelerou nas semanas seguintes (64,3% e 57,1% de conversão). As rematrículas ficaram concentradas no meio do mês — 18 na semana 2 e 17 na semana 3, contra só 5 na semana 1 e 12 na semana 4.",
    "acoes": [
     "A Semana 1 é sistematicamente mais fraca — considerar antecipar contato no fim do mês anterior",
     "Manter o ritmo de rematrículas do meio do mês, que sustentou boa parte da entrada"
@@ -621,10 +621,10 @@
    "conversao_experimentais_pct": 0.0,
    "professores": [],
    "atualizado_em": "2026-08-18",
-   "analise": "Semana forte: 19 cadastros com 57,9% de conversão de safra (11 vendas, a melhor taxa do mês até agora), além de 2 vendas de outro mês (leads antigos que fecharam agora). As rematrículas caíram de 13 para 3 — vale entender se a esteira de renovação perdeu ritmo ou se foi só uma semana mais fraca naturalmente.",
+   "analise": "Semana forte: 19 cadastros e 11 vendas dentro do mês (57,9% de conversão, a melhor taxa até agora), além de 2 vendas de outro mês (leads cadastrados antes de agosto que fecharam agora). As rematrículas caíram de 13 para 3 — vale entender se a esteira de renovação perdeu ritmo ou se foi só uma semana mais fraca naturalmente.",
    "acoes": [
     "Investigar a queda de rematrículas (13 → 3) — a base do mês 13 não some, alguém pode ter deixado de trabalhar essa frente",
-    "Manter o ritmo de conversão da semana — foi a melhor safra do mês até aqui"
+    "Manter o ritmo de conversão da semana — foi a melhor taxa do mês até aqui"
    ]
   },
   "2026-08-23": {
