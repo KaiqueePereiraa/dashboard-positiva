@@ -1,120 +1,59 @@
 {
  "Positiva Acqua Laranjeiras": {
-  "2026-07-05": {
-   "inicio": "2026-06-29",
-   "fim": "2026-07-05",
+  "2026-07-12": {
+   "inicio": "2026-07-01",
+   "fim": "2026-07-12",
    "mes_ref": 7,
    "ano_ref": 2026,
    "semana_do_mes": 1,
    "rotulo": "Semana 1 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 13,
-     "vendas_na_semana": 3,
-     "safra_cadastros": 13,
-     "safra_convertidos": 8,
-     "rematriculas": 0,
-     "experimentais": 7,
-     "fechamentos_experimentais": 5,
-     "consultores": {
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 5,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 4,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {
-      "NATHALIA ALMEIDA LOIOLA": {
-       "atendidas": 3,
-       "convertidas": 3
-      },
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 2,
-       "convertidas": 1
-      },
-      "FELIPE LOPES TONINI": {
-       "atendidas": 1,
-       "convertidas": 1
-      },
-      "BRUNO MARTINS FAZIO": {
-       "atendidas": 1,
-       "convertidas": 0
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20387",
-       "tipo": "nova",
-       "nome": "ANGELA MARIA DE FREITAS FROIS",
-       "contrato": "HIDRO ANTECIPADO 6 MESES- 2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-01",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20388",
-       "tipo": "nova",
-       "nome": "MICAEL DOS SANTOS BISPO",
-       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-01",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20389",
-       "tipo": "nova",
-       "nome": "NATHALIA HIBNER VIEIRA COSTA",
-       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-01",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
-   "oportunidades": 13,
-   "vendas_na_semana": 3,
-   "safra_cadastros": 13,
-   "safra_convertidos": 8,
+   "oportunidades": 22,
+   "vendas_na_semana": 11,
+   "safra_cadastros": 22,
+   "safra_convertidos": 14,
    "rematriculas": 0,
-   "experimentais": 7,
-   "fechamentos_experimentais": 5,
-   "safra_conversao_pct": 61.5,
+   "experimentais": 16,
+   "fechamentos_experimentais": 13,
+   "safra_conversao_pct": 63.6,
    "consultores": [
     {
      "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
-     "cadastros": 5,
-     "vendas_na_semana": 1,
+     "cadastros": 10,
+     "vendas_na_semana": 7,
      "remat": 0,
-     "meta": 1
+     "meta": 7
     },
     {
      "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 4,
-     "vendas_na_semana": 1,
+     "cadastros": 6,
+     "vendas_na_semana": 3,
      "remat": 0,
-     "meta": 1
+     "meta": 3
+    },
+    {
+     "nome": "KAIQUE PEREIRA SIQUEIRA",
+     "cadastros": 1,
+     "vendas_na_semana": 0,
+     "remat": 0,
+     "meta": 0
     }
    ],
    "professores": [
     {
      "nome": "NATHALIA ALMEIDA LOIOLA",
-     "atendidas": 3,
-     "convertidas": 3
+     "atendidas": 5,
+     "convertidas": 5
+    },
+    {
+     "nome": "BRUNO MARTINS FAZIO",
+     "atendidas": 5,
+     "convertidas": 4
+    },
+    {
+     "nome": "FELIPE LOPES TONINI",
+     "atendidas": 2,
+     "convertidas": 2
     },
     {
      "nome": "RICHARDSON ALMEIDA SILVA",
@@ -122,14 +61,9 @@
      "convertidas": 1
     },
     {
-     "nome": "FELIPE LOPES TONINI",
-     "atendidas": 1,
+     "nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA",
+     "atendidas": 2,
      "convertidas": 1
-    },
-    {
-     "nome": "BRUNO MARTINS FAZIO",
-     "atendidas": 1,
-     "convertidas": 0
     }
    ],
    "vendas_detalhe": [
@@ -165,210 +99,7 @@
      "data": "2026-07-01",
      "conta_meta": true,
      "override": false
-    }
-   ]
-  },
-  "2026-07-12": {
-   "inicio": "2026-07-06",
-   "fim": "2026-07-12",
-   "mes_ref": 7,
-   "ano_ref": 2026,
-   "semana_do_mes": 2,
-   "rotulo": "Semana 2 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 9,
-     "vendas_na_semana": 8,
-     "safra_cadastros": 9,
-     "safra_convertidos": 6,
-     "rematriculas": 0,
-     "experimentais": 9,
-     "fechamentos_experimentais": 8,
-     "consultores": {
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 5,
-       "vendas_na_semana": 6,
-       "remat": 0,
-       "meta": 6
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 2,
-       "vendas_na_semana": 2,
-       "remat": 0,
-       "meta": 2
-      },
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {
-      "BRUNO MARTINS FAZIO": {
-       "atendidas": 4,
-       "convertidas": 4
-      },
-      "FELIPE LOPES TONINI": {
-       "atendidas": 1,
-       "convertidas": 1
-      },
-      "THIAGO CORDEIRO DE OLIVEIRA FERREIRA": {
-       "atendidas": 2,
-       "convertidas": 1
-      },
-      "NATHALIA ALMEIDA LOIOLA": {
-       "atendidas": 2,
-       "convertidas": 2
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20409",
-       "tipo": "nova",
-       "nome": "ALINE HERTEL RODRIGUES SIQUEIRA",
-       "contrato": "HIDRO ANTECIPADO 6 MESES- 3",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-07",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20398",
-       "tipo": "nova",
-       "nome": "ANTÔNIO MARTINS VITOR JÚNIOR",
-       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20400",
-       "tipo": "nova",
-       "nome": "BISMARK DE SOUZA NETO",
-       "contrato": "INICIAÇÃO ADULTO PM 12 meses - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20401",
-       "tipo": "nova",
-       "nome": "BRYAN WERNECH NETO",
-       "contrato": "BEBE II PM 6 meses- DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20424",
-       "tipo": "nova",
-       "nome": "CLAYTON HERMES RAMOS",
-       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20402",
-       "tipo": "nova",
-       "nome": "IRANI APARECIDA GIRASSOLO MANNO",
-       "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20416",
-       "tipo": "nova",
-       "nome": "JORGE RASS BRAUER D’ANGELO",
-       "contrato": "BEBE I P1 - 1 - RELAMPAGO",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-08",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20405",
-       "tipo": "nova",
-       "nome": "MATHEUS SCOPEL CEZÁRIO DE OLIVEIRA",
-       "contrato": "Natação Livre 2x - DCC",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-07",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
-   "atualizado_em": "2026-08-18",
-   "oportunidades": 9,
-   "vendas_na_semana": 8,
-   "safra_cadastros": 9,
-   "safra_convertidos": 6,
-   "rematriculas": 0,
-   "experimentais": 9,
-   "fechamentos_experimentais": 8,
-   "safra_conversao_pct": 66.7,
-   "consultores": [
-    {
-     "nome": "RAYNY VITORIA PACHECO DOS SANTOS",
-     "cadastros": 5,
-     "vendas_na_semana": 6,
-     "remat": 0,
-     "meta": 6
     },
-    {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 2,
-     "vendas_na_semana": 2,
-     "remat": 0,
-     "meta": 2
-    },
-    {
-     "nome": "KAIQUE PEREIRA SIQUEIRA",
-     "cadastros": 1,
-     "vendas_na_semana": 0,
-     "remat": 0,
-     "meta": 0
-    }
-   ],
-   "professores": [
-    {
-     "nome": "BRUNO MARTINS FAZIO",
-     "atendidas": 4,
-     "convertidas": 4
-    },
-    {
-     "nome": "NATHALIA ALMEIDA LOIOLA",
-     "atendidas": 2,
-     "convertidas": 2
-    },
-    {
-     "nome": "THIAGO CORDEIRO DE OLIVEIRA FERREIRA",
-     "atendidas": 2,
-     "convertidas": 1
-    },
-    {
-     "nome": "FELIPE LOPES TONINI",
-     "atendidas": 1,
-     "convertidas": 1
-    }
-   ],
-   "vendas_detalhe": [
     {
      "id": "venda:20398",
      "tipo": "nova",
@@ -464,66 +195,8 @@
    "fim": "2026-07-19",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 3,
-   "rotulo": "Semana 3 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 4,
-     "vendas_na_semana": 1,
-     "safra_cadastros": 4,
-     "safra_convertidos": 1,
-     "rematriculas": 0,
-     "experimentais": 6,
-     "fechamentos_experimentais": 2,
-     "consultores": {
-      "FELIPE NETTO DE OLIVEIRA": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 0,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {
-      "SHEILA FREIRE BATISTA PITOMBA": {
-       "atendidas": 3,
-       "convertidas": 1
-      },
-      "NATHALIA ALMEIDA LOIOLA": {
-       "atendidas": 1,
-       "convertidas": 1
-      },
-      "BRUNO MARTINS FAZIO": {
-       "atendidas": 2,
-       "convertidas": 0
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20437",
-       "tipo": "nova",
-       "nome": "AYLA DA SILVA DE SOUZA",
-       "contrato": "BEBE I PM 12 meses- DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 4,
    "vendas_na_semana": 1,
@@ -592,47 +265,8 @@
    "fim": "2026-07-26",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 4,
-   "rotulo": "Semana 4 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 12,
-     "vendas_na_semana": 0,
-     "safra_cadastros": 12,
-     "safra_convertidos": 8,
-     "rematriculas": 1,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 4,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 4,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "remat:9721",
-       "tipo": "remat",
-       "nome": "ELOA ALMEIDA VIEIRA",
-       "contrato": "BEBE III PM 12 meses - DCC1",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-23",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 12,
    "vendas_na_semana": 0,
@@ -673,298 +307,13 @@
     }
    ]
   },
-  "2026-08-02": {
+  "2026-07-31": {
    "inicio": "2026-07-27",
-   "fim": "2026-08-02",
+   "fim": "2026-07-31",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 5,
-   "rotulo": "Semana 5 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 22,
-     "vendas_na_semana": 16,
-     "safra_cadastros": 22,
-     "safra_convertidos": 9,
-     "rematriculas": 4,
-     "experimentais": 24,
-     "fechamentos_experimentais": 19,
-     "consultores": {
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 6,
-       "vendas_na_semana": 4,
-       "remat": 0,
-       "meta": 4
-      },
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 5,
-       "vendas_na_semana": 3,
-       "remat": 4,
-       "meta": 7
-      },
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 1,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 1,
-       "vendas_na_semana": 4,
-       "remat": 0,
-       "meta": 4
-      }
-     },
-     "professores": {
-      "BRUNO MARTINS FAZIO": {
-       "atendidas": 6,
-       "convertidas": 5
-      },
-      "NATHALIA ALMEIDA LOIOLA": {
-       "atendidas": 2,
-       "convertidas": 2
-      },
-      "THIAGO CORDEIRO DE OLIVEIRA FERREIRA": {
-       "atendidas": 2,
-       "convertidas": 0
-      },
-      "SHEILA FREIRE BATISTA PITOMBA": {
-       "atendidas": 3,
-       "convertidas": 2
-      },
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 6,
-       "convertidas": 5
-      },
-      "FELIPE LOPES TONINI": {
-       "atendidas": 5,
-       "convertidas": 5
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20490",
-       "tipo": "nova",
-       "nome": "ANA PAULA CARDOSO MORO LAIGNIER",
-       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-29",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20473",
-       "tipo": "nova",
-       "nome": "ARTHUR MAGRI DAUD",
-       "contrato": "BEBE II PM 6 meses - DCC1",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20507",
-       "tipo": "nova",
-       "nome": "CLÁUDIO LUIZ CALZAVARA",
-       "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20493",
-       "tipo": "nova",
-       "nome": "EDUARDO MARTINS FERNANDES",
-       "contrato": "BEBE III - 1 -  RELAMPAGO",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-29",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20506",
-       "tipo": "nova",
-       "nome": "HANRY VIEIRA FERNANDES",
-       "contrato": "BEBE 3 Anual 12x256 - DCC2",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20484",
-       "tipo": "nova",
-       "nome": "HEITOR GAEL OLIVEIRA DOS SANTOS",
-       "contrato": "BEBE 1 Anual Recorrente - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20505",
-       "tipo": "nova",
-       "nome": "JOÃO SAMUEL VIEIRA DE AZEVEDO",
-       "contrato": "BEBE 3 Anual 12x256 - DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20516",
-       "tipo": "nova",
-       "nome": "LÍVIA BERNABÉ FALQUETO",
-       "contrato": "BEBE II PM 6 meses - DCC1",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20481",
-       "tipo": "nova",
-       "nome": "LORENZO MOREIRA LOPES",
-       "contrato": "APERF. 1,2,3 Anual 12x256 - DCC2",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20518",
-       "tipo": "nova",
-       "nome": "LUZIANA DALMASCHIO GIRALDELI",
-       "contrato": "HIDROGINASTICA PM 6 meses - DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20468",
-       "tipo": "nova",
-       "nome": "MATHEUS INACIO FREDERICH",
-       "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20469",
-       "tipo": "nova",
-       "nome": "MATHEUS EDUARDO ESTRELA ALVES",
-       "contrato": "ADULTO INICIACAO Anual Recorrente - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20510",
-       "tipo": "nova",
-       "nome": "MELISSA MAGACHO LOCATELI",
-       "contrato": "INICIAÇÃO - 1 RELAMPAGO",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20486",
-       "tipo": "nova",
-       "nome": "ROMULO AMARAL SANTOS",
-       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 1",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-29",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20476",
-       "tipo": "nova",
-       "nome": "SUZIENI PARRINI DANTAS",
-       "contrato": "HIDRO Anual 12x146 - DCC2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20480",
-       "tipo": "nova",
-       "nome": "VALENTINA MOREIRA LOPES",
-       "contrato": "INICIACAO Anual 12x256 - DCC2",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:18277",
-       "tipo": "remat",
-       "nome": "JOÃO CARLOS RANGEL NETO",
-       "contrato": "INICIAÇÃO - 1 RELAMPAGO",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-29",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:6772",
-       "tipo": "remat",
-       "nome": "MARIA LUIZA TRAPIA MOREIRA GARCIA",
-       "contrato": "INICIAÇÃO - 2 RELAMPAGO",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:7003",
-       "tipo": "remat",
-       "nome": "JOSE OTAVIO MARQUES PEREIRA",
-       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11470",
-       "tipo": "remat",
-       "nome": "ESTHER ZUPELLI DA SILVA",
-       "contrato": "INICIACAO Anual 12x256 - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 22,
    "vendas_na_semana": 16,
@@ -1258,233 +607,59 @@
      "override": false
     }
    ],
-   "analise": "Julho terminou em ritmo forte: a semana 5 concentrou 22 cadastros (37% do mês), 16 vendas e 24 experimentais — o mês foi salvo no fim. O alerta está no meio do mês: as semanas 3 e 4 somaram só 16 cadastros, zero vendas fechadas na semana 4 e nenhuma experimental registrada. A safra da semana 4 (66,7%) mostra que os leads eram bons — eles só fecharam depois, na onda da semana 5.",
+   "analise": "Julho foi um mês de dois extremos. A Semana 1 (1-12/07, 12 dias) já veio forte: 22 cadastros e 11 vendas. Aí o meio do mês desabou — Semana 2 com só 4 cadastros e 1 venda, Semana 3 com 12 cadastros mas ZERO vendas fechadas (apesar da safra de 66,7%, mostrando que os leads eram bons, só não tinham fechado ainda). A Semana 4 (27-31/07) recuperou tudo: 22 cadastros, 16 vendas e 24 experimentais — praticamente metade das vendas do mês concentrada nos últimos 5 dias.",
    "acoes": [
-    "Distribuir as campanhas de captação ao longo do mês para evitar o vale das semanas 3-4",
-    "Garantir agendamento de experimentais toda semana — semana sem aula experimental é semana sem fechamento",
-    "Aproveitar que leads levam ~1-2 semanas para decidir: follow-up ativo no 7º dia após o cadastro"
-   ]
-  },
-  "2026-08-09": {
-   "inicio": "2026-08-03",
-   "fim": "2026-08-09",
-   "mes_ref": 8,
-   "ano_ref": 2026,
-   "semana_do_mes": 1,
-   "rotulo": "Semana 1 — Agosto",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 0,
-     "vendas_na_semana": 4,
-     "safra_cadastros": 0,
-     "safra_convertidos": 0,
-     "rematriculas": 0,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 0,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20527",
-       "tipo": "nova",
-       "nome": "BERNARDO CORDEIRO BEBER",
-       "contrato": "BEBE 1 Anual 12x226 - DCC1",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20553",
-       "tipo": "nova",
-       "nome": "JOICE FEACADOR SOUZA",
-       "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-08-07",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20524",
-       "tipo": "nova",
-       "nome": "SHELIANA NASCIMENTO LOPES",
-       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20537",
-       "tipo": "nova",
-       "nome": "THIAGO PEIXOTO NUNES RAMOS",
-       "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
-   "atualizado_em": "2026-08-18",
-   "oportunidades": 0,
-   "vendas_na_semana": 4,
-   "safra_cadastros": 0,
-   "safra_convertidos": 0,
-   "rematriculas": 0,
-   "experimentais": 0,
-   "fechamentos_experimentais": 0,
-   "safra_conversao_pct": null,
-   "consultores": [
-    {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 0,
-     "vendas_na_semana": 1,
-     "remat": 0,
-     "meta": 1
-    }
-   ],
-   "professores": [],
-   "vendas_detalhe": [
-    {
-     "id": "venda:20527",
-     "tipo": "nova",
-     "nome": "BERNARDO CORDEIRO BEBER",
-     "contrato": "BEBE 1 Anual 12x226 - DCC1",
-     "consultor_original": null,
-     "consultor": null,
-     "data": "2026-08-03",
-     "conta_meta": true,
-     "override": false
-    },
-    {
-     "id": "venda:20524",
-     "tipo": "nova",
-     "nome": "SHELIANA NASCIMENTO LOPES",
-     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
-     "consultor_original": "ADRIELLY SANTANA SABINO",
-     "consultor": "ADRIELLY SANTANA SABINO",
-     "data": "2026-08-03",
-     "conta_meta": true,
-     "override": false
-    },
-    {
-     "id": "venda:20537",
-     "tipo": "nova",
-     "nome": "THIAGO PEIXOTO NUNES RAMOS",
-     "contrato": "INICIAÇÃO ADULTO RELAMPAGO - 2",
-     "consultor_original": null,
-     "consultor": null,
-     "data": "2026-08-05",
-     "conta_meta": true,
-     "override": false
-    },
-    {
-     "id": "venda:20553",
-     "tipo": "nova",
-     "nome": "JOICE FEACADOR SOUZA",
-     "contrato": "ADULTO INICIACAO Anual 12x256 - DCC2",
-     "consultor_original": null,
-     "consultor": null,
-     "data": "2026-08-07",
-     "conta_meta": true,
-     "override": false
-    }
+    "Investigar o que causou o vazio das semanas 2-3 (meio de julho) — campanha parada? Sazonalidade?",
+    "A safra da semana 3 (66,7%) indica que os leads eram bons; os fechamentos só vieram depois — reforçar follow-up estruturado nos primeiros 10 dias após o cadastro",
+    "Distribuir agendamento de experimentais ao longo do mês; a semana 3 não teve nenhuma"
    ]
   }
  },
  "Positiva Acqua República": {
-  "2026-07-05": {
-   "inicio": "2026-06-29",
-   "fim": "2026-07-05",
+  "2026-07-12": {
+   "inicio": "2026-07-01",
+   "fim": "2026-07-12",
    "mes_ref": 7,
    "ano_ref": 2026,
    "semana_do_mes": 1,
    "rotulo": "Semana 1 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 4,
-     "vendas_na_semana": 2,
-     "safra_cadastros": 4,
-     "safra_convertidos": 3,
-     "rematriculas": 0,
-     "experimentais": 4,
-     "fechamentos_experimentais": 3,
-     "consultores": {
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 3,
-       "vendas_na_semana": 2,
-       "remat": 0,
-       "meta": 2
-      }
-     },
-     "professores": {
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 4,
-       "convertidas": 3
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20393.0",
-       "tipo": "nova",
-       "nome": "ANALÚ KER DE ANDRADE FERRAZ",
-       "contrato": "BEBE I & II PM 6 meses- DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-02",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20396.0",
-       "tipo": "nova",
-       "nome": "VALLENTINA LOPES CASSIMIRO",
-       "contrato": "BEBE I & II PM 12 meses - DCC1",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-03",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
-   "oportunidades": 4,
-   "vendas_na_semana": 2,
-   "safra_cadastros": 4,
-   "safra_convertidos": 3,
-   "rematriculas": 0,
-   "experimentais": 4,
-   "fechamentos_experimentais": 3,
-   "safra_conversao_pct": 75.0,
+   "oportunidades": 11,
+   "vendas_na_semana": 7,
+   "safra_cadastros": 11,
+   "safra_convertidos": 8,
+   "rematriculas": 2,
+   "experimentais": 15,
+   "fechamentos_experimentais": 13,
+   "safra_conversao_pct": 72.7,
    "consultores": [
     {
      "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "cadastros": 3,
-     "vendas_na_semana": 2,
+     "cadastros": 8,
+     "vendas_na_semana": 5,
      "remat": 0,
+     "meta": 5
+    },
+    {
+     "nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
+     "cadastros": 1,
+     "vendas_na_semana": 1,
+     "remat": 1,
      "meta": 2
+    },
+    {
+     "nome": "ADRIELLY SANTANA SABINO",
+     "cadastros": 0,
+     "vendas_na_semana": 0,
+     "remat": 1,
+     "meta": 1
     }
    ],
    "professores": [
     {
      "nome": "RICHARDSON ALMEIDA SILVA",
-     "atendidas": 4,
-     "convertidas": 3
+     "atendidas": 15,
+     "convertidas": 13
     }
    ],
    "vendas_detalhe": [
@@ -1509,172 +684,7 @@
      "data": "2026-07-03",
      "conta_meta": true,
      "override": false
-    }
-   ]
-  },
-  "2026-07-12": {
-   "inicio": "2026-07-06",
-   "fim": "2026-07-12",
-   "mes_ref": 7,
-   "ano_ref": 2026,
-   "semana_do_mes": 2,
-   "rotulo": "Semana 2 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 7,
-     "vendas_na_semana": 5,
-     "safra_cadastros": 7,
-     "safra_convertidos": 5,
-     "rematriculas": 2,
-     "experimentais": 11,
-     "fechamentos_experimentais": 10,
-     "consultores": {
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 5,
-       "vendas_na_semana": 3,
-       "remat": 0,
-       "meta": 3
-      },
-      "LIVIA OLIVEIRA RODRIGUES DOS SANTOS": {
-       "cadastros": 1,
-       "vendas_na_semana": 1,
-       "remat": 1,
-       "meta": 2
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 11,
-       "convertidas": 10
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20421.0",
-       "tipo": "nova",
-       "nome": "ALBERTO CALMON MARTINS FERNANDES",
-       "contrato": "BEBE I & II PM 6 meses- DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20408.0",
-       "tipo": "nova",
-       "nome": "ANALIVIA KER DE ANDRADE FERRAZ",
-       "contrato": "BEBE I & II PM 6 meses- DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-07",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20415.0",
-       "tipo": "nova",
-       "nome": "CECÍLIA DALVI DONATO",
-       "contrato": "BEBE I & II PM 6 meses- DCC2",
-       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "data": "2026-07-08",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20417.0",
-       "tipo": "nova",
-       "nome": "LAURA SOUZA ANDRADE SOUZA",
-       "contrato": "INICIAÇÃO ADULTO PM 6 meses - DCC2",
-       "consultor_original": null,
-       "consultor": null,
-       "data": "2026-07-09",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20423.0",
-       "tipo": "nova",
-       "nome": "MATTEO DRAGO PIANCA",
-       "contrato": "BEBE I & II PM 12 meses- DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:18532",
-       "tipo": "remat",
-       "nome": "MARIA LUIZA TAVARES ALVES",
-       "contrato": "BEBE I & II PM 12 meses- DCC2",
-       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19875",
-       "tipo": "remat",
-       "nome": "LUAN ROSÁRIO DALAPICULA",
-       "contrato": "BEBE I & II PM 6 meses- DCC2",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
-   "atualizado_em": "2026-08-18",
-   "oportunidades": 7,
-   "vendas_na_semana": 5,
-   "safra_cadastros": 7,
-   "safra_convertidos": 5,
-   "rematriculas": 2,
-   "experimentais": 11,
-   "fechamentos_experimentais": 10,
-   "safra_conversao_pct": 71.4,
-   "consultores": [
-    {
-     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "cadastros": 5,
-     "vendas_na_semana": 3,
-     "remat": 0,
-     "meta": 3
     },
-    {
-     "nome": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-     "cadastros": 1,
-     "vendas_na_semana": 1,
-     "remat": 1,
-     "meta": 2
-    },
-    {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 0,
-     "vendas_na_semana": 0,
-     "remat": 1,
-     "meta": 1
-    }
-   ],
-   "professores": [
-    {
-     "nome": "RICHARDSON ALMEIDA SILVA",
-     "atendidas": 11,
-     "convertidas": 10
-    }
-   ],
-   "vendas_detalhe": [
     {
      "id": "remat:18532",
      "tipo": "remat",
@@ -1759,46 +769,8 @@
    "fim": "2026-07-19",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 3,
-   "rotulo": "Semana 3 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 0,
-     "vendas_na_semana": 1,
-     "safra_cadastros": 0,
-     "safra_convertidos": 0,
-     "rematriculas": 0,
-     "experimentais": 1,
-     "fechamentos_experimentais": 1,
-     "consultores": {
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 0,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 1,
-       "convertidas": 1
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20433.0",
-       "tipo": "nova",
-       "nome": "MIGUEL CELANTE OLIVEIRA",
-       "contrato": "BEBE I & II PM 12 meses- DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 0,
    "vendas_na_semana": 1,
@@ -1843,35 +815,8 @@
    "fim": "2026-07-26",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 4,
-   "rotulo": "Semana 4 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 4,
-     "vendas_na_semana": 0,
-     "safra_cadastros": 4,
-     "safra_convertidos": 1,
-     "rematriculas": 0,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 3,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": []
-    }
-   },
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 4,
    "vendas_na_semana": 0,
@@ -1900,74 +845,13 @@
    "professores": [],
    "vendas_detalhe": []
   },
-  "2026-08-02": {
+  "2026-07-31": {
    "inicio": "2026-07-27",
-   "fim": "2026-08-02",
+   "fim": "2026-07-31",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 5,
-   "rotulo": "Semana 5 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 10,
-     "vendas_na_semana": 1,
-     "safra_cadastros": 10,
-     "safra_convertidos": 2,
-     "rematriculas": 1,
-     "experimentais": 7,
-     "fechamentos_experimentais": 3,
-     "consultores": {
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 2,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 5,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      },
-      "RAYNY VITORIA PACHECO DOS SANTOS": {
-       "cadastros": 0,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {
-      "RICHARDSON ALMEIDA SILVA": {
-       "atendidas": 7,
-       "convertidas": 3
-      }
-     },
-     "vendas_detalhe": [
-      {
-       "id": "venda:20485.0",
-       "tipo": "nova",
-       "nome": "JOÃO GAMA PAIER ARGOLO",
-       "contrato": "BEBE 1 e 2 Anual 12x256 - DCC2",
-       "consultor_original": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "consultor": "RAYNY VITORIA PACHECO DOS SANTOS",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:17554",
-       "tipo": "remat",
-       "nome": "LÍVIA PATRICIO MORONARI",
-       "contrato": "ADAPTAÇÃO PM 12 meses - DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 10,
    "vendas_na_semana": 1,
@@ -2031,177 +915,52 @@
      "override": false
     }
    ],
-   "analise": "Mês de baixo volume e concentrado nas duas primeiras semanas (11 dos 25 cadastros, 7 das 9 vendas). A semana 3 não teve nenhum cadastro novo e a semana 5, apesar de 10 cadastros, converteu só 20% da safra até agora — 2 desses leads fecharam já em agosto, então o número deve subir. República depende de poucas fontes de lead; quando elas param, o funil zera.",
+   "analise": "Mês concentrado no início: a Semana 1 (1-12/07) trouxe 11 dos 25 cadastros do mês e 7 das 9 vendas, com safra de 72,7%. Depois, a Semana 2 quase zerou (0 cadastros, 1 venda de lead anterior) e a Semana 3 teve 4 cadastros sem nenhuma venda. A Semana 4 (27-31/07) reagiu um pouco (10 cadastros), mas converteu só 20% da safra até agora.",
    "acoes": [
-    "Diversificar origem de leads — investigar por que a semana 3 zerou (campanha pausada? sazonalidade?)",
-    "Acompanhar de perto a safra da semana 5 (10 leads) — follow-up nesta semana pode converter os pendentes",
-    "Richardson concentrou 100% das experimentais do mês — avaliar segundo professor para ampliar horários"
-   ]
-  },
-  "2026-08-09": {
-   "inicio": "2026-08-03",
-   "fim": "2026-08-09",
-   "mes_ref": 8,
-   "ano_ref": 2026,
-   "semana_do_mes": 1,
-   "rotulo": "Semana 1 — Agosto",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 0,
-     "vendas_na_semana": 2,
-     "safra_cadastros": 0,
-     "safra_convertidos": 0,
-     "rematriculas": 0,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA SANTOS LOUSSURDO": {
-       "cadastros": 0,
-       "vendas_na_semana": 2,
-       "remat": 0,
-       "meta": 2
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20538.0",
-       "tipo": "nova",
-       "nome": "BERNARDO CASOTTI BARONE",
-       "contrato": "BEBE 3 Anual 12x256 - DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20535.0",
-       "tipo": "nova",
-       "nome": "DAVI DE ALENCAR TOREZANI",
-       "contrato": "BEBE 3 Anual 12x256 - DCC2",
-       "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-       "data": "2026-08-04",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
-   "atualizado_em": "2026-08-18",
-   "oportunidades": 0,
-   "vendas_na_semana": 2,
-   "safra_cadastros": 0,
-   "safra_convertidos": 0,
-   "rematriculas": 0,
-   "experimentais": 0,
-   "fechamentos_experimentais": 0,
-   "safra_conversao_pct": null,
-   "consultores": [
-    {
-     "nome": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "cadastros": 0,
-     "vendas_na_semana": 2,
-     "remat": 0,
-     "meta": 2
-    }
-   ],
-   "professores": [],
-   "vendas_detalhe": [
-    {
-     "id": "venda:20535.0",
-     "tipo": "nova",
-     "nome": "DAVI DE ALENCAR TOREZANI",
-     "contrato": "BEBE 3 Anual 12x256 - DCC2",
-     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "data": "2026-08-04",
-     "conta_meta": true,
-     "override": false
-    },
-    {
-     "id": "venda:20538.0",
-     "tipo": "nova",
-     "nome": "BERNARDO CASOTTI BARONE",
-     "contrato": "BEBE 3 Anual 12x256 - DCC2",
-     "consultor_original": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "consultor": "MARIA EDUARDA SANTOS LOUSSURDO",
-     "data": "2026-08-05",
-     "conta_meta": true,
-     "override": false
-    }
+    "Entender por que a Semana 2 não gerou nenhum cadastro novo — unidade pequena, qualquer parada na captação zera o funil rápido",
+    "Acompanhar a safra da Semana 4 (10 leads, só 20% convertida) — follow-up ativo pode destravar fechamentos pendentes",
+    "Richardson concentrou praticamente todas as experimentais do mês — avaliar reforço de horários com outro professor"
    ]
   }
  },
  "Positiva Club": {
-  "2026-07-05": {
-   "inicio": "2026-06-29",
-   "fim": "2026-07-05",
+  "2026-07-12": {
+   "inicio": "2026-07-01",
+   "fim": "2026-07-12",
    "mes_ref": 7,
    "ano_ref": 2026,
    "semana_do_mes": 1,
    "rotulo": "Semana 1 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 4,
-     "vendas_na_semana": 0,
-     "safra_cadastros": 4,
-     "safra_convertidos": 1,
-     "rematriculas": 2,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 4,
-       "vendas_na_semana": 0,
-       "remat": 2,
-       "meta": 2
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "remat:14083",
-       "tipo": "remat",
-       "nome": "MONIQUE SIQUEIRA",
-       "contrato": "Evolução Positiva - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-01",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:8476",
-       "tipo": "remat",
-       "nome": "HERBERT HENRIQUE DE SOUZA",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-01",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
-   "oportunidades": 4,
-   "vendas_na_semana": 0,
-   "safra_cadastros": 4,
-   "safra_convertidos": 1,
-   "rematriculas": 2,
+   "oportunidades": 13,
+   "vendas_na_semana": 2,
+   "safra_cadastros": 13,
+   "safra_convertidos": 2,
+   "rematriculas": 5,
    "experimentais": 0,
    "fechamentos_experimentais": 0,
-   "safra_conversao_pct": 25.0,
+   "safra_conversao_pct": 15.4,
    "consultores": [
     {
      "nome": "MARIA EDUARDA LOPES FREITAS",
-     "cadastros": 4,
-     "vendas_na_semana": 0,
-     "remat": 2,
+     "cadastros": 5,
+     "vendas_na_semana": 1,
+     "remat": 4,
+     "meta": 5
+    },
+    {
+     "nome": "ISABELLY SANTOS MIGUITA",
+     "cadastros": 7,
+     "vendas_na_semana": 1,
+     "remat": 1,
      "meta": 2
+    },
+    {
+     "nome": "MARCOS ROBERTO PEREIRA MONTEIRO",
+     "cadastros": 1,
+     "vendas_na_semana": 0,
+     "remat": 0,
+     "meta": 0
     }
    ],
    "professores": [],
@@ -2227,139 +986,7 @@
      "data": "2026-07-01",
      "conta_meta": true,
      "override": false
-    }
-   ]
-  },
-  "2026-07-12": {
-   "inicio": "2026-07-06",
-   "fim": "2026-07-12",
-   "mes_ref": 7,
-   "ano_ref": 2026,
-   "semana_do_mes": 2,
-   "rotulo": "Semana 2 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 9,
-     "vendas_na_semana": 2,
-     "safra_cadastros": 9,
-     "safra_convertidos": 1,
-     "rematriculas": 3,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 7,
-       "vendas_na_semana": 1,
-       "remat": 1,
-       "meta": 2
-      },
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 1,
-       "vendas_na_semana": 1,
-       "remat": 2,
-       "meta": 3
-      },
-      "MARCOS ROBERTO PEREIRA MONTEIRO": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20407",
-       "tipo": "nova",
-       "nome": "GERALDO THEODORO DE MORAIS",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-07",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20404",
-       "tipo": "nova",
-       "nome": "RAFAEL GOMES BARBOSA",
-       "contrato": "Evolução Positiva - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:8937",
-       "tipo": "remat",
-       "nome": "CLAUDIA BRITO DA CRUZ",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:15920",
-       "tipo": "remat",
-       "nome": "ITALO GABRIEL DE CARVALHO MENEZES",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:15744",
-       "tipo": "remat",
-       "nome": "PEDRO HENRIQUE NEVES LOOSE",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-07",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
-   "atualizado_em": "2026-08-18",
-   "oportunidades": 9,
-   "vendas_na_semana": 2,
-   "safra_cadastros": 9,
-   "safra_convertidos": 1,
-   "rematriculas": 3,
-   "experimentais": 0,
-   "fechamentos_experimentais": 0,
-   "safra_conversao_pct": 11.1,
-   "consultores": [
-    {
-     "nome": "MARIA EDUARDA LOPES FREITAS",
-     "cadastros": 1,
-     "vendas_na_semana": 1,
-     "remat": 2,
-     "meta": 3
     },
-    {
-     "nome": "ISABELLY SANTOS MIGUITA",
-     "cadastros": 7,
-     "vendas_na_semana": 1,
-     "remat": 1,
-     "meta": 2
-    },
-    {
-     "nome": "MARCOS ROBERTO PEREIRA MONTEIRO",
-     "cadastros": 1,
-     "vendas_na_semana": 0,
-     "remat": 0,
-     "meta": 0
-    }
-   ],
-   "professores": [],
-   "vendas_detalhe": [
     {
      "id": "venda:20404",
      "tipo": "nova",
@@ -2422,340 +1049,8 @@
    "fim": "2026-07-19",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 3,
-   "rotulo": "Semana 3 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 14,
-     "vendas_na_semana": 8,
-     "safra_cadastros": 14,
-     "safra_convertidos": 9,
-     "rematriculas": 18,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 8,
-       "vendas_na_semana": 4,
-       "remat": 7,
-       "meta": 10
-      },
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 5,
-       "vendas_na_semana": 3,
-       "remat": 9,
-       "meta": 11
-      },
-      "MARCOS ROBERTO PEREIRA MONTEIRO": {
-       "cadastros": 1,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      },
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      },
-      "Kimberlly Castro Rangel": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20444",
-       "tipo": "nova",
-       "nome": "DANIEL FELIPE RIVEIRA RUIZ",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20439",
-       "tipo": "nova",
-       "nome": "ESTER RODRIGUES TOSTES",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-15",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20446",
-       "tipo": "nova",
-       "nome": "IZABELA DOS SANTOS ALVES",
-       "contrato": "Transferência de Dias",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-17",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "venda:20440",
-       "tipo": "nova",
-       "nome": "LUAN BAPTISTA",
-       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-16",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20438",
-       "tipo": "nova",
-       "nome": "MAYNARA DO CARMO DOS REIS",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-15",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20445",
-       "tipo": "nova",
-       "nome": "SANTIAGO GIRALDO ECHEVARRIA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20443",
-       "tipo": "nova",
-       "nome": "TAMIRES DOS SANTOS OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARCOS ROBERTO PEREIRA MONTEIRO",
-       "consultor": "MARCOS ROBERTO PEREIRA MONTEIRO",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20442",
-       "tipo": "nova",
-       "nome": "VALÉRIA LOPES DE OLIVEIRA",
-       "contrato": "Domínio Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:18346",
-       "tipo": "remat",
-       "nome": "HELEN FREITAS",
-       "contrato": "Domínio Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-15",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19102",
-       "tipo": "remat",
-       "nome": "DAYANE ANDRADE DA SILVA",
-       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:16906",
-       "tipo": "remat",
-       "nome": "CRISIA SOARES SO NASCIMENTO",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-13",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:18420",
-       "tipo": "remat",
-       "nome": "JOSE AUGUSTO FRANÇA CARDOSO",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-13",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11361",
-       "tipo": "remat",
-       "nome": "SUELLEN GOMES",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:14916",
-       "tipo": "remat",
-       "nome": "BEATRIZ BERNARDINO BARCELOS",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-13",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:5209",
-       "tipo": "remat",
-       "nome": "Thiago Siqueira Rodrigues",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:14828",
-       "tipo": "remat",
-       "nome": "LILLIAN PEROVANO FONSECA RODRIGUES",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:196",
-       "tipo": "remat",
-       "nome": "POLYANA SILVERIO MASSARIOL",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-15",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:10524",
-       "tipo": "remat",
-       "nome": "CLAUDIO LUIS DE OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "Kimberlly Castro Rangel",
-       "consultor": "Kimberlly Castro Rangel",
-       "data": "2026-07-13",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:1697",
-       "tipo": "remat",
-       "nome": "PRISCILA CARDOSO SANTOS DA SILVA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-13",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:2858",
-       "tipo": "remat",
-       "nome": "ALINE ANDREATTA FERREIRA BARBOSA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:13045",
-       "tipo": "remat",
-       "nome": "SEBASTIAO SANTOS DE OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:17009",
-       "tipo": "remat",
-       "nome": "THALES SANTOS DE OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:1176",
-       "tipo": "remat",
-       "nome": "NEIDIVALDA BATISTA CARDOSO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-15",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:17001",
-       "tipo": "remat",
-       "nome": "ALINE RUBIM FREITAS",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:3083",
-       "tipo": "remat",
-       "nome": "DIEGO DA SILVA BARBOSA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:16906",
-       "tipo": "remat",
-       "nome": "CRISIA SOARES SO NASCIMENTO",
-       "contrato": "Sem Fidelidade",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-13",
-       "conta_meta": false,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 2,
+   "rotulo": "Semana 2 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 14,
    "vendas_na_semana": 8,
@@ -3097,347 +1392,8 @@
    "fim": "2026-07-26",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 4,
-   "rotulo": "Semana 4 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 14,
-     "vendas_na_semana": 8,
-     "safra_cadastros": 14,
-     "safra_convertidos": 9,
-     "rematriculas": 17,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 8,
-       "vendas_na_semana": 5,
-       "remat": 8,
-       "meta": 12
-      },
-      "LIVIA OLIVEIRA RODRIGUES DOS SANTOS": {
-       "cadastros": 1,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      },
-      "SUPORTEEVO.": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      },
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 2,
-       "vendas_na_semana": 1,
-       "remat": 5,
-       "meta": 6
-      },
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 2,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      },
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 2,
-       "meta": 2
-      },
-      "DIEGO NETTO DE OLIVEIRA": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      },
-      "JESSICA KETULLIN CASTRO RANGEL": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20451",
-       "tipo": "nova",
-       "nome": "AUGUSTO LEITAO",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20460",
-       "tipo": "nova",
-       "nome": "CLEIDINE LINHARES RODRIGUES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20458",
-       "tipo": "nova",
-       "nome": "EMERSON DE LOURDES DE SANTANA",
-       "contrato": "Evolução Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20455",
-       "tipo": "nova",
-       "nome": "GLEUZA DE SÁ NASCIMENTO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "consultor": "LIVIA OLIVEIRA RODRIGUES DOS SANTOS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20457",
-       "tipo": "nova",
-       "nome": "LEONARDO OLIVEIRA WILDEMBERG",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20456",
-       "tipo": "nova",
-       "nome": "RICARDO CARVALHO NEVES",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20452",
-       "tipo": "nova",
-       "nome": "ROSINILDO PIMENTA DOS SANTOS",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20466",
-       "tipo": "nova",
-       "nome": "SHELIANA NASCIMENTO LOPES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-07-26",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:423",
-       "tipo": "remat",
-       "nome": "WALACE JUNKER OLIVEIRA",
-       "contrato": "Aniversario Antecipado 12xR$76",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-23",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19784",
-       "tipo": "remat",
-       "nome": "LIVIA FRAGA NARCISO",
-       "contrato": "Recreio Kids",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-20",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "remat:17186",
-       "tipo": "remat",
-       "nome": "MARIA DA PENHA SILVA",
-       "contrato": "Seja Positiva - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:10049",
-       "tipo": "remat",
-       "nome": "RONIELE SOUZA DOS SANTOS",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-23",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11355",
-       "tipo": "remat",
-       "nome": "MARIA EDUARDA BORGES",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19228",
-       "tipo": "remat",
-       "nome": "SOLINEA TOMASI",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:15961",
-       "tipo": "remat",
-       "nome": "SHEILA MAIA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11040",
-       "tipo": "remat",
-       "nome": "LEIDYANE DE OLIVEIRA LENZI",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:4045",
-       "tipo": "remat",
-       "nome": "NATHÁLIA JUSTINO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-23",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11668",
-       "tipo": "remat",
-       "nome": "GISLENE PEREIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:10889",
-       "tipo": "remat",
-       "nome": "WILDSON NUNES VALVERDE",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "DIEGO NETTO DE OLIVEIRA",
-       "consultor": "DIEGO NETTO DE OLIVEIRA",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:14351",
-       "tipo": "remat",
-       "nome": "GILCIMARA PINTO RANGEL",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19783",
-       "tipo": "remat",
-       "nome": "MARIANE CONRADO FRAGA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19781",
-       "tipo": "remat",
-       "nome": "JHONISSON DE OLIVEIRA NARCISO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:4050",
-       "tipo": "remat",
-       "nome": "SOCRATES DA SILVA PINTO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "JESSICA KETULLIN CASTRO RANGEL",
-       "consultor": "JESSICA KETULLIN CASTRO RANGEL",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:9624",
-       "tipo": "remat",
-       "nome": "CESAR AUGUSTO RODRIGUES REZENDE",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-20",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:17832",
-       "tipo": "remat",
-       "nome": "ROBERTA WILDEMBERG",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-21",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
+   "semana_do_mes": 3,
+   "rotulo": "Semana 3 — Julho",
    "atualizado_em": "2026-08-18",
    "oportunidades": 14,
    "vendas_na_semana": 8,
@@ -3784,300 +1740,26 @@
     }
    ]
   },
-  "2026-08-02": {
+  "2026-07-31": {
    "inicio": "2026-07-27",
-   "fim": "2026-08-02",
+   "fim": "2026-07-31",
    "mes_ref": 7,
    "ano_ref": 2026,
-   "semana_do_mes": 5,
-   "rotulo": "Semana 5 — Julho",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 12,
-     "vendas_na_semana": 7,
-     "safra_cadastros": 12,
-     "safra_convertidos": 6,
-     "rematriculas": 12,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 6,
-       "vendas_na_semana": 4,
-       "remat": 5,
-       "meta": 9
-      },
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 6,
-       "vendas_na_semana": 3,
-       "remat": 3,
-       "meta": 6
-      },
-      "LUANA APARECIDA FERNANDES": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 0
-      },
-      "Kimberlly Castro Rangel": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 2,
-       "meta": 2
-      },
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20475",
-       "tipo": "nova",
-       "nome": "ANA BEATRIZ CRSTO SANTOS",
-       "contrato": "Domínio Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20498",
-       "tipo": "nova",
-       "nome": "DANIELLA MAZEGA PEREIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20514",
-       "tipo": "nova",
-       "nome": "GERRY ADRIANO OLIVEIRA DOS SANTOS",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20512",
-       "tipo": "nova",
-       "nome": "LIVIA RIBEIRO BREMER",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-31",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20500",
-       "tipo": "nova",
-       "nome": "NAUMIR DELESPORTE",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20508",
-       "tipo": "nova",
-       "nome": "ROSILANE CHAGAS",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:20482",
-       "tipo": "nova",
-       "nome": "RYAN ALMEIDA DE SÁ ROCHA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19069",
-       "tipo": "remat",
-       "nome": "JOSIMARA DA SILVA",
-       "contrato": "Evolução Positiva Anual Antecipado 12xR$136",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19984",
-       "tipo": "remat",
-       "nome": "YASMIN CARVALHO REIS",
-       "contrato": "Recreio Kids",
-       "consultor_original": "LUANA APARECIDA FERNANDES",
-       "consultor": "LUANA APARECIDA FERNANDES",
-       "data": "2026-07-27",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "remat:13139",
-       "tipo": "remat",
-       "nome": "VANUSIA ALVES FERNANDES MARQUES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:4413",
-       "tipo": "remat",
-       "nome": "RAIANE MARQUES DA SILVA PAULINO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:13816",
-       "tipo": "remat",
-       "nome": "PAULO ROBLES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:9521",
-       "tipo": "remat",
-       "nome": "KELY CRISTINA GUIMARAES DEI SANTI",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:7406",
-       "tipo": "remat",
-       "nome": "MARIANNA XAVIER MACHADO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "Kimberlly Castro Rangel",
-       "consultor": "Kimberlly Castro Rangel",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:11473",
-       "tipo": "remat",
-       "nome": "REINALDO EUSTAQUIO DE LACERDA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "KAIQUE PEREIRA SIQUEIRA",
-       "consultor": "KAIQUE PEREIRA SIQUEIRA",
-       "data": "2026-07-29",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:18522",
-       "tipo": "remat",
-       "nome": "MICHELE SANGALLI",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:14821",
-       "tipo": "remat",
-       "nome": "MARIANA DA SILVA DOS SANTOS",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-27",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:12216",
-       "tipo": "remat",
-       "nome": "LUCAS OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "Kimberlly Castro Rangel",
-       "consultor": "Kimberlly Castro Rangel",
-       "data": "2026-07-30",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:10946",
-       "tipo": "remat",
-       "nome": "LUCAS CUNHA LOPES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-07-28",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    },
-    "8/2026": {
-     "oportunidades": 2,
-     "vendas_na_semana": 0,
-     "safra_cadastros": 2,
-     "safra_convertidos": 0,
-     "rematriculas": 0,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 2,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": []
-    }
-   },
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Julho",
    "atualizado_em": "2026-08-18",
-   "oportunidades": 14,
+   "oportunidades": 12,
    "vendas_na_semana": 7,
-   "safra_cadastros": 14,
+   "safra_cadastros": 12,
    "safra_convertidos": 6,
    "rematriculas": 12,
    "experimentais": 0,
    "fechamentos_experimentais": 0,
-   "safra_conversao_pct": 42.9,
+   "safra_conversao_pct": 50.0,
    "consultores": [
     {
      "nome": "MARIA EDUARDA LOPES FREITAS",
-     "cadastros": 8,
+     "cadastros": 6,
      "vendas_na_semana": 4,
      "remat": 5,
      "meta": 9
@@ -4323,318 +2005,33 @@
      "override": false
     }
    ],
-   "analise": "Club foi a unidade mais consistente de julho: vendas cresceram do início ao fim (0 → 2 → 8 → 8 → 7) e as rematrículas concentraram-se no meio do mês (35 das 52 nas semanas 3-4). O começo lento (4 cadastros e zero vendas na semana 1) sugere que o ciclo comercial do Club demora a engatar após a virada do mês. Sem dados de experimentais neste mês.",
+   "analise": "Club teve a curva mais suave do trio: começou devagar (Semana 1: 13 cadastros, só 2 vendas, safra de 15,4%) e acelerou nas semanas seguintes (8 vendas nas semanas 2 e 3, 7 na semana 4). As rematrículas ficaram concentradas no meio do mês — 18 na semana 2 e 17 na semana 3, contra só 5 na semana 1 e 12 na semana 4. Sem dados de experimentais neste mês.",
    "acoes": [
-    "Antecipar a régua de contato para a primeira semana do mês — o funil só engata na semana 3",
-    "Manter o ritmo de rematrículas do meio do mês, que sustentou a entrada",
-    "Voltar a acompanhar experimentais em agosto para enxergar o funil completo"
+    "A semana 1 é sistematicamente mais fraca (cadastro e rematrícula) — considerar antecipar a régua de contato para o fim do mês anterior",
+    "Manter o ritmo forte de rematrículas do meio do mês, que sustentou boa parte da entrada",
+    "Retomar o acompanhamento de experimentais em agosto para enxergar o funil completo"
    ]
   },
   "2026-08-09": {
-   "inicio": "2026-08-03",
+   "inicio": "2026-08-01",
    "fim": "2026-08-09",
    "mes_ref": 8,
    "ano_ref": 2026,
    "semana_do_mes": 1,
    "rotulo": "Semana 1 — Agosto",
-   "componentes": {
-    "7/2026": {
-     "oportunidades": 0,
-     "vendas_na_semana": 1,
-     "safra_cadastros": 0,
-     "safra_convertidos": 0,
-     "rematriculas": 0,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ADRIELLY SANTANA SABINO": {
-       "cadastros": 0,
-       "vendas_na_semana": 1,
-       "remat": 0,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:20554",
-       "tipo": "nova",
-       "nome": "SIRLY BARROS BARBOSA",
-       "contrato": "Evolução Positiva 12 meses - DCC",
-       "consultor_original": "ADRIELLY SANTANA SABINO",
-       "consultor": "ADRIELLY SANTANA SABINO",
-       "data": "2026-08-09",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    },
-    "8/2026": {
-     "oportunidades": 13,
-     "vendas_na_semana": 7,
-     "safra_cadastros": 13,
-     "safra_convertidos": 7,
-     "rematriculas": 13,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 6,
-       "vendas_na_semana": 4,
-       "remat": 3,
-       "meta": 7
-      },
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 6,
-       "vendas_na_semana": 3,
-       "remat": 10,
-       "meta": 11
-      },
-      "SUPORTEEVO.": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:31231",
-       "tipo": "nova",
-       "nome": "ARIEL REZENDE CONCEIÇÃO DO NASCIMENTO",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31255",
-       "tipo": "nova",
-       "nome": "CLEOMAR RADAELI GUMIERO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31254",
-       "tipo": "nova",
-       "nome": "FABIANA LORETO CORREA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31263",
-       "tipo": "nova",
-       "nome": "GIOAVANA MAIA PROVEDEL",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31224",
-       "tipo": "nova",
-       "nome": "MARIA LUIZA MARQUES RODRIGUES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31265",
-       "tipo": "nova",
-       "nome": "REINARA DE ANDRADE REIS SOARES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31257",
-       "tipo": "nova",
-       "nome": "SANTIAGO CHACON GARCIA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:13763",
-       "tipo": "remat",
-       "nome": "HIZABELA CALIARI FABEM",
-       "contrato": "Domínio Positiva - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-05",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:13499",
-       "tipo": "remat",
-       "nome": "ANA PAULA ROOS DA SILVA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-04",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:16074",
-       "tipo": "remat",
-       "nome": "RYAN MARTINS XAVIER",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19648",
-       "tipo": "remat",
-       "nome": "RAYSSA VITORIA PINTO DO NASCIMENTO",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19950",
-       "tipo": "remat",
-       "nome": "FRANCIANE SANCHES MOREIRA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:5712",
-       "tipo": "remat",
-       "nome": "KEDMA LUIZA RIBEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:7961",
-       "tipo": "remat",
-       "nome": "MYLENA BASTOS ZUNTA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:9264",
-       "tipo": "remat",
-       "nome": "ANDRE NEITZEL THOM",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:12194",
-       "tipo": "remat",
-       "nome": "PAULO HENRIQUE NICOLE",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:12195",
-       "tipo": "remat",
-       "nome": "FLAVIA SOUZA BASTOS NICOLE",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:20210",
-       "tipo": "remat",
-       "nome": "CLEOMARA GONÇALVES",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-06",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:16074",
-       "tipo": "remat",
-       "nome": "RYAN MARTINS XAVIER",
-       "contrato": "Sem Fidelidade",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-03",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "remat:19950",
-       "tipo": "remat",
-       "nome": "FRANCIANE SANCHES MOREIRA",
-       "contrato": "Sem Fidelidade",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-06",
-       "conta_meta": false,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
-   "oportunidades": 13,
-   "vendas_na_semana": 8,
-   "safra_cadastros": 13,
+   "oportunidades": 15,
+   "vendas_na_semana": 7,
+   "safra_cadastros": 15,
    "safra_convertidos": 7,
    "rematriculas": 13,
    "experimentais": 0,
    "fechamentos_experimentais": 0,
-   "safra_conversao_pct": 53.8,
+   "safra_conversao_pct": 46.7,
    "consultores": [
     {
      "nome": "MARIA EDUARDA LOPES FREITAS",
-     "cadastros": 6,
+     "cadastros": 8,
      "vendas_na_semana": 3,
      "remat": 10,
      "meta": 11
@@ -4645,13 +2042,6 @@
      "vendas_na_semana": 4,
      "remat": 3,
      "meta": 7
-    },
-    {
-     "nome": "ADRIELLY SANTANA SABINO",
-     "cadastros": 0,
-     "vendas_na_semana": 1,
-     "remat": 0,
-     "meta": 1
     },
     {
      "nome": "SUPORTEEVO.",
@@ -4882,17 +2272,6 @@
      "data": "2026-08-06",
      "conta_meta": false,
      "override": false
-    },
-    {
-     "id": "venda:20554",
-     "tipo": "nova",
-     "nome": "SIRLY BARROS BARBOSA",
-     "contrato": "Evolução Positiva 12 meses - DCC",
-     "consultor_original": "ADRIELLY SANTANA SABINO",
-     "consultor": "ADRIELLY SANTANA SABINO",
-     "data": "2026-08-09",
-     "conta_meta": true,
-     "override": false
     }
    ]
   },
@@ -4903,194 +2282,6 @@
    "ano_ref": 2026,
    "semana_do_mes": 2,
    "rotulo": "Semana 2 — Agosto",
-   "componentes": {
-    "8/2026": {
-     "oportunidades": 19,
-     "vendas_na_semana": 11,
-     "safra_cadastros": 19,
-     "safra_convertidos": 11,
-     "rematriculas": 3,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 6,
-       "vendas_na_semana": 2,
-       "remat": 2,
-       "meta": 3
-      },
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 12,
-       "vendas_na_semana": 9,
-       "remat": 1,
-       "meta": 9
-      },
-      "KAIQUE PEREIRA SIQUEIRA": {
-       "cadastros": 1,
-       "vendas_na_semana": 0,
-       "remat": 0,
-       "meta": 0
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "venda:31308",
-       "tipo": "nova",
-       "nome": "AILSA DA CUNHA PEREIRA",
-       "contrato": "Transferência de Dias",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-13",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "venda:31276",
-       "tipo": "nova",
-       "nome": "ALEXANDRO FERREIRA SILVA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31318",
-       "tipo": "nova",
-       "nome": "ALLANA SACHL DOS SANTOS SATIRO",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31317",
-       "tipo": "nova",
-       "nome": "AMANDA SACHL DOS SANTOS SILVA",
-       "contrato": "Evolução Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-14",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31296",
-       "tipo": "nova",
-       "nome": "ANGELINA JUCA MONTEIRO DE BARROS",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-11",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31297",
-       "tipo": "nova",
-       "nome": "GEOVANA COIMBRA CALAZANS",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-11",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31291",
-       "tipo": "nova",
-       "nome": "ISABELA DUTRA FONSECA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-11",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31279",
-       "tipo": "nova",
-       "nome": "JOSE ELIAS FURTADO SILVA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31278",
-       "tipo": "nova",
-       "nome": "LIDIANE GAMO SOARES SILVA",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31275",
-       "tipo": "nova",
-       "nome": "ROBERTA PEREIRA DE ARAUJO",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-10",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "venda:31298",
-       "tipo": "nova",
-       "nome": "SAMARA ROCHA CARVALHO",
-       "contrato": "POSITIVA GYM antigo",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-11",
-       "conta_meta": false,
-       "override": false
-      },
-      {
-       "id": "remat:561",
-       "tipo": "remat",
-       "nome": "LORHAN AMILTON MOREIRA BERGER",
-       "contrato": "Domínio Positiva Anual Antecipado 12xR$166",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-11",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:339",
-       "tipo": "remat",
-       "nome": "LARA FONSECA FROEDE",
-       "contrato": "Seja Positiva 12 meses - DCC",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-11",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:2350",
-       "tipo": "remat",
-       "nome": "LUDMILLA OLIVEIRA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-13",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
    "oportunidades": 19,
    "vendas_na_semana": 11,
@@ -5280,7 +2471,7 @@
      "override": false
     }
    ],
-   "analise": "Semana forte em vendas novas (11, melhor semana do ano no Club), mas o placar de metas conta outra história: Maria Eduarda fechou 9 elegíveis e bateu a Meta Real em cima (100% — leva 70% da comissão; faltaram 3 para a Super), enquanto Isabelly caiu de 7 para 3 e ficou abaixo do Básico (0% da comissão). Atenção: na semana 1 Maria Eduarda fez 11 e ficou a UMA venda da Super Meta — duas semanas seguidas batendo na trave. As rematrículas despencaram de 13 para 3, o que derrubou a contagem de meta das duas.",
+   "analise": "Semana forte em vendas novas (11, melhor semana do mês no Club), mas o placar de metas conta outra história: Maria Eduarda fechou 9 elegíveis e bateu a Meta Real em cima (100% — leva 70% da comissão; faltaram 3 para a Super), enquanto Isabelly caiu de 7 para 3 e ficou abaixo do Básico (0% da comissão). Atenção: na semana 1 de agosto Maria Eduarda fez 11 e ficou a UMA venda da Super Meta — duas semanas seguidas batendo na trave. As rematrículas despencaram de 13 para 3, o que derrubou a contagem de meta das duas.",
    "acoes": [
     "Maria Eduarda está a 1-3 vendas da Super Meta há duas semanas — revisar com ela os leads pendentes de fechamento na segunda-feira",
     "Investigar a queda de Isabelly (7 → 3): agenda, leads recebidos ou fechamento?",
@@ -5295,56 +2486,6 @@
    "ano_ref": 2026,
    "semana_do_mes": 3,
    "rotulo": "Semana 3 — Agosto",
-   "componentes": {
-    "8/2026": {
-     "oportunidades": 3,
-     "vendas_na_semana": 0,
-     "safra_cadastros": 3,
-     "safra_convertidos": 0,
-     "rematriculas": 2,
-     "experimentais": 0,
-     "fechamentos_experimentais": 0,
-     "consultores": {
-      "MARIA EDUARDA LOPES FREITAS": {
-       "cadastros": 3,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      },
-      "ISABELLY SANTOS MIGUITA": {
-       "cadastros": 0,
-       "vendas_na_semana": 0,
-       "remat": 1,
-       "meta": 1
-      }
-     },
-     "professores": {},
-     "vendas_detalhe": [
-      {
-       "id": "remat:14037",
-       "tipo": "remat",
-       "nome": "KELY CRISTINA MANARA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "ISABELLY SANTOS MIGUITA",
-       "consultor": "ISABELLY SANTOS MIGUITA",
-       "data": "2026-08-17",
-       "conta_meta": true,
-       "override": false
-      },
-      {
-       "id": "remat:19560",
-       "tipo": "remat",
-       "nome": "JULIA ARAUJO MAIA",
-       "contrato": "Seja Positiva Anual Antecipado 12xR$96",
-       "consultor_original": "MARIA EDUARDA LOPES FREITAS",
-       "consultor": "MARIA EDUARDA LOPES FREITAS",
-       "data": "2026-08-17",
-       "conta_meta": true,
-       "override": false
-      }
-     ]
-    }
-   },
    "atualizado_em": "2026-08-18",
    "oportunidades": 3,
    "vendas_na_semana": 0,
@@ -5395,6 +2536,26 @@
      "override": false
     }
    ]
+  },
+  "2026-08-31": {
+   "inicio": "2026-08-24",
+   "fim": "2026-08-31",
+   "mes_ref": 8,
+   "ano_ref": 2026,
+   "semana_do_mes": 4,
+   "rotulo": "Semana 4 — Agosto",
+   "atualizado_em": "2026-08-18",
+   "oportunidades": 0,
+   "vendas_na_semana": 0,
+   "safra_cadastros": 0,
+   "safra_convertidos": 0,
+   "rematriculas": 0,
+   "experimentais": 0,
+   "fechamentos_experimentais": 0,
+   "safra_conversao_pct": null,
+   "consultores": [],
+   "professores": [],
+   "vendas_detalhe": []
   }
  }
 }
